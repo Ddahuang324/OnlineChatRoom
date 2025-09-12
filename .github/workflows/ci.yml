@@ -1,0 +1,3 @@
+# Placeholder for CI workflow as per T056.
+# Steps: build + ctest + artifact (test report)
+# Implementation will be provided by the user.

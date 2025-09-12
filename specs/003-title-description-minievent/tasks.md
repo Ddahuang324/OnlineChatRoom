@@ -431,3 +431,41 @@ Task Agent 命令示例 (伪示例，若集成自动执行框架，可改成真�
 - 无未解决的高严重 bug
 
 #############################################################
+
+#############################################################
+# 阶段 18: Agent 生成的摘要任务 (供参考)
+#############################################################
+
+## 阶段 1: 设置
+- [ ] T081 [P] 根据 `plan.md` 在仓库根目录创建 `src`, `tests`, `gui` 目录结构
+- [ ] T082 [P] 在根目录创建基础的 `CMakeLists.txt` 以包含 `src`, `tests`, `gui` 目录, 并链接 Qt 和 MiniEvent
+- [ ] T083 [P] 在根目录创建 `.clang-format` 文件以统一代码风格
+
+## 阶段 2: 测试优先 (TDD)
+- [ ] T084 [P] 在 `tests/contract/test_storage.cpp` 中根据 `contracts/storage_contract.md` 编写存储层契约测试
+- [ ] T085 [P] 在 `tests/contract/test_network.cpp` 中根据 `contracts/network_contract.md` 编写网络层契约测试
+- [ ] T086 [P] 在 `tests/integration/test_login.cpp` 中编写登录流程的集成测试 (模拟网络和存储)
+- [ ] T087 [P] 在 `tests/integration/test_messaging.cpp` 中编写消息收发的集成测试 (模拟网络和存储)
+
+## 阶段 3: 核心实现
+- [ ] T088 [P] 在 `src/model/DataModels.hpp` 中根据 `data-model.md` 创建 `UserRecord`, `MessageRecord`, `FileMeta` 结构体
+- [ ] T089 在 `src/storage/` 中创建 `SQLiteStorage.hpp` 和 `SQLiteStorage.cpp`, 实现 `contracts/storage_contract.md` 中定义的 `Storage` 接口
+- [ ] T090 在 `src/network/` 中创建 `MiniEventAdapter.hpp` 和 `MiniEventAdapter.cpp`, 实现 `contracts/network_contract.md` 中定义的 `MiniEventAdapter` 接口
+- [ ] T091 [P] 在 `src/viewmodel/` 中创建 `LoginViewModel.hpp` 和 `LoginViewModel.cpp`
+- [ ] T092 [P] 在 `src/viewmodel/` 中创建 `ChatViewModel.hpp` 和 `ChatViewModel.cpp`
+- [ ] T093 [P] 在 `src/viewmodel/` 中创建 `RoomsViewModel.hpp` 和 `RoomsViewModel.cpp`
+- [ ] T094 [P] 在 `gui/` 中创建 `LoginPage.qml`
+- [ ] T095 [P] 在 `gui/` 中创建 `ChatPage.qml`
+- [ ] T096 [P] 在 `gui/` 中创建 `RoomsPage.qml`
+- [ ] T097 在 `src/main.cpp` 中创建 Qt 应用入口, 加载 QML 并注册 C++ 类型
+
+## 阶段 4: 集成
+- [ ] T098 将 `LoginViewModel` 与 `MiniEventAdapter` 和 `SQLiteStorage` 连接
+- [ ] T099 将 `ChatViewModel` 与 `MiniEventAdapter` 和 `SQLiteStorage` 连接
+- [ ] T100 将 ViewModels 暴露给 QML 上下文以实现数据绑定
+
+## 阶段 5: 完善
+- [ ] T101 [P] 为 `src/utils/` (如果创建) 中的辅助函数编写单元测试
+- [ ] T102 实现文件传输功能, 包括 UI 进度更新
+- [ ] T103 [P] 为 QML 视图添加基础样式和主题
+- [ ] T104 更新 `README.md` 文件, 包括构建和运行说明

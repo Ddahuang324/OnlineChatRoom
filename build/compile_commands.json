@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/Users/dahuang/Desktop/项目/OnlineChat/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QUICK_LIB -I/Users/dahuang/Desktop/项目/OnlineChat/build/chat_app_autogen/include -isystem /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/dahuang/Qt/6.9.1/macos/lib -isystem /Users/dahuang/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/dahuang/Qt/6.9.1/macos/include -isystem /Users/dahuang/Qt/6.9.1/macos/lib/QtGui.framework/Headers -isystem /Users/dahuang/Qt/6.9.1/macos/lib/QtQml.framework/Headers -isystem /Users/dahuang/Qt/6.9.1/macos/include/QtQmlIntegration -isystem /Users/dahuang/Qt/6.9.1/macos/lib/QtNetwork.framework/Headers -isystem /Users/dahuang/Qt/6.9.1/macos/lib/QtQuick.framework/Headers -isystem /Users/dahuang/Qt/6.9.1/macos/lib/QtQmlMeta.framework/Headers -isystem /Users/dahuang/Qt/6.9.1/macos/lib/QtQmlModels.framework/Headers -isystem /Users/dahuang/Qt/6.9.1/macos/lib/QtQmlWorkerScript.framework/Headers -isystem /Users/dahuang/Qt/6.9.1/macos/lib/QtOpenGL.framework/Headers -isystem /Library/Frameworks/Mono.framework/Headers -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -Wall -Wextra -Wpedantic -o CMakeFiles/chat_app.dir/chat_app_autogen/mocs_compilation.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/build/chat_app_autogen/mocs_compilation.cpp",
+  "file": "/Users/dahuang/Desktop/项目/OnlineChat/build/chat_app_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/chat_app.dir/chat_app_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/Users/dahuang/Desktop/项目/OnlineChat/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QUICK_LIB -I/Users/dahuang/Desktop/项目/OnlineChat/build/chat_app_autogen/include -isystem /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers -iframework /Users/dahuang/Qt/6.9.1/macos/lib -isystem /Users/dahuang/Qt/6.9.1/macos/mkspecs/macx-clang -isystem /Users/dahuang/Qt/6.9.1/macos/include -isystem /Users/dahuang/Qt/6.9.1/macos/lib/QtGui.framework/Headers -isystem /Users/dahuang/Qt/6.9.1/macos/lib/QtQml.framework/Headers -isystem /Users/dahuang/Qt/6.9.1/macos/include/QtQmlIntegration -isystem /Users/dahuang/Qt/6.9.1/macos/lib/QtNetwork.framework/Headers -isystem /Users/dahuang/Qt/6.9.1/macos/lib/QtQuick.framework/Headers -isystem /Users/dahuang/Qt/6.9.1/macos/lib/QtQmlMeta.framework/Headers -isystem /Users/dahuang/Qt/6.9.1/macos/lib/QtQmlModels.framework/Headers -isystem /Users/dahuang/Qt/6.9.1/macos/lib/QtQmlWorkerScript.framework/Headers -isystem /Users/dahuang/Qt/6.9.1/macos/lib/QtOpenGL.framework/Headers -isystem /Library/Frameworks/Mono.framework/Headers -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -Wall -Wextra -Wpedantic -o CMakeFiles/chat_app.dir/main.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/main.cpp",
+  "file": "/Users/dahuang/Desktop/项目/OnlineChat/main.cpp",
+  "output": "CMakeFiles/chat_app.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/dahuang/Desktop/项目/OnlineChat/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/dahuang/Desktop/项目/OnlineChat/build/src/storage_lib_autogen/include -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -Wall -Wextra -Wpedantic -o CMakeFiles/storage_lib.dir/storage_lib_autogen/mocs_compilation.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/build/src/storage_lib_autogen/mocs_compilation.cpp",
+  "file": "/Users/dahuang/Desktop/项目/OnlineChat/build/src/storage_lib_autogen/mocs_compilation.cpp",
+  "output": "src/CMakeFiles/storage_lib.dir/storage_lib_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/Users/dahuang/Desktop/项目/OnlineChat/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/dahuang/Desktop/项目/OnlineChat/build/src/net_lib_autogen/include -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -Wall -Wextra -Wpedantic -o CMakeFiles/net_lib.dir/net_lib_autogen/mocs_compilation.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/build/src/net_lib_autogen/mocs_compilation.cpp",
+  "file": "/Users/dahuang/Desktop/项目/OnlineChat/build/src/net_lib_autogen/mocs_compilation.cpp",
+  "output": "src/CMakeFiles/net_lib.dir/net_lib_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/Users/dahuang/Desktop/项目/OnlineChat/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/dahuang/Desktop/项目/OnlineChat/build/src/viewmodel_lib_autogen/include -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -Wall -Wextra -Wpedantic -o CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/build/src/viewmodel_lib_autogen/mocs_compilation.cpp",
+  "file": "/Users/dahuang/Desktop/项目/OnlineChat/build/src/viewmodel_lib_autogen/mocs_compilation.cpp",
+  "output": "src/CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/Users/dahuang/Desktop/项目/OnlineChat/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/dahuang/Desktop/项目/OnlineChat/build/src/transfer_lib_autogen/include -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -Wall -Wextra -Wpedantic -o CMakeFiles/transfer_lib.dir/transfer_lib_autogen/mocs_compilation.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/build/src/transfer_lib_autogen/mocs_compilation.cpp",
+  "file": "/Users/dahuang/Desktop/项目/OnlineChat/build/src/transfer_lib_autogen/mocs_compilation.cpp",
+  "output": "src/CMakeFiles/transfer_lib.dir/transfer_lib_autogen/mocs_compilation.cpp.o"
+}
+]
