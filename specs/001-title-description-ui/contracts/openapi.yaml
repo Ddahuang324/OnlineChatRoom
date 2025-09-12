@@ -1,0 +1,193 @@
+openapi: 3.0.0
+info:
+  title: MiniEvent Chat API (草案)
+  version: '0.1'
+servers:
+  - url: http://localhost:7000
+paths:
+  /auth/login:
+    post:
+      summary: 用户登录（示例）
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [username, password]
+              properties:
+                username: { type: string, minLength: 1, maxLength: 64 }
+                password: { type: string, minLength: 1, maxLength: 128 }
+      requestBody:
+        required: true
+      responses:
+        '200':
+          description: 登录成功
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [token, user]
+                properties:
+                  token: { type: string }
+                  user:
+                    $ref: '#/components/schemas/User'
+
+  /conversations:
+    get:
+      summary: 列出会话
+      parameters:
+        - in: query
+          name: limit
+          schema: { type: integer, minimum: 1, maximum: 200, default: 50 }
+        - in: query
+          name: before
+          schema: { type: integer, format: int64, description: epoch_ms }
+      responses:
+        '200':
+          description: 会话列表
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [items]
+                properties:
+                  items:
+                    type: array
+                    items: { $ref: '#/components/schemas/Conversation' }
+
+  /conversations/{conversation_id}/messages:
+    get:
+      summary: 获取会话历史消息（分页）
+      parameters:
+        - name: conversation_id
+          in: path
+          required: true
+        - in: query
+          name: limit
+          schema: { type: integer, minimum: 1, maximum: 200, default: 50 }
+        - in: query
+          name: before
+          schema: { type: integer, format: int64 }
+      responses:
+        '200':
+          description: 消息列表
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [items]
+                properties:
+                  items:
+                    type: array
+                    items: { $ref: '#/components/schemas/Message' }
+    post:
+      summary: 发送消息到会话
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [content_type, content_ref]
+              properties:
+                content_type: { type: string, enum: [text, image, file, audio, video] }
+                content_ref: { type: string, minLength: 1, maxLength: 2048 }
+      responses:
+        '201':
+          description: 消息已接受
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [message]
+                properties:
+                  message: { $ref: '#/components/schemas/Message' }
+
+  /files/upload:
+    post:
+      summary: 上传文件（分片/断点续传将在 research 阶段定义）
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [filename, mime_type, size_bytes]
+              properties:
+                filename: { type: string, minLength: 1, maxLength: 255 }
+                mime_type: { type: string, minLength: 1, maxLength: 128 }
+                size_bytes: { type: integer, format: int64, minimum: 0 }
+      responses:
+        '201':
+          description: 文件上传已接受
+
+  /files/upload/chunk:
+    put:
+      summary: 上传文件分片
+      parameters:
+        - in: query
+          name: file_id
+          required: true
+          schema: { type: string }
+        - in: query
+          name: idx
+          required: true
+          schema: { type: integer, minimum: 0 }
+      requestBody:
+        required: true
+        content:
+          application/octet-stream:
+            schema:
+              type: string
+              format: binary
+      responses:
+        '204': { description: 接收成功 }
+        '409': { description: 分片冲突 }
+
+components:
+  schemas:
+    User:
+      type: object
+      required: [user_id, display_name, presence]
+      properties:
+        user_id: { type: string }
+        display_name: { type: string }
+        avatar_url: { type: string }
+        presence: { type: string, enum: [online, offline, away] }
+    Message:
+      type: object
+      properties:
+        message_id:
+          type: string
+        sender_id:
+          type: string
+        conversation_id:
+          type: string
+        content_type:
+          type: string
+          enum: [text, image, file, audio, video]
+        content_ref:
+          type: string
+        created_at:
+          type: integer
+          format: int64
+        delivered_at:
+          type: integer
+          format: int64
+          nullable: true
+        read_at:
+          type: integer
+          format: int64
+          nullable: true
+        status:
+          type: string
+          enum: [queued, sent, delivered, read, failed]
+    Conversation:
+      type: object
+      required: [conversation_id, type, last_activity_at]
+      properties:
+        conversation_id: { type: string }
+        type: { type: string, enum: [direct, group] }
+        last_activity_at: { type: integer, format: int64 }
+        unread_count: { type: integer, minimum: 0 }
