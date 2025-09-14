@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/transfer_lib_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/transfer_lib_autogen.dir/ParseCache.txt"
   "transfer_lib_autogen"
+  "CMakeFiles/transfer_lib.dir/transfer/FileTransferManager.cpp.o"
+  "CMakeFiles/transfer_lib.dir/transfer/FileTransferManager.cpp.o.d"
   "CMakeFiles/transfer_lib.dir/transfer_lib_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/transfer_lib.dir/transfer_lib_autogen/mocs_compilation.cpp.o.d"
   "libtransfer_lib.a"

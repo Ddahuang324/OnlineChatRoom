@@ -116,6 +116,384 @@ depend:
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+tests/CMakeFiles/unit_tests.dir/rule:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/unit_tests.dir/rule
+.PHONY : tests/CMakeFiles/unit_tests.dir/rule
+
+# Convenience name for target.
+unit_tests: tests/CMakeFiles/unit_tests.dir/rule
+.PHONY : unit_tests
+
+# fast build rule for target.
+unit_tests/fast:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/build
+.PHONY : unit_tests/fast
+
+# Convenience name for target.
+tests/CMakeFiles/unit_tests_autogen_timestamp_deps.dir/rule:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/unit_tests_autogen_timestamp_deps.dir/rule
+.PHONY : tests/CMakeFiles/unit_tests_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+unit_tests_autogen_timestamp_deps: tests/CMakeFiles/unit_tests_autogen_timestamp_deps.dir/rule
+.PHONY : unit_tests_autogen_timestamp_deps
+
+# fast build rule for target.
+unit_tests_autogen_timestamp_deps/fast:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests_autogen_timestamp_deps.dir/build.make tests/CMakeFiles/unit_tests_autogen_timestamp_deps.dir/build
+.PHONY : unit_tests_autogen_timestamp_deps/fast
+
+# Convenience name for target.
+tests/CMakeFiles/unit_tests_autogen.dir/rule:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/unit_tests_autogen.dir/rule
+.PHONY : tests/CMakeFiles/unit_tests_autogen.dir/rule
+
+# Convenience name for target.
+unit_tests_autogen: tests/CMakeFiles/unit_tests_autogen.dir/rule
+.PHONY : unit_tests_autogen
+
+# fast build rule for target.
+unit_tests_autogen/fast:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests_autogen.dir/build.make tests/CMakeFiles/unit_tests_autogen.dir/build
+.PHONY : unit_tests_autogen/fast
+
+config/test_config.o: config/test_config.cpp.o
+.PHONY : config/test_config.o
+
+# target to build an object file
+config/test_config.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/config/test_config.cpp.o
+.PHONY : config/test_config.cpp.o
+
+config/test_config.i: config/test_config.cpp.i
+.PHONY : config/test_config.i
+
+# target to preprocess a source file
+config/test_config.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/config/test_config.cpp.i
+.PHONY : config/test_config.cpp.i
+
+config/test_config.s: config/test_config.cpp.s
+.PHONY : config/test_config.s
+
+# target to generate assembly for a file
+config/test_config.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/config/test_config.cpp.s
+.PHONY : config/test_config.cpp.s
+
+contract/test_network_connect.o: contract/test_network_connect.cpp.o
+.PHONY : contract/test_network_connect.o
+
+# target to build an object file
+contract/test_network_connect.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/contract/test_network_connect.cpp.o
+.PHONY : contract/test_network_connect.cpp.o
+
+contract/test_network_connect.i: contract/test_network_connect.cpp.i
+.PHONY : contract/test_network_connect.i
+
+# target to preprocess a source file
+contract/test_network_connect.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/contract/test_network_connect.cpp.i
+.PHONY : contract/test_network_connect.cpp.i
+
+contract/test_network_connect.s: contract/test_network_connect.cpp.s
+.PHONY : contract/test_network_connect.s
+
+# target to generate assembly for a file
+contract/test_network_connect.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/contract/test_network_connect.cpp.s
+.PHONY : contract/test_network_connect.cpp.s
+
+contract/test_network_file_chunk.o: contract/test_network_file_chunk.cpp.o
+.PHONY : contract/test_network_file_chunk.o
+
+# target to build an object file
+contract/test_network_file_chunk.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/contract/test_network_file_chunk.cpp.o
+.PHONY : contract/test_network_file_chunk.cpp.o
+
+contract/test_network_file_chunk.i: contract/test_network_file_chunk.cpp.i
+.PHONY : contract/test_network_file_chunk.i
+
+# target to preprocess a source file
+contract/test_network_file_chunk.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/contract/test_network_file_chunk.cpp.i
+.PHONY : contract/test_network_file_chunk.cpp.i
+
+contract/test_network_file_chunk.s: contract/test_network_file_chunk.cpp.s
+.PHONY : contract/test_network_file_chunk.s
+
+# target to generate assembly for a file
+contract/test_network_file_chunk.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/contract/test_network_file_chunk.cpp.s
+.PHONY : contract/test_network_file_chunk.cpp.s
+
+contract/test_storage_messages.o: contract/test_storage_messages.cpp.o
+.PHONY : contract/test_storage_messages.o
+
+# target to build an object file
+contract/test_storage_messages.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/contract/test_storage_messages.cpp.o
+.PHONY : contract/test_storage_messages.cpp.o
+
+contract/test_storage_messages.i: contract/test_storage_messages.cpp.i
+.PHONY : contract/test_storage_messages.i
+
+# target to preprocess a source file
+contract/test_storage_messages.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/contract/test_storage_messages.cpp.i
+.PHONY : contract/test_storage_messages.cpp.i
+
+contract/test_storage_messages.s: contract/test_storage_messages.cpp.s
+.PHONY : contract/test_storage_messages.s
+
+# target to generate assembly for a file
+contract/test_storage_messages.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/contract/test_storage_messages.cpp.s
+.PHONY : contract/test_storage_messages.cpp.s
+
+contract/test_storage_user.o: contract/test_storage_user.cpp.o
+.PHONY : contract/test_storage_user.o
+
+# target to build an object file
+contract/test_storage_user.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/contract/test_storage_user.cpp.o
+.PHONY : contract/test_storage_user.cpp.o
+
+contract/test_storage_user.i: contract/test_storage_user.cpp.i
+.PHONY : contract/test_storage_user.i
+
+# target to preprocess a source file
+contract/test_storage_user.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/contract/test_storage_user.cpp.i
+.PHONY : contract/test_storage_user.cpp.i
+
+contract/test_storage_user.s: contract/test_storage_user.cpp.s
+.PHONY : contract/test_storage_user.s
+
+# target to generate assembly for a file
+contract/test_storage_user.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/contract/test_storage_user.cpp.s
+.PHONY : contract/test_storage_user.cpp.s
+
+integration/test_e2e_file_reconnect.o: integration/test_e2e_file_reconnect.cpp.o
+.PHONY : integration/test_e2e_file_reconnect.o
+
+# target to build an object file
+integration/test_e2e_file_reconnect.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/integration/test_e2e_file_reconnect.cpp.o
+.PHONY : integration/test_e2e_file_reconnect.cpp.o
+
+integration/test_e2e_file_reconnect.i: integration/test_e2e_file_reconnect.cpp.i
+.PHONY : integration/test_e2e_file_reconnect.i
+
+# target to preprocess a source file
+integration/test_e2e_file_reconnect.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/integration/test_e2e_file_reconnect.cpp.i
+.PHONY : integration/test_e2e_file_reconnect.cpp.i
+
+integration/test_e2e_file_reconnect.s: integration/test_e2e_file_reconnect.cpp.s
+.PHONY : integration/test_e2e_file_reconnect.s
+
+# target to generate assembly for a file
+integration/test_e2e_file_reconnect.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/integration/test_e2e_file_reconnect.cpp.s
+.PHONY : integration/test_e2e_file_reconnect.cpp.s
+
+integration/test_e2e_login_send.o: integration/test_e2e_login_send.cpp.o
+.PHONY : integration/test_e2e_login_send.o
+
+# target to build an object file
+integration/test_e2e_login_send.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/integration/test_e2e_login_send.cpp.o
+.PHONY : integration/test_e2e_login_send.cpp.o
+
+integration/test_e2e_login_send.i: integration/test_e2e_login_send.cpp.i
+.PHONY : integration/test_e2e_login_send.i
+
+# target to preprocess a source file
+integration/test_e2e_login_send.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/integration/test_e2e_login_send.cpp.i
+.PHONY : integration/test_e2e_login_send.cpp.i
+
+integration/test_e2e_login_send.s: integration/test_e2e_login_send.cpp.s
+.PHONY : integration/test_e2e_login_send.s
+
+# target to generate assembly for a file
+integration/test_e2e_login_send.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/integration/test_e2e_login_send.cpp.s
+.PHONY : integration/test_e2e_login_send.cpp.s
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+net/test_mini_event_adapter.o: net/test_mini_event_adapter.cpp.o
+.PHONY : net/test_mini_event_adapter.o
+
+# target to build an object file
+net/test_mini_event_adapter.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.o
+.PHONY : net/test_mini_event_adapter.cpp.o
+
+net/test_mini_event_adapter.i: net/test_mini_event_adapter.cpp.i
+.PHONY : net/test_mini_event_adapter.i
+
+# target to preprocess a source file
+net/test_mini_event_adapter.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.i
+.PHONY : net/test_mini_event_adapter.cpp.i
+
+net/test_mini_event_adapter.s: net/test_mini_event_adapter.cpp.s
+.PHONY : net/test_mini_event_adapter.s
+
+# target to generate assembly for a file
+net/test_mini_event_adapter.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.s
+.PHONY : net/test_mini_event_adapter.cpp.s
+
+storage/test_sqlite.o: storage/test_sqlite.cpp.o
+.PHONY : storage/test_sqlite.o
+
+# target to build an object file
+storage/test_sqlite.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/storage/test_sqlite.cpp.o
+.PHONY : storage/test_sqlite.cpp.o
+
+storage/test_sqlite.i: storage/test_sqlite.cpp.i
+.PHONY : storage/test_sqlite.i
+
+# target to preprocess a source file
+storage/test_sqlite.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/storage/test_sqlite.cpp.i
+.PHONY : storage/test_sqlite.cpp.i
+
+storage/test_sqlite.s: storage/test_sqlite.cpp.s
+.PHONY : storage/test_sqlite.s
+
+# target to generate assembly for a file
+storage/test_sqlite.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/storage/test_sqlite.cpp.s
+.PHONY : storage/test_sqlite.cpp.s
+
+transfer/test_file_transfer.o: transfer/test_file_transfer.cpp.o
+.PHONY : transfer/test_file_transfer.o
+
+# target to build an object file
+transfer/test_file_transfer.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/transfer/test_file_transfer.cpp.o
+.PHONY : transfer/test_file_transfer.cpp.o
+
+transfer/test_file_transfer.i: transfer/test_file_transfer.cpp.i
+.PHONY : transfer/test_file_transfer.i
+
+# target to preprocess a source file
+transfer/test_file_transfer.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/transfer/test_file_transfer.cpp.i
+.PHONY : transfer/test_file_transfer.cpp.i
+
+transfer/test_file_transfer.s: transfer/test_file_transfer.cpp.s
+.PHONY : transfer/test_file_transfer.s
+
+# target to generate assembly for a file
+transfer/test_file_transfer.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/transfer/test_file_transfer.cpp.s
+.PHONY : transfer/test_file_transfer.cpp.s
+
+unit_tests_autogen/mocs_compilation.o: unit_tests_autogen/mocs_compilation.cpp.o
+.PHONY : unit_tests_autogen/mocs_compilation.o
+
+# target to build an object file
+unit_tests_autogen/mocs_compilation.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests_autogen/mocs_compilation.cpp.o
+.PHONY : unit_tests_autogen/mocs_compilation.cpp.o
+
+unit_tests_autogen/mocs_compilation.i: unit_tests_autogen/mocs_compilation.cpp.i
+.PHONY : unit_tests_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+unit_tests_autogen/mocs_compilation.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests_autogen/mocs_compilation.cpp.i
+.PHONY : unit_tests_autogen/mocs_compilation.cpp.i
+
+unit_tests_autogen/mocs_compilation.s: unit_tests_autogen/mocs_compilation.cpp.s
+.PHONY : unit_tests_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+unit_tests_autogen/mocs_compilation.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests_autogen/mocs_compilation.cpp.s
+.PHONY : unit_tests_autogen/mocs_compilation.cpp.s
+
+viewmodel/test_chat.o: viewmodel/test_chat.cpp.o
+.PHONY : viewmodel/test_chat.o
+
+# target to build an object file
+viewmodel/test_chat.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/viewmodel/test_chat.cpp.o
+.PHONY : viewmodel/test_chat.cpp.o
+
+viewmodel/test_chat.i: viewmodel/test_chat.cpp.i
+.PHONY : viewmodel/test_chat.i
+
+# target to preprocess a source file
+viewmodel/test_chat.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/viewmodel/test_chat.cpp.i
+.PHONY : viewmodel/test_chat.cpp.i
+
+viewmodel/test_chat.s: viewmodel/test_chat.cpp.s
+.PHONY : viewmodel/test_chat.s
+
+# target to generate assembly for a file
+viewmodel/test_chat.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/viewmodel/test_chat.cpp.s
+.PHONY : viewmodel/test_chat.cpp.s
+
+viewmodel/test_login.o: viewmodel/test_login.cpp.o
+.PHONY : viewmodel/test_login.o
+
+# target to build an object file
+viewmodel/test_login.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o
+.PHONY : viewmodel/test_login.cpp.o
+
+viewmodel/test_login.i: viewmodel/test_login.cpp.i
+.PHONY : viewmodel/test_login.i
+
+# target to preprocess a source file
+viewmodel/test_login.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.i
+.PHONY : viewmodel/test_login.cpp.i
+
+viewmodel/test_login.s: viewmodel/test_login.cpp.s
+.PHONY : viewmodel/test_login.s
+
+# target to generate assembly for a file
+viewmodel/test_login.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.s
+.PHONY : viewmodel/test_login.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +502,51 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... unit_tests_autogen"
+	@echo "... unit_tests_autogen_timestamp_deps"
+	@echo "... unit_tests"
+	@echo "... config/test_config.o"
+	@echo "... config/test_config.i"
+	@echo "... config/test_config.s"
+	@echo "... contract/test_network_connect.o"
+	@echo "... contract/test_network_connect.i"
+	@echo "... contract/test_network_connect.s"
+	@echo "... contract/test_network_file_chunk.o"
+	@echo "... contract/test_network_file_chunk.i"
+	@echo "... contract/test_network_file_chunk.s"
+	@echo "... contract/test_storage_messages.o"
+	@echo "... contract/test_storage_messages.i"
+	@echo "... contract/test_storage_messages.s"
+	@echo "... contract/test_storage_user.o"
+	@echo "... contract/test_storage_user.i"
+	@echo "... contract/test_storage_user.s"
+	@echo "... integration/test_e2e_file_reconnect.o"
+	@echo "... integration/test_e2e_file_reconnect.i"
+	@echo "... integration/test_e2e_file_reconnect.s"
+	@echo "... integration/test_e2e_login_send.o"
+	@echo "... integration/test_e2e_login_send.i"
+	@echo "... integration/test_e2e_login_send.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... net/test_mini_event_adapter.o"
+	@echo "... net/test_mini_event_adapter.i"
+	@echo "... net/test_mini_event_adapter.s"
+	@echo "... storage/test_sqlite.o"
+	@echo "... storage/test_sqlite.i"
+	@echo "... storage/test_sqlite.s"
+	@echo "... transfer/test_file_transfer.o"
+	@echo "... transfer/test_file_transfer.i"
+	@echo "... transfer/test_file_transfer.s"
+	@echo "... unit_tests_autogen/mocs_compilation.o"
+	@echo "... unit_tests_autogen/mocs_compilation.i"
+	@echo "... unit_tests_autogen/mocs_compilation.s"
+	@echo "... viewmodel/test_chat.o"
+	@echo "... viewmodel/test_chat.i"
+	@echo "... viewmodel/test_chat.s"
+	@echo "... viewmodel/test_login.o"
+	@echo "... viewmodel/test_login.i"
+	@echo "... viewmodel/test_login.s"
 .PHONY : help
 
 

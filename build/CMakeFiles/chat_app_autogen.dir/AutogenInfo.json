@@ -953,13 +953,38 @@
 		"/opt/homebrew/share/cmake/Modules/FindGTest.cmake",
 		"/opt/homebrew/share/cmake/Modules/GoogleTest.cmake",
 		"/opt/homebrew/share/cmake/Modules/FindPackageHandleStandardArgs.cmake",
-		"/opt/homebrew/share/cmake/Modules/FindPackageMessage.cmake"
+		"/opt/homebrew/share/cmake/Modules/FindPackageMessage.cmake",
+		"/opt/homebrew/opt/googletest/lib/cmake/GTest/GTestConfigVersion.cmake",
+		"/opt/homebrew/opt/googletest/lib/cmake/GTest/GTestConfig.cmake",
+		"/opt/homebrew/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/opt/homebrew/share/cmake/Modules/FindThreads.cmake",
+		"/opt/homebrew/share/cmake/Modules/CheckLibraryExists.cmake",
+		"/opt/homebrew/share/cmake/Modules/CheckIncludeFileCXX.cmake",
+		"/opt/homebrew/share/cmake/Modules/CheckCXXSourceCompiles.cmake",
+		"/opt/homebrew/share/cmake/Modules/FindPackageHandleStandardArgs.cmake",
+		"/opt/homebrew/share/cmake/Modules/FindPackageMessage.cmake",
+		"/opt/homebrew/opt/googletest/lib/cmake/GTest/GTestTargets.cmake",
+		"/opt/homebrew/opt/googletest/lib/cmake/GTest/GTestTargets-release.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat",
 	"CROSS_CONFIG" : false,
 	"DEP_FILE" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/chat_app_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "chat_app_autogen/timestamp",
-	"HEADERS" : [],
+	"HEADERS" : 
+	[
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/include/model/Entities.hpp",
+			"MU",
+			"Q6AU6LSD6J/moc_Entities.cpp",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/include/model/Room.hpp",
+			"MU",
+			"Q6AU6LSD6J/moc_Room.cpp",
+			null
+		]
+	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/chat_app_autogen/include",
 	"MOC_COMPILATION_FILE" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/chat_app_autogen/mocs_compilation.cpp",
@@ -986,6 +1011,8 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/include",
+		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/src",
 		"/Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers",
 		"/Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework",
 		"/Users/dahuang/Qt/6.9.1/macos/mkspecs/macx-clang",
@@ -1046,7 +1073,11 @@
 	"SETTINGS_FILE" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/CMakeFiles/chat_app_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/main.cpp", "MU", null ]
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/src/app/main.cpp",
+			"MU",
+			null
+		]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

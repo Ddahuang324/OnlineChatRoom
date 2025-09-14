@@ -19,6 +19,10 @@ if(CHAT_ENABLE_SQLITE)
 endif()
 
 if(CHAT_BUILD_TESTS)
+    if(APPLE)
+        # Hint for Homebrew-installed googletest
+        list(APPEND CMAKE_PREFIX_PATH "/opt/homebrew/opt/googletest")
+    endif()
     find_package(GTest)
 endif()
 

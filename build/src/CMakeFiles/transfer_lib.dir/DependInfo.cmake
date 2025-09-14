@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "src/transfer_lib_autogen/timestamp" "custom" "src/transfer_lib_autogen/deps"
+  "/Users/dahuang/Desktop/项目/OnlineChat/src/transfer/FileTransferManager.cpp" "src/CMakeFiles/transfer_lib.dir/transfer/FileTransferManager.cpp.o" "gcc" "src/CMakeFiles/transfer_lib.dir/transfer/FileTransferManager.cpp.o.d"
   "/Users/dahuang/Desktop/项目/OnlineChat/build/src/transfer_lib_autogen/mocs_compilation.cpp" "src/CMakeFiles/transfer_lib.dir/transfer_lib_autogen/mocs_compilation.cpp.o" "gcc" "src/CMakeFiles/transfer_lib.dir/transfer_lib_autogen/mocs_compilation.cpp.o.d"
   )
 

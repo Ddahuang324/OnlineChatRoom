@@ -173,6 +173,62 @@ transfer_lib/fast:
 .PHONY : transfer_lib/fast
 
 # Convenience name for target.
+src/CMakeFiles/common_lib.dir/rule:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/common_lib.dir/rule
+.PHONY : src/CMakeFiles/common_lib.dir/rule
+
+# Convenience name for target.
+common_lib: src/CMakeFiles/common_lib.dir/rule
+.PHONY : common_lib
+
+# fast build rule for target.
+common_lib/fast:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/common_lib.dir/build.make src/CMakeFiles/common_lib.dir/build
+.PHONY : common_lib/fast
+
+# Convenience name for target.
+src/CMakeFiles/config_lib.dir/rule:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/config_lib.dir/rule
+.PHONY : src/CMakeFiles/config_lib.dir/rule
+
+# Convenience name for target.
+config_lib: src/CMakeFiles/config_lib.dir/rule
+.PHONY : config_lib
+
+# fast build rule for target.
+config_lib/fast:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/config_lib.dir/build.make src/CMakeFiles/config_lib.dir/build
+.PHONY : config_lib/fast
+
+# Convenience name for target.
+src/CMakeFiles/util_lib.dir/rule:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/util_lib.dir/rule
+.PHONY : src/CMakeFiles/util_lib.dir/rule
+
+# Convenience name for target.
+util_lib: src/CMakeFiles/util_lib.dir/rule
+.PHONY : util_lib
+
+# fast build rule for target.
+util_lib/fast:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/util_lib.dir/build.make src/CMakeFiles/util_lib.dir/build
+.PHONY : util_lib/fast
+
+# Convenience name for target.
+src/CMakeFiles/i18n_lib.dir/rule:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/i18n_lib.dir/rule
+.PHONY : src/CMakeFiles/i18n_lib.dir/rule
+
+# Convenience name for target.
+i18n_lib: src/CMakeFiles/i18n_lib.dir/rule
+.PHONY : i18n_lib
+
+# fast build rule for target.
+i18n_lib/fast:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/i18n_lib.dir/build.make src/CMakeFiles/i18n_lib.dir/build
+.PHONY : i18n_lib/fast
+
+# Convenience name for target.
 src/CMakeFiles/storage_lib_autogen_timestamp_deps.dir/rule:
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/storage_lib_autogen_timestamp_deps.dir/rule
 .PHONY : src/CMakeFiles/storage_lib_autogen_timestamp_deps.dir/rule
@@ -284,6 +340,286 @@ transfer_lib_autogen/fast:
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/transfer_lib_autogen.dir/build.make src/CMakeFiles/transfer_lib_autogen.dir/build
 .PHONY : transfer_lib_autogen/fast
 
+# Convenience name for target.
+src/CMakeFiles/common_lib_autogen_timestamp_deps.dir/rule:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/common_lib_autogen_timestamp_deps.dir/rule
+.PHONY : src/CMakeFiles/common_lib_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+common_lib_autogen_timestamp_deps: src/CMakeFiles/common_lib_autogen_timestamp_deps.dir/rule
+.PHONY : common_lib_autogen_timestamp_deps
+
+# fast build rule for target.
+common_lib_autogen_timestamp_deps/fast:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/common_lib_autogen_timestamp_deps.dir/build.make src/CMakeFiles/common_lib_autogen_timestamp_deps.dir/build
+.PHONY : common_lib_autogen_timestamp_deps/fast
+
+# Convenience name for target.
+src/CMakeFiles/common_lib_autogen.dir/rule:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/common_lib_autogen.dir/rule
+.PHONY : src/CMakeFiles/common_lib_autogen.dir/rule
+
+# Convenience name for target.
+common_lib_autogen: src/CMakeFiles/common_lib_autogen.dir/rule
+.PHONY : common_lib_autogen
+
+# fast build rule for target.
+common_lib_autogen/fast:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/common_lib_autogen.dir/build.make src/CMakeFiles/common_lib_autogen.dir/build
+.PHONY : common_lib_autogen/fast
+
+# Convenience name for target.
+src/CMakeFiles/config_lib_autogen_timestamp_deps.dir/rule:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/config_lib_autogen_timestamp_deps.dir/rule
+.PHONY : src/CMakeFiles/config_lib_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+config_lib_autogen_timestamp_deps: src/CMakeFiles/config_lib_autogen_timestamp_deps.dir/rule
+.PHONY : config_lib_autogen_timestamp_deps
+
+# fast build rule for target.
+config_lib_autogen_timestamp_deps/fast:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/config_lib_autogen_timestamp_deps.dir/build.make src/CMakeFiles/config_lib_autogen_timestamp_deps.dir/build
+.PHONY : config_lib_autogen_timestamp_deps/fast
+
+# Convenience name for target.
+src/CMakeFiles/config_lib_autogen.dir/rule:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/config_lib_autogen.dir/rule
+.PHONY : src/CMakeFiles/config_lib_autogen.dir/rule
+
+# Convenience name for target.
+config_lib_autogen: src/CMakeFiles/config_lib_autogen.dir/rule
+.PHONY : config_lib_autogen
+
+# fast build rule for target.
+config_lib_autogen/fast:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/config_lib_autogen.dir/build.make src/CMakeFiles/config_lib_autogen.dir/build
+.PHONY : config_lib_autogen/fast
+
+# Convenience name for target.
+src/CMakeFiles/util_lib_autogen_timestamp_deps.dir/rule:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/util_lib_autogen_timestamp_deps.dir/rule
+.PHONY : src/CMakeFiles/util_lib_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+util_lib_autogen_timestamp_deps: src/CMakeFiles/util_lib_autogen_timestamp_deps.dir/rule
+.PHONY : util_lib_autogen_timestamp_deps
+
+# fast build rule for target.
+util_lib_autogen_timestamp_deps/fast:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/util_lib_autogen_timestamp_deps.dir/build.make src/CMakeFiles/util_lib_autogen_timestamp_deps.dir/build
+.PHONY : util_lib_autogen_timestamp_deps/fast
+
+# Convenience name for target.
+src/CMakeFiles/util_lib_autogen.dir/rule:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/util_lib_autogen.dir/rule
+.PHONY : src/CMakeFiles/util_lib_autogen.dir/rule
+
+# Convenience name for target.
+util_lib_autogen: src/CMakeFiles/util_lib_autogen.dir/rule
+.PHONY : util_lib_autogen
+
+# fast build rule for target.
+util_lib_autogen/fast:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/util_lib_autogen.dir/build.make src/CMakeFiles/util_lib_autogen.dir/build
+.PHONY : util_lib_autogen/fast
+
+# Convenience name for target.
+src/CMakeFiles/i18n_lib_autogen_timestamp_deps.dir/rule:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/i18n_lib_autogen_timestamp_deps.dir/rule
+.PHONY : src/CMakeFiles/i18n_lib_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+i18n_lib_autogen_timestamp_deps: src/CMakeFiles/i18n_lib_autogen_timestamp_deps.dir/rule
+.PHONY : i18n_lib_autogen_timestamp_deps
+
+# fast build rule for target.
+i18n_lib_autogen_timestamp_deps/fast:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/i18n_lib_autogen_timestamp_deps.dir/build.make src/CMakeFiles/i18n_lib_autogen_timestamp_deps.dir/build
+.PHONY : i18n_lib_autogen_timestamp_deps/fast
+
+# Convenience name for target.
+src/CMakeFiles/i18n_lib_autogen.dir/rule:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/i18n_lib_autogen.dir/rule
+.PHONY : src/CMakeFiles/i18n_lib_autogen.dir/rule
+
+# Convenience name for target.
+i18n_lib_autogen: src/CMakeFiles/i18n_lib_autogen.dir/rule
+.PHONY : i18n_lib_autogen
+
+# fast build rule for target.
+i18n_lib_autogen/fast:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/i18n_lib_autogen.dir/build.make src/CMakeFiles/i18n_lib_autogen.dir/build
+.PHONY : i18n_lib_autogen/fast
+
+common/Log.o: common/Log.cpp.o
+.PHONY : common/Log.o
+
+# target to build an object file
+common/Log.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/common_lib.dir/build.make src/CMakeFiles/common_lib.dir/common/Log.cpp.o
+.PHONY : common/Log.cpp.o
+
+common/Log.i: common/Log.cpp.i
+.PHONY : common/Log.i
+
+# target to preprocess a source file
+common/Log.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/common_lib.dir/build.make src/CMakeFiles/common_lib.dir/common/Log.cpp.i
+.PHONY : common/Log.cpp.i
+
+common/Log.s: common/Log.cpp.s
+.PHONY : common/Log.s
+
+# target to generate assembly for a file
+common/Log.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/common_lib.dir/build.make src/CMakeFiles/common_lib.dir/common/Log.cpp.s
+.PHONY : common/Log.cpp.s
+
+common_lib_autogen/mocs_compilation.o: common_lib_autogen/mocs_compilation.cpp.o
+.PHONY : common_lib_autogen/mocs_compilation.o
+
+# target to build an object file
+common_lib_autogen/mocs_compilation.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/common_lib.dir/build.make src/CMakeFiles/common_lib.dir/common_lib_autogen/mocs_compilation.cpp.o
+.PHONY : common_lib_autogen/mocs_compilation.cpp.o
+
+common_lib_autogen/mocs_compilation.i: common_lib_autogen/mocs_compilation.cpp.i
+.PHONY : common_lib_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+common_lib_autogen/mocs_compilation.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/common_lib.dir/build.make src/CMakeFiles/common_lib.dir/common_lib_autogen/mocs_compilation.cpp.i
+.PHONY : common_lib_autogen/mocs_compilation.cpp.i
+
+common_lib_autogen/mocs_compilation.s: common_lib_autogen/mocs_compilation.cpp.s
+.PHONY : common_lib_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+common_lib_autogen/mocs_compilation.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/common_lib.dir/build.make src/CMakeFiles/common_lib.dir/common_lib_autogen/mocs_compilation.cpp.s
+.PHONY : common_lib_autogen/mocs_compilation.cpp.s
+
+config/Config.o: config/Config.cpp.o
+.PHONY : config/Config.o
+
+# target to build an object file
+config/Config.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/config_lib.dir/build.make src/CMakeFiles/config_lib.dir/config/Config.cpp.o
+.PHONY : config/Config.cpp.o
+
+config/Config.i: config/Config.cpp.i
+.PHONY : config/Config.i
+
+# target to preprocess a source file
+config/Config.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/config_lib.dir/build.make src/CMakeFiles/config_lib.dir/config/Config.cpp.i
+.PHONY : config/Config.cpp.i
+
+config/Config.s: config/Config.cpp.s
+.PHONY : config/Config.s
+
+# target to generate assembly for a file
+config/Config.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/config_lib.dir/build.make src/CMakeFiles/config_lib.dir/config/Config.cpp.s
+.PHONY : config/Config.cpp.s
+
+config_lib_autogen/mocs_compilation.o: config_lib_autogen/mocs_compilation.cpp.o
+.PHONY : config_lib_autogen/mocs_compilation.o
+
+# target to build an object file
+config_lib_autogen/mocs_compilation.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/config_lib.dir/build.make src/CMakeFiles/config_lib.dir/config_lib_autogen/mocs_compilation.cpp.o
+.PHONY : config_lib_autogen/mocs_compilation.cpp.o
+
+config_lib_autogen/mocs_compilation.i: config_lib_autogen/mocs_compilation.cpp.i
+.PHONY : config_lib_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+config_lib_autogen/mocs_compilation.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/config_lib.dir/build.make src/CMakeFiles/config_lib.dir/config_lib_autogen/mocs_compilation.cpp.i
+.PHONY : config_lib_autogen/mocs_compilation.cpp.i
+
+config_lib_autogen/mocs_compilation.s: config_lib_autogen/mocs_compilation.cpp.s
+.PHONY : config_lib_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+config_lib_autogen/mocs_compilation.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/config_lib.dir/build.make src/CMakeFiles/config_lib.dir/config_lib_autogen/mocs_compilation.cpp.s
+.PHONY : config_lib_autogen/mocs_compilation.cpp.s
+
+i18n/I18n.o: i18n/I18n.cpp.o
+.PHONY : i18n/I18n.o
+
+# target to build an object file
+i18n/I18n.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/i18n_lib.dir/build.make src/CMakeFiles/i18n_lib.dir/i18n/I18n.cpp.o
+.PHONY : i18n/I18n.cpp.o
+
+i18n/I18n.i: i18n/I18n.cpp.i
+.PHONY : i18n/I18n.i
+
+# target to preprocess a source file
+i18n/I18n.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/i18n_lib.dir/build.make src/CMakeFiles/i18n_lib.dir/i18n/I18n.cpp.i
+.PHONY : i18n/I18n.cpp.i
+
+i18n/I18n.s: i18n/I18n.cpp.s
+.PHONY : i18n/I18n.s
+
+# target to generate assembly for a file
+i18n/I18n.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/i18n_lib.dir/build.make src/CMakeFiles/i18n_lib.dir/i18n/I18n.cpp.s
+.PHONY : i18n/I18n.cpp.s
+
+i18n_lib_autogen/mocs_compilation.o: i18n_lib_autogen/mocs_compilation.cpp.o
+.PHONY : i18n_lib_autogen/mocs_compilation.o
+
+# target to build an object file
+i18n_lib_autogen/mocs_compilation.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/i18n_lib.dir/build.make src/CMakeFiles/i18n_lib.dir/i18n_lib_autogen/mocs_compilation.cpp.o
+.PHONY : i18n_lib_autogen/mocs_compilation.cpp.o
+
+i18n_lib_autogen/mocs_compilation.i: i18n_lib_autogen/mocs_compilation.cpp.i
+.PHONY : i18n_lib_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+i18n_lib_autogen/mocs_compilation.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/i18n_lib.dir/build.make src/CMakeFiles/i18n_lib.dir/i18n_lib_autogen/mocs_compilation.cpp.i
+.PHONY : i18n_lib_autogen/mocs_compilation.cpp.i
+
+i18n_lib_autogen/mocs_compilation.s: i18n_lib_autogen/mocs_compilation.cpp.s
+.PHONY : i18n_lib_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+i18n_lib_autogen/mocs_compilation.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/i18n_lib.dir/build.make src/CMakeFiles/i18n_lib.dir/i18n_lib_autogen/mocs_compilation.cpp.s
+.PHONY : i18n_lib_autogen/mocs_compilation.cpp.s
+
+net/MiniEventAdapterImpl.o: net/MiniEventAdapterImpl.cpp.o
+.PHONY : net/MiniEventAdapterImpl.o
+
+# target to build an object file
+net/MiniEventAdapterImpl.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/net/MiniEventAdapterImpl.cpp.o
+.PHONY : net/MiniEventAdapterImpl.cpp.o
+
+net/MiniEventAdapterImpl.i: net/MiniEventAdapterImpl.cpp.i
+.PHONY : net/MiniEventAdapterImpl.i
+
+# target to preprocess a source file
+net/MiniEventAdapterImpl.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/net/MiniEventAdapterImpl.cpp.i
+.PHONY : net/MiniEventAdapterImpl.cpp.i
+
+net/MiniEventAdapterImpl.s: net/MiniEventAdapterImpl.cpp.s
+.PHONY : net/MiniEventAdapterImpl.s
+
+# target to generate assembly for a file
+net/MiniEventAdapterImpl.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/net/MiniEventAdapterImpl.cpp.s
+.PHONY : net/MiniEventAdapterImpl.cpp.s
+
 net_lib_autogen/mocs_compilation.o: net_lib_autogen/mocs_compilation.cpp.o
 .PHONY : net_lib_autogen/mocs_compilation.o
 
@@ -307,6 +643,30 @@ net_lib_autogen/mocs_compilation.s: net_lib_autogen/mocs_compilation.cpp.s
 net_lib_autogen/mocs_compilation.cpp.s:
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/net_lib_autogen/mocs_compilation.cpp.s
 .PHONY : net_lib_autogen/mocs_compilation.cpp.s
+
+storage/SQLiteStorage.o: storage/SQLiteStorage.cpp.o
+.PHONY : storage/SQLiteStorage.o
+
+# target to build an object file
+storage/SQLiteStorage.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/storage_lib.dir/build.make src/CMakeFiles/storage_lib.dir/storage/SQLiteStorage.cpp.o
+.PHONY : storage/SQLiteStorage.cpp.o
+
+storage/SQLiteStorage.i: storage/SQLiteStorage.cpp.i
+.PHONY : storage/SQLiteStorage.i
+
+# target to preprocess a source file
+storage/SQLiteStorage.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/storage_lib.dir/build.make src/CMakeFiles/storage_lib.dir/storage/SQLiteStorage.cpp.i
+.PHONY : storage/SQLiteStorage.cpp.i
+
+storage/SQLiteStorage.s: storage/SQLiteStorage.cpp.s
+.PHONY : storage/SQLiteStorage.s
+
+# target to generate assembly for a file
+storage/SQLiteStorage.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/storage_lib.dir/build.make src/CMakeFiles/storage_lib.dir/storage/SQLiteStorage.cpp.s
+.PHONY : storage/SQLiteStorage.cpp.s
 
 storage_lib_autogen/mocs_compilation.o: storage_lib_autogen/mocs_compilation.cpp.o
 .PHONY : storage_lib_autogen/mocs_compilation.o
@@ -332,6 +692,30 @@ storage_lib_autogen/mocs_compilation.cpp.s:
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/storage_lib.dir/build.make src/CMakeFiles/storage_lib.dir/storage_lib_autogen/mocs_compilation.cpp.s
 .PHONY : storage_lib_autogen/mocs_compilation.cpp.s
 
+transfer/FileTransferManager.o: transfer/FileTransferManager.cpp.o
+.PHONY : transfer/FileTransferManager.o
+
+# target to build an object file
+transfer/FileTransferManager.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/transfer_lib.dir/build.make src/CMakeFiles/transfer_lib.dir/transfer/FileTransferManager.cpp.o
+.PHONY : transfer/FileTransferManager.cpp.o
+
+transfer/FileTransferManager.i: transfer/FileTransferManager.cpp.i
+.PHONY : transfer/FileTransferManager.i
+
+# target to preprocess a source file
+transfer/FileTransferManager.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/transfer_lib.dir/build.make src/CMakeFiles/transfer_lib.dir/transfer/FileTransferManager.cpp.i
+.PHONY : transfer/FileTransferManager.cpp.i
+
+transfer/FileTransferManager.s: transfer/FileTransferManager.cpp.s
+.PHONY : transfer/FileTransferManager.s
+
+# target to generate assembly for a file
+transfer/FileTransferManager.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/transfer_lib.dir/build.make src/CMakeFiles/transfer_lib.dir/transfer/FileTransferManager.cpp.s
+.PHONY : transfer/FileTransferManager.cpp.s
+
 transfer_lib_autogen/mocs_compilation.o: transfer_lib_autogen/mocs_compilation.cpp.o
 .PHONY : transfer_lib_autogen/mocs_compilation.o
 
@@ -355,6 +739,150 @@ transfer_lib_autogen/mocs_compilation.s: transfer_lib_autogen/mocs_compilation.c
 transfer_lib_autogen/mocs_compilation.cpp.s:
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/transfer_lib.dir/build.make src/CMakeFiles/transfer_lib.dir/transfer_lib_autogen/mocs_compilation.cpp.s
 .PHONY : transfer_lib_autogen/mocs_compilation.cpp.s
+
+util/Sha256.o: util/Sha256.cpp.o
+.PHONY : util/Sha256.o
+
+# target to build an object file
+util/Sha256.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/util_lib.dir/build.make src/CMakeFiles/util_lib.dir/util/Sha256.cpp.o
+.PHONY : util/Sha256.cpp.o
+
+util/Sha256.i: util/Sha256.cpp.i
+.PHONY : util/Sha256.i
+
+# target to preprocess a source file
+util/Sha256.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/util_lib.dir/build.make src/CMakeFiles/util_lib.dir/util/Sha256.cpp.i
+.PHONY : util/Sha256.cpp.i
+
+util/Sha256.s: util/Sha256.cpp.s
+.PHONY : util/Sha256.s
+
+# target to generate assembly for a file
+util/Sha256.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/util_lib.dir/build.make src/CMakeFiles/util_lib.dir/util/Sha256.cpp.s
+.PHONY : util/Sha256.cpp.s
+
+util/ThreadNaming.o: util/ThreadNaming.cpp.o
+.PHONY : util/ThreadNaming.o
+
+# target to build an object file
+util/ThreadNaming.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/util_lib.dir/build.make src/CMakeFiles/util_lib.dir/util/ThreadNaming.cpp.o
+.PHONY : util/ThreadNaming.cpp.o
+
+util/ThreadNaming.i: util/ThreadNaming.cpp.i
+.PHONY : util/ThreadNaming.i
+
+# target to preprocess a source file
+util/ThreadNaming.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/util_lib.dir/build.make src/CMakeFiles/util_lib.dir/util/ThreadNaming.cpp.i
+.PHONY : util/ThreadNaming.cpp.i
+
+util/ThreadNaming.s: util/ThreadNaming.cpp.s
+.PHONY : util/ThreadNaming.s
+
+# target to generate assembly for a file
+util/ThreadNaming.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/util_lib.dir/build.make src/CMakeFiles/util_lib.dir/util/ThreadNaming.cpp.s
+.PHONY : util/ThreadNaming.cpp.s
+
+util/Uuid.o: util/Uuid.cpp.o
+.PHONY : util/Uuid.o
+
+# target to build an object file
+util/Uuid.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/util_lib.dir/build.make src/CMakeFiles/util_lib.dir/util/Uuid.cpp.o
+.PHONY : util/Uuid.cpp.o
+
+util/Uuid.i: util/Uuid.cpp.i
+.PHONY : util/Uuid.i
+
+# target to preprocess a source file
+util/Uuid.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/util_lib.dir/build.make src/CMakeFiles/util_lib.dir/util/Uuid.cpp.i
+.PHONY : util/Uuid.cpp.i
+
+util/Uuid.s: util/Uuid.cpp.s
+.PHONY : util/Uuid.s
+
+# target to generate assembly for a file
+util/Uuid.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/util_lib.dir/build.make src/CMakeFiles/util_lib.dir/util/Uuid.cpp.s
+.PHONY : util/Uuid.cpp.s
+
+util_lib_autogen/mocs_compilation.o: util_lib_autogen/mocs_compilation.cpp.o
+.PHONY : util_lib_autogen/mocs_compilation.o
+
+# target to build an object file
+util_lib_autogen/mocs_compilation.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/util_lib.dir/build.make src/CMakeFiles/util_lib.dir/util_lib_autogen/mocs_compilation.cpp.o
+.PHONY : util_lib_autogen/mocs_compilation.cpp.o
+
+util_lib_autogen/mocs_compilation.i: util_lib_autogen/mocs_compilation.cpp.i
+.PHONY : util_lib_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+util_lib_autogen/mocs_compilation.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/util_lib.dir/build.make src/CMakeFiles/util_lib.dir/util_lib_autogen/mocs_compilation.cpp.i
+.PHONY : util_lib_autogen/mocs_compilation.cpp.i
+
+util_lib_autogen/mocs_compilation.s: util_lib_autogen/mocs_compilation.cpp.s
+.PHONY : util_lib_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+util_lib_autogen/mocs_compilation.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/util_lib.dir/build.make src/CMakeFiles/util_lib.dir/util_lib_autogen/mocs_compilation.cpp.s
+.PHONY : util_lib_autogen/mocs_compilation.cpp.s
+
+viewmodel/ChatViewModel.o: viewmodel/ChatViewModel.cpp.o
+.PHONY : viewmodel/ChatViewModel.o
+
+# target to build an object file
+viewmodel/ChatViewModel.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/viewmodel_lib.dir/build.make src/CMakeFiles/viewmodel_lib.dir/viewmodel/ChatViewModel.cpp.o
+.PHONY : viewmodel/ChatViewModel.cpp.o
+
+viewmodel/ChatViewModel.i: viewmodel/ChatViewModel.cpp.i
+.PHONY : viewmodel/ChatViewModel.i
+
+# target to preprocess a source file
+viewmodel/ChatViewModel.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/viewmodel_lib.dir/build.make src/CMakeFiles/viewmodel_lib.dir/viewmodel/ChatViewModel.cpp.i
+.PHONY : viewmodel/ChatViewModel.cpp.i
+
+viewmodel/ChatViewModel.s: viewmodel/ChatViewModel.cpp.s
+.PHONY : viewmodel/ChatViewModel.s
+
+# target to generate assembly for a file
+viewmodel/ChatViewModel.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/viewmodel_lib.dir/build.make src/CMakeFiles/viewmodel_lib.dir/viewmodel/ChatViewModel.cpp.s
+.PHONY : viewmodel/ChatViewModel.cpp.s
+
+viewmodel/LoginViewModel.o: viewmodel/LoginViewModel.cpp.o
+.PHONY : viewmodel/LoginViewModel.o
+
+# target to build an object file
+viewmodel/LoginViewModel.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/viewmodel_lib.dir/build.make src/CMakeFiles/viewmodel_lib.dir/viewmodel/LoginViewModel.cpp.o
+.PHONY : viewmodel/LoginViewModel.cpp.o
+
+viewmodel/LoginViewModel.i: viewmodel/LoginViewModel.cpp.i
+.PHONY : viewmodel/LoginViewModel.i
+
+# target to preprocess a source file
+viewmodel/LoginViewModel.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/viewmodel_lib.dir/build.make src/CMakeFiles/viewmodel_lib.dir/viewmodel/LoginViewModel.cpp.i
+.PHONY : viewmodel/LoginViewModel.cpp.i
+
+viewmodel/LoginViewModel.s: viewmodel/LoginViewModel.cpp.s
+.PHONY : viewmodel/LoginViewModel.s
+
+# target to generate assembly for a file
+viewmodel/LoginViewModel.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/viewmodel_lib.dir/build.make src/CMakeFiles/viewmodel_lib.dir/viewmodel/LoginViewModel.cpp.s
+.PHONY : viewmodel/LoginViewModel.cpp.s
 
 viewmodel_lib_autogen/mocs_compilation.o: viewmodel_lib_autogen/mocs_compilation.cpp.o
 .PHONY : viewmodel_lib_autogen/mocs_compilation.o
@@ -388,27 +916,84 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... common_lib_autogen"
+	@echo "... common_lib_autogen_timestamp_deps"
+	@echo "... config_lib_autogen"
+	@echo "... config_lib_autogen_timestamp_deps"
+	@echo "... i18n_lib_autogen"
+	@echo "... i18n_lib_autogen_timestamp_deps"
 	@echo "... net_lib_autogen"
 	@echo "... net_lib_autogen_timestamp_deps"
 	@echo "... storage_lib_autogen"
 	@echo "... storage_lib_autogen_timestamp_deps"
 	@echo "... transfer_lib_autogen"
 	@echo "... transfer_lib_autogen_timestamp_deps"
+	@echo "... util_lib_autogen"
+	@echo "... util_lib_autogen_timestamp_deps"
 	@echo "... viewmodel_lib_autogen"
 	@echo "... viewmodel_lib_autogen_timestamp_deps"
+	@echo "... common_lib"
+	@echo "... config_lib"
+	@echo "... i18n_lib"
 	@echo "... net_lib"
 	@echo "... storage_lib"
 	@echo "... transfer_lib"
+	@echo "... util_lib"
 	@echo "... viewmodel_lib"
+	@echo "... common/Log.o"
+	@echo "... common/Log.i"
+	@echo "... common/Log.s"
+	@echo "... common_lib_autogen/mocs_compilation.o"
+	@echo "... common_lib_autogen/mocs_compilation.i"
+	@echo "... common_lib_autogen/mocs_compilation.s"
+	@echo "... config/Config.o"
+	@echo "... config/Config.i"
+	@echo "... config/Config.s"
+	@echo "... config_lib_autogen/mocs_compilation.o"
+	@echo "... config_lib_autogen/mocs_compilation.i"
+	@echo "... config_lib_autogen/mocs_compilation.s"
+	@echo "... i18n/I18n.o"
+	@echo "... i18n/I18n.i"
+	@echo "... i18n/I18n.s"
+	@echo "... i18n_lib_autogen/mocs_compilation.o"
+	@echo "... i18n_lib_autogen/mocs_compilation.i"
+	@echo "... i18n_lib_autogen/mocs_compilation.s"
+	@echo "... net/MiniEventAdapterImpl.o"
+	@echo "... net/MiniEventAdapterImpl.i"
+	@echo "... net/MiniEventAdapterImpl.s"
 	@echo "... net_lib_autogen/mocs_compilation.o"
 	@echo "... net_lib_autogen/mocs_compilation.i"
 	@echo "... net_lib_autogen/mocs_compilation.s"
+	@echo "... storage/SQLiteStorage.o"
+	@echo "... storage/SQLiteStorage.i"
+	@echo "... storage/SQLiteStorage.s"
 	@echo "... storage_lib_autogen/mocs_compilation.o"
 	@echo "... storage_lib_autogen/mocs_compilation.i"
 	@echo "... storage_lib_autogen/mocs_compilation.s"
+	@echo "... transfer/FileTransferManager.o"
+	@echo "... transfer/FileTransferManager.i"
+	@echo "... transfer/FileTransferManager.s"
 	@echo "... transfer_lib_autogen/mocs_compilation.o"
 	@echo "... transfer_lib_autogen/mocs_compilation.i"
 	@echo "... transfer_lib_autogen/mocs_compilation.s"
+	@echo "... util/Sha256.o"
+	@echo "... util/Sha256.i"
+	@echo "... util/Sha256.s"
+	@echo "... util/ThreadNaming.o"
+	@echo "... util/ThreadNaming.i"
+	@echo "... util/ThreadNaming.s"
+	@echo "... util/Uuid.o"
+	@echo "... util/Uuid.i"
+	@echo "... util/Uuid.s"
+	@echo "... util_lib_autogen/mocs_compilation.o"
+	@echo "... util_lib_autogen/mocs_compilation.i"
+	@echo "... util_lib_autogen/mocs_compilation.s"
+	@echo "... viewmodel/ChatViewModel.o"
+	@echo "... viewmodel/ChatViewModel.i"
+	@echo "... viewmodel/ChatViewModel.s"
+	@echo "... viewmodel/LoginViewModel.o"
+	@echo "... viewmodel/LoginViewModel.i"
+	@echo "... viewmodel/LoginViewModel.s"
 	@echo "... viewmodel_lib_autogen/mocs_compilation.o"
 	@echo "... viewmodel_lib_autogen/mocs_compilation.i"
 	@echo "... viewmodel_lib_autogen/mocs_compilation.s"

@@ -52,7 +52,7 @@ private:
     //Private methods
     void startWriter_(); // 启动写线程
     void stopWriter_(); // 停止写线程
-    void executeWrite_(std::function<void()>&& task); // 执行写操作
+    void executeWrite_(const std::function<void()>& task); // 执行写操作
     bool exec_(const std::string& sql); // 执行SQL语句
 
 

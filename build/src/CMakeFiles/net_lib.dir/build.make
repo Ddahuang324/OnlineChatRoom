@@ -92,17 +92,33 @@ src/CMakeFiles/net_lib.dir/net_lib_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/net_lib.dir/net_lib_autogen/mocs_compilation.cpp.s"
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/build/src/net_lib_autogen/mocs_compilation.cpp -o CMakeFiles/net_lib.dir/net_lib_autogen/mocs_compilation.cpp.s
 
+src/CMakeFiles/net_lib.dir/net/MiniEventAdapterImpl.cpp.o: src/CMakeFiles/net_lib.dir/flags.make
+src/CMakeFiles/net_lib.dir/net/MiniEventAdapterImpl.cpp.o: /Users/dahuang/Desktop/项目/OnlineChat/src/net/MiniEventAdapterImpl.cpp
+src/CMakeFiles/net_lib.dir/net/MiniEventAdapterImpl.cpp.o: src/CMakeFiles/net_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/net_lib.dir/net/MiniEventAdapterImpl.cpp.o"
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/net_lib.dir/net/MiniEventAdapterImpl.cpp.o -MF CMakeFiles/net_lib.dir/net/MiniEventAdapterImpl.cpp.o.d -o CMakeFiles/net_lib.dir/net/MiniEventAdapterImpl.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/src/net/MiniEventAdapterImpl.cpp
+
+src/CMakeFiles/net_lib.dir/net/MiniEventAdapterImpl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/net_lib.dir/net/MiniEventAdapterImpl.cpp.i"
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/src/net/MiniEventAdapterImpl.cpp > CMakeFiles/net_lib.dir/net/MiniEventAdapterImpl.cpp.i
+
+src/CMakeFiles/net_lib.dir/net/MiniEventAdapterImpl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/net_lib.dir/net/MiniEventAdapterImpl.cpp.s"
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/src/net/MiniEventAdapterImpl.cpp -o CMakeFiles/net_lib.dir/net/MiniEventAdapterImpl.cpp.s
+
 # Object files for target net_lib
 net_lib_OBJECTS = \
-"CMakeFiles/net_lib.dir/net_lib_autogen/mocs_compilation.cpp.o"
+"CMakeFiles/net_lib.dir/net_lib_autogen/mocs_compilation.cpp.o" \
+"CMakeFiles/net_lib.dir/net/MiniEventAdapterImpl.cpp.o"
 
 # External object files for target net_lib
 net_lib_EXTERNAL_OBJECTS =
 
 src/libnet_lib.a: src/CMakeFiles/net_lib.dir/net_lib_autogen/mocs_compilation.cpp.o
+src/libnet_lib.a: src/CMakeFiles/net_lib.dir/net/MiniEventAdapterImpl.cpp.o
 src/libnet_lib.a: src/CMakeFiles/net_lib.dir/build.make
 src/libnet_lib.a: src/CMakeFiles/net_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libnet_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libnet_lib.a"
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && $(CMAKE_COMMAND) -P CMakeFiles/net_lib.dir/cmake_clean_target.cmake
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/net_lib.dir/link.txt --verbose=$(VERBOSE)
 

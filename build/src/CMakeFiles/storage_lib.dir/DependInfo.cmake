@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "src/storage_lib_autogen/timestamp" "custom" "src/storage_lib_autogen/deps"
+  "/Users/dahuang/Desktop/项目/OnlineChat/src/storage/SQLiteStorage.cpp" "src/CMakeFiles/storage_lib.dir/storage/SQLiteStorage.cpp.o" "gcc" "src/CMakeFiles/storage_lib.dir/storage/SQLiteStorage.cpp.o.d"
   "/Users/dahuang/Desktop/项目/OnlineChat/build/src/storage_lib_autogen/mocs_compilation.cpp" "src/CMakeFiles/storage_lib.dir/storage_lib_autogen/mocs_compilation.cpp.o" "gcc" "src/CMakeFiles/storage_lib.dir/storage_lib_autogen/mocs_compilation.cpp.o.d"
   )
 

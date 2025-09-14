@@ -9,7 +9,33 @@
 	"CROSS_CONFIG" : false,
 	"DEP_FILE" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/viewmodel_lib_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "viewmodel_lib_autogen/timestamp",
-	"HEADERS" : [],
+	"HEADERS" : 
+	[
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/include/model/Entities.hpp",
+			"MU",
+			"5CGI4662IT/moc_Entities.cpp",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/include/model/Room.hpp",
+			"MU",
+			"5CGI4662IT/moc_Room.cpp",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/src/viewmodel/ChatViewModel.h",
+			"MU",
+			"7OCNMGYRF4/moc_ChatViewModel.cpp",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/src/viewmodel/LoginViewModel.h",
+			"MU",
+			"7OCNMGYRF4/moc_LoginViewModel.cpp",
+			null
+		]
+	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/viewmodel_lib_autogen/include",
 	"MOC_COMPILATION_FILE" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/viewmodel_lib_autogen/mocs_compilation.cpp",
@@ -23,6 +49,8 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/include",
+		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/src",
 		"/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1",
 		"/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include",
 		"/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include",
@@ -63,7 +91,19 @@
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 9,
 	"SETTINGS_FILE" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/CMakeFiles/viewmodel_lib_autogen.dir/AutogenUsed.txt",
-	"SOURCES" : [],
+	"SOURCES" : 
+	[
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/src/viewmodel/ChatViewModel.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/src/viewmodel/LoginViewModel.cpp",
+			"MU",
+			null
+		]
+	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
 	"UIC_SKIP" : 

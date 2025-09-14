@@ -92,17 +92,33 @@ src/CMakeFiles/transfer_lib.dir/transfer_lib_autogen/mocs_compilation.cpp.s: cma
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/transfer_lib.dir/transfer_lib_autogen/mocs_compilation.cpp.s"
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/build/src/transfer_lib_autogen/mocs_compilation.cpp -o CMakeFiles/transfer_lib.dir/transfer_lib_autogen/mocs_compilation.cpp.s
 
+src/CMakeFiles/transfer_lib.dir/transfer/FileTransferManager.cpp.o: src/CMakeFiles/transfer_lib.dir/flags.make
+src/CMakeFiles/transfer_lib.dir/transfer/FileTransferManager.cpp.o: /Users/dahuang/Desktop/项目/OnlineChat/src/transfer/FileTransferManager.cpp
+src/CMakeFiles/transfer_lib.dir/transfer/FileTransferManager.cpp.o: src/CMakeFiles/transfer_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/transfer_lib.dir/transfer/FileTransferManager.cpp.o"
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/transfer_lib.dir/transfer/FileTransferManager.cpp.o -MF CMakeFiles/transfer_lib.dir/transfer/FileTransferManager.cpp.o.d -o CMakeFiles/transfer_lib.dir/transfer/FileTransferManager.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/src/transfer/FileTransferManager.cpp
+
+src/CMakeFiles/transfer_lib.dir/transfer/FileTransferManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/transfer_lib.dir/transfer/FileTransferManager.cpp.i"
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/src/transfer/FileTransferManager.cpp > CMakeFiles/transfer_lib.dir/transfer/FileTransferManager.cpp.i
+
+src/CMakeFiles/transfer_lib.dir/transfer/FileTransferManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/transfer_lib.dir/transfer/FileTransferManager.cpp.s"
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/src/transfer/FileTransferManager.cpp -o CMakeFiles/transfer_lib.dir/transfer/FileTransferManager.cpp.s
+
 # Object files for target transfer_lib
 transfer_lib_OBJECTS = \
-"CMakeFiles/transfer_lib.dir/transfer_lib_autogen/mocs_compilation.cpp.o"
+"CMakeFiles/transfer_lib.dir/transfer_lib_autogen/mocs_compilation.cpp.o" \
+"CMakeFiles/transfer_lib.dir/transfer/FileTransferManager.cpp.o"
 
 # External object files for target transfer_lib
 transfer_lib_EXTERNAL_OBJECTS =
 
 src/libtransfer_lib.a: src/CMakeFiles/transfer_lib.dir/transfer_lib_autogen/mocs_compilation.cpp.o
+src/libtransfer_lib.a: src/CMakeFiles/transfer_lib.dir/transfer/FileTransferManager.cpp.o
 src/libtransfer_lib.a: src/CMakeFiles/transfer_lib.dir/build.make
 src/libtransfer_lib.a: src/CMakeFiles/transfer_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libtransfer_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libtransfer_lib.a"
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && $(CMAKE_COMMAND) -P CMakeFiles/transfer_lib.dir/cmake_clean_target.cmake
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/transfer_lib.dir/link.txt --verbose=$(VERBOSE)
 

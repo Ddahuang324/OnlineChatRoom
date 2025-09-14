@@ -9,6 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "src/viewmodel_lib_autogen/timestamp" "custom" "src/viewmodel_lib_autogen/deps"
+  "/Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/ChatViewModel.cpp" "src/CMakeFiles/viewmodel_lib.dir/viewmodel/ChatViewModel.cpp.o" "gcc" "src/CMakeFiles/viewmodel_lib.dir/viewmodel/ChatViewModel.cpp.o.d"
+  "/Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/LoginViewModel.cpp" "src/CMakeFiles/viewmodel_lib.dir/viewmodel/LoginViewModel.cpp.o" "gcc" "src/CMakeFiles/viewmodel_lib.dir/viewmodel/LoginViewModel.cpp.o.d"
   "/Users/dahuang/Desktop/项目/OnlineChat/build/src/viewmodel_lib_autogen/mocs_compilation.cpp" "src/CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.o" "gcc" "src/CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.o.d"
   )
 

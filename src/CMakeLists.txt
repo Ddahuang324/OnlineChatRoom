@@ -13,17 +13,17 @@ target_sources(model_lib INTERFACE
 # These are currently empty and will be populated later.
 add_library(storage_lib
     storage/SQLiteStorage.cpp
-    storage/SQLiteStorage.h
+    storage/SQLiteStorage.hpp
 )
-target_link_libraries(storage_lib PUBLIC model_lib)
-target_include_directories(storage_lib PUBLIC ../include)
+target_link_libraries(storage_lib PUBLIC model_lib SQLite::SQLite3)  # Link SQLite
+target_include_directories(storage_lib PUBLIC ../include .)  # Add current directory to include path
 
 add_library(net_lib
     net/MiniEventAdapterImpl.cpp
     net/MiniEventAdapterImpl.h
 )
 target_link_libraries(net_lib PUBLIC model_lib)
-target_include_directories(net_lib PUBLIC ../include)
+target_include_directories(net_lib PUBLIC ../include .)  # Add current directory to include path
 
 add_library(viewmodel_lib
     viewmodel/LoginViewModel.cpp
@@ -32,12 +32,14 @@ add_library(viewmodel_lib
     viewmodel/ChatViewModel.h
 )
 target_link_libraries(viewmodel_lib PUBLIC model_lib)
+target_include_directories(viewmodel_lib PUBLIC ../include .)  # Add current directory to include path
 
 add_library(transfer_lib
     transfer/FileTransferManager.cpp
     transfer/FileTransferManager.h
 )
 target_link_libraries(transfer_lib PUBLIC model_lib)
+target_include_directories(transfer_lib PUBLIC ../include .)  # Add current directory to include path
 
 # Library for common utilities (T004)
 add_library(common_lib

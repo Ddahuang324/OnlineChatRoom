@@ -208,6 +208,58 @@ transfer_lib/fast:
 .PHONY : transfer_lib/fast
 
 #=============================================================================
+# Target rules for targets named common_lib
+
+# Build rule for target.
+common_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 common_lib
+.PHONY : common_lib
+
+# fast build rule for target.
+common_lib/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/common_lib.dir/build.make src/CMakeFiles/common_lib.dir/build
+.PHONY : common_lib/fast
+
+#=============================================================================
+# Target rules for targets named config_lib
+
+# Build rule for target.
+config_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 config_lib
+.PHONY : config_lib
+
+# fast build rule for target.
+config_lib/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/config_lib.dir/build.make src/CMakeFiles/config_lib.dir/build
+.PHONY : config_lib/fast
+
+#=============================================================================
+# Target rules for targets named util_lib
+
+# Build rule for target.
+util_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 util_lib
+.PHONY : util_lib
+
+# fast build rule for target.
+util_lib/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/util_lib.dir/build.make src/CMakeFiles/util_lib.dir/build
+.PHONY : util_lib/fast
+
+#=============================================================================
+# Target rules for targets named i18n_lib
+
+# Build rule for target.
+i18n_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 i18n_lib
+.PHONY : i18n_lib
+
+# fast build rule for target.
+i18n_lib/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/i18n_lib.dir/build.make src/CMakeFiles/i18n_lib.dir/build
+.PHONY : i18n_lib/fast
+
+#=============================================================================
 # Target rules for targets named storage_lib_autogen_timestamp_deps
 
 # Build rule for target.
@@ -311,6 +363,149 @@ transfer_lib_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/transfer_lib_autogen.dir/build.make src/CMakeFiles/transfer_lib_autogen.dir/build
 .PHONY : transfer_lib_autogen/fast
 
+#=============================================================================
+# Target rules for targets named common_lib_autogen_timestamp_deps
+
+# Build rule for target.
+common_lib_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 common_lib_autogen_timestamp_deps
+.PHONY : common_lib_autogen_timestamp_deps
+
+# fast build rule for target.
+common_lib_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/common_lib_autogen_timestamp_deps.dir/build.make src/CMakeFiles/common_lib_autogen_timestamp_deps.dir/build
+.PHONY : common_lib_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named common_lib_autogen
+
+# Build rule for target.
+common_lib_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 common_lib_autogen
+.PHONY : common_lib_autogen
+
+# fast build rule for target.
+common_lib_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/common_lib_autogen.dir/build.make src/CMakeFiles/common_lib_autogen.dir/build
+.PHONY : common_lib_autogen/fast
+
+#=============================================================================
+# Target rules for targets named config_lib_autogen_timestamp_deps
+
+# Build rule for target.
+config_lib_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 config_lib_autogen_timestamp_deps
+.PHONY : config_lib_autogen_timestamp_deps
+
+# fast build rule for target.
+config_lib_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/config_lib_autogen_timestamp_deps.dir/build.make src/CMakeFiles/config_lib_autogen_timestamp_deps.dir/build
+.PHONY : config_lib_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named config_lib_autogen
+
+# Build rule for target.
+config_lib_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 config_lib_autogen
+.PHONY : config_lib_autogen
+
+# fast build rule for target.
+config_lib_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/config_lib_autogen.dir/build.make src/CMakeFiles/config_lib_autogen.dir/build
+.PHONY : config_lib_autogen/fast
+
+#=============================================================================
+# Target rules for targets named util_lib_autogen_timestamp_deps
+
+# Build rule for target.
+util_lib_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 util_lib_autogen_timestamp_deps
+.PHONY : util_lib_autogen_timestamp_deps
+
+# fast build rule for target.
+util_lib_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/util_lib_autogen_timestamp_deps.dir/build.make src/CMakeFiles/util_lib_autogen_timestamp_deps.dir/build
+.PHONY : util_lib_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named util_lib_autogen
+
+# Build rule for target.
+util_lib_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 util_lib_autogen
+.PHONY : util_lib_autogen
+
+# fast build rule for target.
+util_lib_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/util_lib_autogen.dir/build.make src/CMakeFiles/util_lib_autogen.dir/build
+.PHONY : util_lib_autogen/fast
+
+#=============================================================================
+# Target rules for targets named i18n_lib_autogen_timestamp_deps
+
+# Build rule for target.
+i18n_lib_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 i18n_lib_autogen_timestamp_deps
+.PHONY : i18n_lib_autogen_timestamp_deps
+
+# fast build rule for target.
+i18n_lib_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/i18n_lib_autogen_timestamp_deps.dir/build.make src/CMakeFiles/i18n_lib_autogen_timestamp_deps.dir/build
+.PHONY : i18n_lib_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named i18n_lib_autogen
+
+# Build rule for target.
+i18n_lib_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 i18n_lib_autogen
+.PHONY : i18n_lib_autogen
+
+# fast build rule for target.
+i18n_lib_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/i18n_lib_autogen.dir/build.make src/CMakeFiles/i18n_lib_autogen.dir/build
+.PHONY : i18n_lib_autogen/fast
+
+#=============================================================================
+# Target rules for targets named unit_tests
+
+# Build rule for target.
+unit_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unit_tests
+.PHONY : unit_tests
+
+# fast build rule for target.
+unit_tests/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/build
+.PHONY : unit_tests/fast
+
+#=============================================================================
+# Target rules for targets named unit_tests_autogen_timestamp_deps
+
+# Build rule for target.
+unit_tests_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unit_tests_autogen_timestamp_deps
+.PHONY : unit_tests_autogen_timestamp_deps
+
+# fast build rule for target.
+unit_tests_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests_autogen_timestamp_deps.dir/build.make tests/CMakeFiles/unit_tests_autogen_timestamp_deps.dir/build
+.PHONY : unit_tests_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named unit_tests_autogen
+
+# Build rule for target.
+unit_tests_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unit_tests_autogen
+.PHONY : unit_tests_autogen
+
+# fast build rule for target.
+unit_tests_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests_autogen.dir/build.make tests/CMakeFiles/unit_tests_autogen.dir/build
+.PHONY : unit_tests_autogen/fast
+
 chat_app_autogen/mocs_compilation.o: chat_app_autogen/mocs_compilation.cpp.o
 .PHONY : chat_app_autogen/mocs_compilation.o
 
@@ -335,29 +530,29 @@ chat_app_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_app.dir/build.make CMakeFiles/chat_app.dir/chat_app_autogen/mocs_compilation.cpp.s
 .PHONY : chat_app_autogen/mocs_compilation.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/app/main.o: src/app/main.cpp.o
+.PHONY : src/app/main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_app.dir/build.make CMakeFiles/chat_app.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/app/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_app.dir/build.make CMakeFiles/chat_app.dir/src/app/main.cpp.o
+.PHONY : src/app/main.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/app/main.i: src/app/main.cpp.i
+.PHONY : src/app/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_app.dir/build.make CMakeFiles/chat_app.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/app/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_app.dir/build.make CMakeFiles/chat_app.dir/src/app/main.cpp.i
+.PHONY : src/app/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/app/main.s: src/app/main.cpp.s
+.PHONY : src/app/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_app.dir/build.make CMakeFiles/chat_app.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/app/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_app.dir/build.make CMakeFiles/chat_app.dir/src/app/main.cpp.s
+.PHONY : src/app/main.cpp.s
 
 # Help Target
 help:
@@ -369,25 +564,40 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... chat_app_autogen"
 	@echo "... chat_app_autogen_timestamp_deps"
+	@echo "... common_lib_autogen"
+	@echo "... common_lib_autogen_timestamp_deps"
+	@echo "... config_lib_autogen"
+	@echo "... config_lib_autogen_timestamp_deps"
+	@echo "... i18n_lib_autogen"
+	@echo "... i18n_lib_autogen_timestamp_deps"
 	@echo "... net_lib_autogen"
 	@echo "... net_lib_autogen_timestamp_deps"
 	@echo "... storage_lib_autogen"
 	@echo "... storage_lib_autogen_timestamp_deps"
 	@echo "... transfer_lib_autogen"
 	@echo "... transfer_lib_autogen_timestamp_deps"
+	@echo "... unit_tests_autogen"
+	@echo "... unit_tests_autogen_timestamp_deps"
+	@echo "... util_lib_autogen"
+	@echo "... util_lib_autogen_timestamp_deps"
 	@echo "... viewmodel_lib_autogen"
 	@echo "... viewmodel_lib_autogen_timestamp_deps"
 	@echo "... chat_app"
+	@echo "... common_lib"
+	@echo "... config_lib"
+	@echo "... i18n_lib"
 	@echo "... net_lib"
 	@echo "... storage_lib"
 	@echo "... transfer_lib"
+	@echo "... unit_tests"
+	@echo "... util_lib"
 	@echo "... viewmodel_lib"
 	@echo "... chat_app_autogen/mocs_compilation.o"
 	@echo "... chat_app_autogen/mocs_compilation.i"
 	@echo "... chat_app_autogen/mocs_compilation.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/app/main.o"
+	@echo "... src/app/main.i"
+	@echo "... src/app/main.s"
 .PHONY : help
 
 

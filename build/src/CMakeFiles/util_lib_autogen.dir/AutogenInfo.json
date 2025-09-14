@@ -1,0 +1,123 @@
+{
+	"BUILD_DIR" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/util_lib_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/src",
+	"CMAKE_EXECUTABLE" : "/opt/homebrew/bin/cmake",
+	"CMAKE_LIST_FILES" : [ "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/src/CMakeLists.txt" ],
+	"CMAKE_SOURCE_DIR" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat",
+	"CROSS_CONFIG" : false,
+	"DEP_FILE" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/util_lib_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "util_lib_autogen/timestamp",
+	"HEADERS" : 
+	[
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/src/util/Sha256.h",
+			"MU",
+			"KH43KSYMFX/moc_Sha256.cpp",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/src/util/ThreadNaming.h",
+			"MU",
+			"KH43KSYMFX/moc_ThreadNaming.cpp",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/src/util/Uuid.h",
+			"MU",
+			"KH43KSYMFX/moc_Uuid.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/util_lib_autogen/include",
+	"MOC_COMPILATION_FILE" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/util_lib_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/src",
+		"/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1",
+		"/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include",
+		"/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include",
+		"/Library/Developer/CommandLineTools/usr/include"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT",
+		"Q_GADGET_EXPORT",
+		"Q_ENUM_NS"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/Library/Developer/CommandLineTools/usr/bin/c++",
+		"-std=gnu++17",
+		"-dM",
+		"-E",
+		"-c",
+		"/opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/util_lib_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : 
+	[
+		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/common_lib_autogen/mocs_compilation.cpp",
+		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/config_lib_autogen/mocs_compilation.cpp",
+		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/net_lib_autogen/mocs_compilation.cpp",
+		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/storage_lib_autogen/mocs_compilation.cpp",
+		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/transfer_lib_autogen/mocs_compilation.cpp",
+		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/viewmodel_lib_autogen/mocs_compilation.cpp"
+	],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 8,
+	"PARSE_CACHE_FILE" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/CMakeFiles/util_lib_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/Users/dahuang/Qt/6.9.1/macos/libexec/moc",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 9,
+	"SETTINGS_FILE" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/CMakeFiles/util_lib_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/src/util/Sha256.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/src/util/ThreadNaming.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/src/util/Uuid.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : 
+	[
+		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/common_lib_autogen/mocs_compilation.cpp",
+		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/config_lib_autogen/mocs_compilation.cpp",
+		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/net_lib_autogen/mocs_compilation.cpp",
+		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/storage_lib_autogen/mocs_compilation.cpp",
+		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/transfer_lib_autogen/mocs_compilation.cpp",
+		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/viewmodel_lib_autogen/mocs_compilation.cpp"
+	],
+	"UIC_UI_FILES" : [],
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

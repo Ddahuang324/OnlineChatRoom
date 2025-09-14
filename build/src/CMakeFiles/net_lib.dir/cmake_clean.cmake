@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/net_lib_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/net_lib_autogen.dir/ParseCache.txt"
   "net_lib_autogen"
+  "CMakeFiles/net_lib.dir/net/MiniEventAdapterImpl.cpp.o"
+  "CMakeFiles/net_lib.dir/net/MiniEventAdapterImpl.cpp.o.d"
   "CMakeFiles/net_lib.dir/net_lib_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/net_lib.dir/net_lib_autogen/mocs_compilation.cpp.o.d"
   "libnet_lib.a"

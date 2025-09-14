@@ -1,0 +1,42 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/unit_tests_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/unit_tests_autogen.dir/ParseCache.txt"
+  "unit_tests_autogen"
+  "CMakeFiles/unit_tests.dir/config/test_config.cpp.o"
+  "CMakeFiles/unit_tests.dir/config/test_config.cpp.o.d"
+  "CMakeFiles/unit_tests.dir/contract/test_network_connect.cpp.o"
+  "CMakeFiles/unit_tests.dir/contract/test_network_connect.cpp.o.d"
+  "CMakeFiles/unit_tests.dir/contract/test_network_file_chunk.cpp.o"
+  "CMakeFiles/unit_tests.dir/contract/test_network_file_chunk.cpp.o.d"
+  "CMakeFiles/unit_tests.dir/contract/test_storage_messages.cpp.o"
+  "CMakeFiles/unit_tests.dir/contract/test_storage_messages.cpp.o.d"
+  "CMakeFiles/unit_tests.dir/contract/test_storage_user.cpp.o"
+  "CMakeFiles/unit_tests.dir/contract/test_storage_user.cpp.o.d"
+  "CMakeFiles/unit_tests.dir/integration/test_e2e_file_reconnect.cpp.o"
+  "CMakeFiles/unit_tests.dir/integration/test_e2e_file_reconnect.cpp.o.d"
+  "CMakeFiles/unit_tests.dir/integration/test_e2e_login_send.cpp.o"
+  "CMakeFiles/unit_tests.dir/integration/test_e2e_login_send.cpp.o.d"
+  "CMakeFiles/unit_tests.dir/main.cpp.o"
+  "CMakeFiles/unit_tests.dir/main.cpp.o.d"
+  "CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.o"
+  "CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.o.d"
+  "CMakeFiles/unit_tests.dir/storage/test_sqlite.cpp.o"
+  "CMakeFiles/unit_tests.dir/storage/test_sqlite.cpp.o.d"
+  "CMakeFiles/unit_tests.dir/transfer/test_file_transfer.cpp.o"
+  "CMakeFiles/unit_tests.dir/transfer/test_file_transfer.cpp.o.d"
+  "CMakeFiles/unit_tests.dir/unit_tests_autogen/mocs_compilation.cpp.o"
+  "CMakeFiles/unit_tests.dir/unit_tests_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/unit_tests.dir/viewmodel/test_chat.cpp.o"
+  "CMakeFiles/unit_tests.dir/viewmodel/test_chat.cpp.o.d"
+  "CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o"
+  "CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o.d"
+  "unit_tests"
+  "unit_tests.pdb"
+  "unit_tests_autogen/mocs_compilation.cpp"
+  "unit_tests_autogen/timestamp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/unit_tests.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

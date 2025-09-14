@@ -1,0 +1,157 @@
+{
+	"BUILD_DIR" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/tests/unit_tests_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/tests",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/tests",
+	"CMAKE_EXECUTABLE" : "/opt/homebrew/bin/cmake",
+	"CMAKE_LIST_FILES" : [ "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/tests/CMakeLists.txt" ],
+	"CMAKE_SOURCE_DIR" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat",
+	"CROSS_CONFIG" : false,
+	"DEP_FILE" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/tests/unit_tests_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "unit_tests_autogen/timestamp",
+	"HEADERS" : 
+	[
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/include/model/Entities.hpp",
+			"MU",
+			"5CGI4662IT/moc_Entities.cpp",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/include/model/Room.hpp",
+			"MU",
+			"5CGI4662IT/moc_Room.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/tests/unit_tests_autogen/include",
+	"MOC_COMPILATION_FILE" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/tests/unit_tests_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/tests",
+		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/tests/mocks",
+		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/tests/support",
+		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/include",
+		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/src",
+		"/opt/homebrew/opt/googletest/include",
+		"/Library/Frameworks/Mono.framework/Headers",
+		"/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1",
+		"/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include",
+		"/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include",
+		"/Library/Developer/CommandLineTools/usr/include"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT",
+		"Q_GADGET_EXPORT",
+		"Q_ENUM_NS"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/Library/Developer/CommandLineTools/usr/bin/c++",
+		"-std=gnu++17",
+		"-dM",
+		"-E",
+		"-c",
+		"/opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/tests/unit_tests_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 8,
+	"PARSE_CACHE_FILE" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/tests/CMakeFiles/unit_tests_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/Users/dahuang/Qt/6.9.1/macos/libexec/moc",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 9,
+	"SETTINGS_FILE" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/tests/CMakeFiles/unit_tests_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/tests/config/test_config.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/tests/contract/test_network_connect.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/tests/contract/test_network_file_chunk.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/tests/contract/test_storage_messages.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/tests/contract/test_storage_user.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/tests/integration/test_e2e_file_reconnect.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/tests/integration/test_e2e_login_send.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/tests/main.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/tests/net/test_mini_event_adapter.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/tests/storage/test_sqlite.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/tests/transfer/test_file_transfer.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/tests/viewmodel/test_chat.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/tests/viewmodel/test_login.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

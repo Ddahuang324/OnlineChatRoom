@@ -10,7 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "chat_app_autogen/timestamp" "custom" "chat_app_autogen/deps"
   "/Users/dahuang/Desktop/项目/OnlineChat/build/chat_app_autogen/mocs_compilation.cpp" "CMakeFiles/chat_app.dir/chat_app_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/chat_app.dir/chat_app_autogen/mocs_compilation.cpp.o.d"
-  "/Users/dahuang/Desktop/项目/OnlineChat/main.cpp" "CMakeFiles/chat_app.dir/main.cpp.o" "gcc" "CMakeFiles/chat_app.dir/main.cpp.o.d"
+  "/Users/dahuang/Desktop/项目/OnlineChat/src/app/main.cpp" "CMakeFiles/chat_app.dir/src/app/main.cpp.o" "gcc" "CMakeFiles/chat_app.dir/src/app/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

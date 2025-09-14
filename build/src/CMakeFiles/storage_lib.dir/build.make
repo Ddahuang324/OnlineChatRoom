@@ -92,17 +92,33 @@ src/CMakeFiles/storage_lib.dir/storage_lib_autogen/mocs_compilation.cpp.s: cmake
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/storage_lib.dir/storage_lib_autogen/mocs_compilation.cpp.s"
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/build/src/storage_lib_autogen/mocs_compilation.cpp -o CMakeFiles/storage_lib.dir/storage_lib_autogen/mocs_compilation.cpp.s
 
+src/CMakeFiles/storage_lib.dir/storage/SQLiteStorage.cpp.o: src/CMakeFiles/storage_lib.dir/flags.make
+src/CMakeFiles/storage_lib.dir/storage/SQLiteStorage.cpp.o: /Users/dahuang/Desktop/项目/OnlineChat/src/storage/SQLiteStorage.cpp
+src/CMakeFiles/storage_lib.dir/storage/SQLiteStorage.cpp.o: src/CMakeFiles/storage_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/storage_lib.dir/storage/SQLiteStorage.cpp.o"
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/storage_lib.dir/storage/SQLiteStorage.cpp.o -MF CMakeFiles/storage_lib.dir/storage/SQLiteStorage.cpp.o.d -o CMakeFiles/storage_lib.dir/storage/SQLiteStorage.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/src/storage/SQLiteStorage.cpp
+
+src/CMakeFiles/storage_lib.dir/storage/SQLiteStorage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/storage_lib.dir/storage/SQLiteStorage.cpp.i"
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/src/storage/SQLiteStorage.cpp > CMakeFiles/storage_lib.dir/storage/SQLiteStorage.cpp.i
+
+src/CMakeFiles/storage_lib.dir/storage/SQLiteStorage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/storage_lib.dir/storage/SQLiteStorage.cpp.s"
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/src/storage/SQLiteStorage.cpp -o CMakeFiles/storage_lib.dir/storage/SQLiteStorage.cpp.s
+
 # Object files for target storage_lib
 storage_lib_OBJECTS = \
-"CMakeFiles/storage_lib.dir/storage_lib_autogen/mocs_compilation.cpp.o"
+"CMakeFiles/storage_lib.dir/storage_lib_autogen/mocs_compilation.cpp.o" \
+"CMakeFiles/storage_lib.dir/storage/SQLiteStorage.cpp.o"
 
 # External object files for target storage_lib
 storage_lib_EXTERNAL_OBJECTS =
 
 src/libstorage_lib.a: src/CMakeFiles/storage_lib.dir/storage_lib_autogen/mocs_compilation.cpp.o
+src/libstorage_lib.a: src/CMakeFiles/storage_lib.dir/storage/SQLiteStorage.cpp.o
 src/libstorage_lib.a: src/CMakeFiles/storage_lib.dir/build.make
 src/libstorage_lib.a: src/CMakeFiles/storage_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libstorage_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libstorage_lib.a"
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && $(CMAKE_COMMAND) -P CMakeFiles/storage_lib.dir/cmake_clean_target.cmake
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/storage_lib.dir/link.txt --verbose=$(VERBOSE)
 

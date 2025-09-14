@@ -92,32 +92,36 @@ CMakeFiles/chat_app.dir/chat_app_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/chat_app.dir/chat_app_autogen/mocs_compilation.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/build/chat_app_autogen/mocs_compilation.cpp -o CMakeFiles/chat_app.dir/chat_app_autogen/mocs_compilation.cpp.s
 
-CMakeFiles/chat_app.dir/main.cpp.o: CMakeFiles/chat_app.dir/flags.make
-CMakeFiles/chat_app.dir/main.cpp.o: /Users/dahuang/Desktop/项目/OnlineChat/main.cpp
-CMakeFiles/chat_app.dir/main.cpp.o: CMakeFiles/chat_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/chat_app.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chat_app.dir/main.cpp.o -MF CMakeFiles/chat_app.dir/main.cpp.o.d -o CMakeFiles/chat_app.dir/main.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/main.cpp
+CMakeFiles/chat_app.dir/src/app/main.cpp.o: CMakeFiles/chat_app.dir/flags.make
+CMakeFiles/chat_app.dir/src/app/main.cpp.o: /Users/dahuang/Desktop/项目/OnlineChat/src/app/main.cpp
+CMakeFiles/chat_app.dir/src/app/main.cpp.o: CMakeFiles/chat_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/chat_app.dir/src/app/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chat_app.dir/src/app/main.cpp.o -MF CMakeFiles/chat_app.dir/src/app/main.cpp.o.d -o CMakeFiles/chat_app.dir/src/app/main.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/src/app/main.cpp
 
-CMakeFiles/chat_app.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/chat_app.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/main.cpp > CMakeFiles/chat_app.dir/main.cpp.i
+CMakeFiles/chat_app.dir/src/app/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/chat_app.dir/src/app/main.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/src/app/main.cpp > CMakeFiles/chat_app.dir/src/app/main.cpp.i
 
-CMakeFiles/chat_app.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/chat_app.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/main.cpp -o CMakeFiles/chat_app.dir/main.cpp.s
+CMakeFiles/chat_app.dir/src/app/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/chat_app.dir/src/app/main.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/src/app/main.cpp -o CMakeFiles/chat_app.dir/src/app/main.cpp.s
 
 # Object files for target chat_app
 chat_app_OBJECTS = \
 "CMakeFiles/chat_app.dir/chat_app_autogen/mocs_compilation.cpp.o" \
-"CMakeFiles/chat_app.dir/main.cpp.o"
+"CMakeFiles/chat_app.dir/src/app/main.cpp.o"
 
 # External object files for target chat_app
 chat_app_EXTERNAL_OBJECTS =
 
 chat_app: CMakeFiles/chat_app.dir/chat_app_autogen/mocs_compilation.cpp.o
-chat_app: CMakeFiles/chat_app.dir/main.cpp.o
+chat_app: CMakeFiles/chat_app.dir/src/app/main.cpp.o
 chat_app: CMakeFiles/chat_app.dir/build.make
 chat_app: /Users/dahuang/Qt/6.9.1/macos/lib/QtQuick.framework/Versions/A/QtQuick
+chat_app: src/libcommon_lib.a
+chat_app: src/libconfig_lib.a
+chat_app: src/libutil_lib.a
+chat_app: src/libi18n_lib.a
 chat_app: src/libstorage_lib.a
 chat_app: src/libnet_lib.a
 chat_app: src/libviewmodel_lib.a

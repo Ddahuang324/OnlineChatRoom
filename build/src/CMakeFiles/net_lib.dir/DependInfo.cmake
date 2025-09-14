@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "src/net_lib_autogen/timestamp" "custom" "src/net_lib_autogen/deps"
+  "/Users/dahuang/Desktop/项目/OnlineChat/src/net/MiniEventAdapterImpl.cpp" "src/CMakeFiles/net_lib.dir/net/MiniEventAdapterImpl.cpp.o" "gcc" "src/CMakeFiles/net_lib.dir/net/MiniEventAdapterImpl.cpp.o.d"
   "/Users/dahuang/Desktop/项目/OnlineChat/build/src/net_lib_autogen/mocs_compilation.cpp" "src/CMakeFiles/net_lib.dir/net_lib_autogen/mocs_compilation.cpp.o" "gcc" "src/CMakeFiles/net_lib.dir/net_lib_autogen/mocs_compilation.cpp.o.d"
   )
 

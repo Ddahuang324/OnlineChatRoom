@@ -1,5 +1,5 @@
 // Placeholder for the SQLiteStorage implementation as per T014.
-// Implementation will be provided by the user.
+// Implementation will be provid                if (stop_ && writeQueue_.empty()) {
 #include "storage/SQLiteStorage.hpp"
 #include <iostream>
 #include "common/Log.hpp"
@@ -69,9 +69,9 @@ bool SQLiteStorage::exec_(const std::string& sql){
 }
 
 
-void SQLiteStorage::executeWrite_(std::function<void()>&& task){
+void SQLiteStorage::executeWrite_(const std::function<void()>& task){
         std::unique_lock<std::mutex> lock(queueMutex_);
-        writeQueue_.emplace(std::move(task));
+        writeQueue_.emplace(task);
         queueCv_.notify_one();
 }//异步管道
 
@@ -99,10 +99,12 @@ void SQLiteStorage::startWriter_() {
                     log_debug("Writer thread stopping");
                     break;
                 }
-                auto task = std::move(writeQueue_.front());
+                task = std::move(writeQueue_.front());
                 writeQueue_.pop();
             }
-            task(  );
+            if(task) {
+                task();
+            }
         }
     });
 }
@@ -112,7 +114,7 @@ class StatementGuard {
 public:     
     StatementGuard(sqlite3* db, const std::string& sql) {
         if (sqlite3_prepare_v2(db, sql.c_str(), -1, &stmt_, nullptr) != SQLITE_OK) {
-            log_error("Failed to prepare statement: %s, SQL: %s", sqlite3_errmsg(db), sql.c_str());
+            // log_error("Failed to prepare statement: %s, SQL: %s", sqlite3_errmsg(db), sql.c_str());
             stmt_ = nullptr;
         }
     }
@@ -131,30 +133,28 @@ private:
 
 
 bool SQLiteStorage::saveUser(const UserRecord& user) {
-   
-    executeWrite_([this, user] {
+    executeWrite_([this, user]() {
         std::unique_lock<std::shared_mutex> lock(rwMutex_);
         std::string sql = "INSERT OR REPLACE INTO users (id, name, avatar_url) VALUES (?,?,?)";
-        StatementGuard stmt (m_db, sql);
+        StatementGuard stmt(m_db, sql);
         if (!stmt) {
             return;
         }
-       //Sql语句
         sqlite3_bind_text(stmt.get(), 1, user.id.c_str(), -1, SQLITE_TRANSIENT);
         sqlite3_bind_text(stmt.get(), 2, user.displayName.c_str(), -1, SQLITE_TRANSIENT);
         sqlite3_bind_text(stmt.get(), 3, user.avatarPath.c_str(), -1, SQLITE_TRANSIENT);
         
         if (sqlite3_step(stmt.get()) != SQLITE_DONE) {
-            log_error("Failed to execute statement: %s", sqlite3_errmsg(m_db));
+            // log_error("Failed to execute statement: %s", sqlite3_errmsg(m_db));
             return;
         }
-   }); // 异步写入
-     return true;
+    });
+    return true;
 }
 
 // ...existing code...
 bool SQLiteStorage::saveMessage(const MessageRecord& message) {
-    executeWrite_([this, message] {
+    executeWrite_([this, message]() {
         std::unique_lock<std::shared_mutex> lock(rwMutex_);
         std::string sql = "INSERT OR REPLACE INTO messages (local_id, room_id, sender_id, content, content_type, local_ts, server_ts) VALUES (?, ?, ?, ?, ?, ?, ?)";
         StatementGuard stmt(m_db, sql);
@@ -170,7 +170,7 @@ bool SQLiteStorage::saveMessage(const MessageRecord& message) {
         sqlite3_bind_int64(stmt.get(), 7, message.serverTimestamp);
 
         if (sqlite3_step(stmt.get()) != SQLITE_DONE) {
-            log_error("Failed to save message: %s", sqlite3_errmsg(m_db));
+            // log_error("Failed to save message: %s", sqlite3_errmsg(m_db));
         }
     });
     return true;
@@ -203,9 +203,36 @@ std::vector<MessageRecord> SQLiteStorage::loadRecentMessages(const std::string& 
     return messages;
 }
 
+std::optional<UserRecord> SQLiteStorage::getUser(const std::string& userId) const {
+    std::shared_lock<std::shared_mutex> lock(rwMutex_);
+
+    std::string sql = "SELECT id, name, avatar_url FROM users WHERE id = ?";
+    StatementGuard stmt(m_db, sql);
+    if (!stmt) {
+        return std::nullopt;
+    }
+    sqlite3_bind_text(stmt.get(), 1, userId.c_str(), -1, SQLITE_TRANSIENT);
+
+    if (sqlite3_step(stmt.get()) == SQLITE_ROW) {
+        UserRecord user;
+        user.id = reinterpret_cast<const char*>(sqlite3_column_text(stmt.get(), 0));
+        user.displayName = reinterpret_cast<const char*>(sqlite3_column_text(stmt.get(), 1));
+        user.avatarPath = reinterpret_cast<const char*>(sqlite3_column_text(stmt.get(), 2));
+        return user;
+    }
+    return std::nullopt;
+}
+
+bool SQLiteStorage::beginTransaction() {
+    return exec_("BEGIN TRANSACTION;");
+}
+
+bool SQLiteStorage::commitTransaction() {
+    return exec_("COMMIT;");
+}
 
 bool SQLiteStorage::saveFileProgress(const std::string& fileId, uint64_t offset) {
-    executeWrite_([this, fileId, offset] {
+    executeWrite_([this, fileId, offset]() {
         std::unique_lock<std::shared_mutex> lock(rwMutex_);
         const char* sql = "INSERT OR REPLACE INTO file_progress (file_id, offset) VALUES (?, ?)";
         StatementGuard stmt(m_db, sql);
@@ -216,9 +243,10 @@ bool SQLiteStorage::saveFileProgress(const std::string& fileId, uint64_t offset)
         sqlite3_bind_int64(stmt.get(), 2, offset);
 
         if (sqlite3_step(stmt.get()) != SQLITE_DONE) {
-            log_error("Failed to save file progress: %s", sqlite3_errmsg(m_db));
+            // log_error("Failed to save file progress: %s", sqlite3_errmsg(m_db));
         }
     });
+    return true;
 }
 
 
@@ -227,7 +255,7 @@ std::optional<uint64_t>  SQLiteStorage::loadFileProgress(const std::string& file
     const char* sql = "SELECT offset FROM file_progress WHERE file_id = ?";
     StatementGuard stmt(m_db, sql);
     if (!stmt) {
-        return false;
+        return std::nullopt;
     }
     sqlite3_bind_text(stmt.get(), 1, fileId.c_str(), -1, SQLITE_TRANSIENT);
 
