@@ -28,12 +28,17 @@ public:
     bool beginTransaction() override;
     bool commitTransaction() override;
 
+    
+//支持断点续传
     bool saveFileProgress(const std::string& fileId, uint64_t offset) override;
     std::optional<uint64_t> loadFileProgress(const std::string& fileId) override;
 
+//(可选) 恢复机制
     bool recover() override;
+
 private:
     sqlite3* m_db = nullptr; // SQLite 数据库连接指针
+    std::string dbPath_; // 数据库文件路径
 
     mutable std::shared_mutex rwMutex_; // 用于读写操作的共享互斥锁
     std::thread writeThread_; // 用于执行写操作的线程

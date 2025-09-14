@@ -4,7 +4,7 @@
 #include <iostream>
 #include "common/Log.hpp"
 #include <utility>
-
+#include <filesystem>
 
 
 SQLiteStorage::SQLiteStorage():
@@ -22,6 +22,7 @@ SQLiteStorage::~SQLiteStorage() {
 }
 
 bool SQLiteStorage:: init(const std::string& dbPath) {
+    dbPath_ = dbPath; // 保存数据库路径
     int rc =sqlite3_open_v2(dbPath.c_str(), &m_db, SQLITE_OPEN_READWRITE | SQLITE_OPEN_CREATE | SQLITE_OPEN_FULLMUTEX, nullptr);
     
     if (rc != SQLITE_OK) {
@@ -203,3 +204,75 @@ std::vector<MessageRecord> SQLiteStorage::loadRecentMessages(const std::string& 
 }
 
 
+bool SQLiteStorage::saveFileProgress(const std::string& fileId, uint64_t offset) {
+    executeWrite_([this, fileId, offset] {
+        std::unique_lock<std::shared_mutex> lock(rwMutex_);
+        const char* sql = "INSERT OR REPLACE INTO file_progress (file_id, offset) VALUES (?, ?)";
+        StatementGuard stmt(m_db, sql);
+        if (!stmt) {
+            return;
+        }
+        sqlite3_bind_text(stmt.get(), 1, fileId.c_str(), -1, SQLITE_TRANSIENT);
+        sqlite3_bind_int64(stmt.get(), 2, offset);
+
+        if (sqlite3_step(stmt.get()) != SQLITE_DONE) {
+            log_error("Failed to save file progress: %s", sqlite3_errmsg(m_db));
+        }
+    });
+}
+
+
+std::optional<uint64_t>  SQLiteStorage::loadFileProgress(const std::string& fileId)  {
+    std::shared_lock<std::shared_mutex> lock(rwMutex_);
+    const char* sql = "SELECT offset FROM file_progress WHERE file_id = ?";
+    StatementGuard stmt(m_db, sql);
+    if (!stmt) {
+        return false;
+    }
+    sqlite3_bind_text(stmt.get(), 1, fileId.c_str(), -1, SQLITE_TRANSIENT);
+
+    int rc = sqlite3_step(stmt.get());
+    if (rc == SQLITE_ROW) {
+       return static_cast<uint64_t>(sqlite3_column_int64(stmt.get(), 0));
+    } else if (rc == SQLITE_DONE) {
+        return std::nullopt; // No record found
+    }else{
+        log_error("Failed to load file progress: %s", sqlite3_errmsg(m_db));
+        return std::nullopt;
+    }
+}
+
+bool SQLiteStorage:: recover() {
+    // 采取放弃并重建的策略
+    log_warn("Recovering database from scratch");
+    
+    // 停止写线程
+    stopWriter_();
+    
+    // 关闭当前数据库连接
+    if(m_db){
+        sqlite3_close(m_db);
+        m_db = nullptr;
+    }
+    
+    // 备份现有数据库文件
+    std::string backupPath = dbPath_ + ".bak";
+    if (std::filesystem::exists(dbPath_)) {
+        std::filesystem::copy_file(dbPath_, backupPath, std::filesystem::copy_options::overwrite_existing);
+        log_info("Database backed up to %s", backupPath.c_str());
+    }
+    
+    // 删除损坏的数据库文件
+    if (std::filesystem::exists(dbPath_)) {
+        std::filesystem::remove(dbPath_);
+    }
+    
+    // 重新初始化数据库
+    if (!init(dbPath_)) {
+        log_error("Failed to reinitialize database during recovery");
+        return false;
+    }
+    
+    log_info("Database recovery completed");
+    return true;
+}

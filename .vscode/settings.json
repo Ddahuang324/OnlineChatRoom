@@ -68,6 +68,7 @@
         "memory": "cpp",
         "functional": "cpp",
         "shared_mutex": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "filesystem": "cpp"
     }
 }
