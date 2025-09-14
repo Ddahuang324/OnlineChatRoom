@@ -49,10 +49,9 @@ bool SQLiteStorage:: init(const std::string& dbPath) {
     for (const char* stmt : schema) {
         if (!exec_(stmt)) return false;
     }
-
     log_debug("Database created successfully");
-
     return true;
+    // Removed return statement to match the expected void return type
 };
 
 
@@ -65,6 +64,7 @@ bool SQLiteStorage::exec_(const std::string& sql){
         return false;
     }
     return true;
+    // Removed return statement to match the expected void return type
 }
 
 
@@ -104,6 +104,102 @@ void SQLiteStorage::startWriter_() {
             task(  );
         }
     });
+}
+
+
+class StatementGuard {
+public:     
+    StatementGuard(sqlite3* db, const std::string& sql) {
+        if (sqlite3_prepare_v2(db, sql.c_str(), -1, &stmt_, nullptr) != SQLITE_OK) {
+            log_error("Failed to prepare statement: %s, SQL: %s", sqlite3_errmsg(db), sql.c_str());
+            stmt_ = nullptr;
+        }
+    }
+    ~StatementGuard() {
+        if (stmt_) {
+            sqlite3_finalize(stmt_);
+        }   
+    }
+    sqlite3_stmt* get() const { return stmt_; }
+    operator bool() const { return stmt_ != nullptr; }
+
+private:
+    sqlite3_stmt* stmt_ = nullptr; // Declare stmt_ as a private member
+};
+
+
+
+bool SQLiteStorage::saveUser(const UserRecord& user) {
+   
+    executeWrite_([this, user] {
+        std::unique_lock<std::shared_mutex> lock(rwMutex_);
+        std::string sql = "INSERT OR REPLACE INTO users (id, name, avatar_url) VALUES (?,?,?)";
+        StatementGuard stmt (m_db, sql);
+        if (!stmt) {
+            return;
+        }
+       //Sql语句
+        sqlite3_bind_text(stmt.get(), 1, user.id.c_str(), -1, SQLITE_TRANSIENT);
+        sqlite3_bind_text(stmt.get(), 2, user.displayName.c_str(), -1, SQLITE_TRANSIENT);
+        sqlite3_bind_text(stmt.get(), 3, user.avatarPath.c_str(), -1, SQLITE_TRANSIENT);
+        
+        if (sqlite3_step(stmt.get()) != SQLITE_DONE) {
+            log_error("Failed to execute statement: %s", sqlite3_errmsg(m_db));
+            return;
+        }
+   }); // 异步写入
+     return true;
+}
+
+// ...existing code...
+bool SQLiteStorage::saveMessage(const MessageRecord& message) {
+    executeWrite_([this, message] {
+        std::unique_lock<std::shared_mutex> lock(rwMutex_);
+        std::string sql = "INSERT OR REPLACE INTO messages (local_id, room_id, sender_id, content, content_type, local_ts, server_ts) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        StatementGuard stmt(m_db, sql);
+        if (!stmt) {
+            return;
+        }
+        sqlite3_bind_text(stmt.get(), 1, message.id.c_str(), -1, SQLITE_TRANSIENT);
+        sqlite3_bind_text(stmt.get(), 2, message.roomId.c_str(), -1, SQLITE_TRANSIENT);
+        sqlite3_bind_text(stmt.get(), 3, message.senderId.c_str(), -1, SQLITE_TRANSIENT);
+        sqlite3_bind_text(stmt.get(), 4, message.content.c_str(), -1, SQLITE_TRANSIENT);
+        sqlite3_bind_int(stmt.get(), 5, static_cast<int>(message.type));
+        sqlite3_bind_int64(stmt.get(), 6, message.localTimestamp);
+        sqlite3_bind_int64(stmt.get(), 7, message.serverTimestamp);
+
+        if (sqlite3_step(stmt.get()) != SQLITE_DONE) {
+            log_error("Failed to save message: %s", sqlite3_errmsg(m_db));
+        }
+    });
+    return true;
+}
+
+
+std::vector<MessageRecord> SQLiteStorage::loadRecentMessages(const std::string& roomId, int limit) const {
+    std::shared_lock<std::shared_mutex> lock(rwMutex_);
+
+    std::vector<MessageRecord> messages;
+    std::string sql = "SELECT local_id, room_id, sender_id, content, content_type, local_ts, server_ts FROM messages WHERE room_id = ? ORDER BY local_ts DESC LIMIT ?";
+    StatementGuard stmt(m_db, sql);
+    if (!stmt) {
+        return messages;
+    }
+    sqlite3_bind_text(stmt.get(), 1, roomId.c_str(), -1, SQLITE_TRANSIENT);
+    sqlite3_bind_int(stmt.get(), 2, limit);
+
+    while (sqlite3_step(stmt.get()) == SQLITE_ROW) {
+        MessageRecord msg;
+        msg.id = reinterpret_cast<const char*>(sqlite3_column_text(stmt.get(), 0));
+        msg.roomId = reinterpret_cast<const char*>(sqlite3_column_text(stmt.get(), 1));
+        msg.senderId = reinterpret_cast<const char*>(sqlite3_column_text(stmt.get(), 2));
+        msg.content = reinterpret_cast<const char*>(sqlite3_column_text(stmt.get(), 3));
+        msg.type = static_cast<MessageType>(sqlite3_column_int(stmt.get(), 4));
+        msg.localTimestamp = sqlite3_column_int64(stmt.get(), 5);
+        msg.serverTimestamp = sqlite3_column_int64(stmt.get(), 6);
+        messages.push_back(std::move(msg));
+    }
+    return messages;
 }
 
 

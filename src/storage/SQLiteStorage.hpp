@@ -35,7 +35,7 @@ public:
 private:
     sqlite3* m_db = nullptr; // SQLite 数据库连接指针
 
-    std::shared_mutex rwMutex_; // 用于读写操作的共享互斥锁
+    mutable std::shared_mutex rwMutex_; // 用于读写操作的共享互斥锁
     std::thread writeThread_; // 用于执行写操作的线程
 
     std::atomic<bool> stop_ = false; // 标志位，指示写线程是否应停止
