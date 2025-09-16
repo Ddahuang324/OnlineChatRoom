@@ -40,13 +40,36 @@
   - ThreadPool / Worker
 
 函数级别契约（示例）:
-- MiniEventAdapter
-  - bool connect(const ConnectionParams& params)
-  - void disconnect()
-  - bool sendMessage(const SerializedMessage& msg)
-  - void sendFileChunk(const FileChunk& chunk)
-  - void setMessageHandler(std::function<void(const SerializedMessage&)> cb)
-  - void setConnectionHandler(std::function<void(ConnectionEvent)> cb)
+ MiniEventAdapter (基于 MiniEventWork 的实现要点)
+  - init/connect/线程模型:
+    - `bool init(EventBase* sharedBase = nullptr)`：适配器可以接受一个外部共享的 `MiniEventWork::EventBase`（例如应用已有的 I/O 循环），如果未提供则在内部 new 一个 `EventBase` 并在单独线程运行 `loop()`。
+    - 所有 socket/BufferEvent/Channel 的生命周期必须在 `EventBase` 的线程内管理；通过 `EventBase::queueInLoop` 或 `runInLoop` 将创建/销毁/读写任务封送到 loop 线程。
+  - 发送/接收策略:
+    - 外部调用 `sendMessage` / `sendFileChunk` 时仅把任务排入线程安全的发送队列（`std::deque` + mutex），并使用 `EventBase::queueInLoop` 在 loop 线程调度实际的写操作，写操作使用 `Buffer::append` + BufferEvent 写 fd。
+    - 接收在 BufferEvent 的 read 回调中解析帧（可用 `Buffer::find_str` 或自定义定界符），在 loop 线程直接构建 `SerializedMessage` 后调用 msgCb_（或通过 `queueInLoop` 转发到 ViewModel 主线程）。
+  - 统计与日志:
+    - 在关键事件（connect, disconnect, message sent/received, timeouts）调用 `ConnectionManager::getInstance()` 的统计接口增量；使用 `MiniEventLog` 记录详细调试/错误信息，测试允许注入输出流以捕获日志行。
+  - 错误与重连策略:
+    - connect 失败或短暂断开使用指数退避（base=500ms, factor=2, max=30s, attempts<=8）；区分可重试错误（临时网络故障）与不可重试（参数/序列化错误）。
+    - 定义错误映射表：socket errno -> NetStatus（见 `docs/network-error-mapping.md`）。
+  - API 建议（头文件 `include/net/MiniEventAdapter.h`）:
+    - enum class NetStatus { Ok, NotConnected, Timeout, QueueFull, SerializeError, InternalError };
+    - struct ConnectionParams { std::string host; uint16_t port; unsigned timeoutMs; bool useSharedEventBase; };
+    - virtual NetStatus connect(const ConnectionParams& params) = 0;
+    - virtual void disconnect() = 0;
+    - virtual NetStatus sendMessage(const SerializedMessage& msg) = 0;
+    - virtual NetStatus sendFileChunk(const FileChunk& chunk) = 0;
+    - virtual void setMessageHandler(std::function<void(const SerializedMessage&)> cb) = 0;
+    - virtual void setConnectionHandler(std::function<void(ConnectionEvent)> cb) = 0;
+
+ 实施步骤（MiniEventWork 适配）:
+ 1. 研究/对齐 MiniEventWork API（已完成）: 确认 `EventBase`, `Buffer/BufferEvent`, `MessageHandler`, `ConnectionManager`, `MiniEventLog` 的可用函数与线程约束。
+ 2. 在 `include/net/` 中添加 `MiniEventAdapter.h`（抽象契约）并在 `src/net/` 中添加 `MiniEventAdapterMiniEventWork.{h,cpp}` 实现。
+ 3. 实现连接/接收/发送/断开四个核心流程，严格把 I/O 操作封装在 `EventBase` 线程内，外部线程通过 `queueInLoop` 交互。
+ 4. 编写 `tests/mocks/FakeMiniEventServer` 基于 `MiniEventWork::TCPSever`，并复用 `TCPMsgHandler` 作为回显/ACK 服务器。
+ 5. 编写单元测试 `tests/net/test_mini_event_adapter.cpp` 覆盖场景（正常/错误/队列满/断线重连/分片）。
+ 6. 撰写集成文档 `docs/mini_event_adapter_integration.md`，包含注意事项和示例代码。
+
 
 - Storage (SQLite)
   - bool init(const std::string& dbPath)

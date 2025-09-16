@@ -126,40 +126,71 @@ FEATURE_DIR: specs/003-title-description-minievent
 -------------------------------------------------
 阶段 4: 网络适配层 MiniEventAdapter
 -------------------------------------------------
-[ ] T021 定义 MiniEventAdapter 抽象 (补充状态码)
+
+[ ] T021 定义 MiniEventAdapter 抽象 (补充状态码与线程模型)
   文件: include/net/MiniEventAdapter.h
+  目标: 定义适配器对外契约并记录内部线程模型（EventLoop owned、send queue 串行化）
+  函数签名建议:
+    - bool init(EventBase* sharedBase = nullptr); // 可传入共享 EventBase 或由适配器 own
+    - NetStatus connect(const std::string& host, uint16_t port, unsigned timeoutMs);
+    - void disconnect();
+    - NetStatus sendMessage(const SerializedMessage& msg); // 序列化并入发送队列
+    - NetStatus sendFileChunk(const FileChunk& chunk); // 分片发送，大小 <= 64*1024
+    - void setMessageHandler(std::function<void(const SerializedMessage&)> cb);
+    - void setConnectionHandler(std::function<void(ConnectionEvent)> cb);
   枚举: NetStatus { Ok, NotConnected, Timeout, QueueFull, SerializeError, InternalError }
+  说明: 适配器内部应使用 `MiniEventWork::EventBase` 作为 I/O 循环、`Buffer/BufferEvent` 做 socket IO、`ConnectionManager` 做统计、`MiniEventLog` 做日志。
 
-[ ] T022 [P] Adapter 实现骨架头
-  文件: src/net/MiniEventAdapterImpl.h
-  成员: std::thread recvThread_; std::thread sendThread_; std::mutex sendMutex_; std::condition_variable sendCv_; std::queue<SerializedMessage> sendQueue_; std::atomic<bool> connected_{false}; std::atomic<bool> stop_{false}; 回调 std::function<void(... )> msgCb_, connCb_;
+[ ] T022 Adapter 实现骨架（MiniEventWork 绑定）
+  文件: src/net/MiniEventAdapterMiniEventWork.h
+  文件: src/net/MiniEventAdapterMiniEventWork.cpp
+  私有成员建议:
+    - EventBase* eventBase_ = nullptr; // 如果 adapter own，则在 init 中 new
+    - std::thread loopThread_; // 当 adapter own EventBase 时用于运行 loop()
+    - std::atomic<bool> running_{false};
+    - std::mutex sendMutex_; std::condition_variable sendCv_;
+    - std::deque<SerializedMessage> sendQueue_; // 使用 deque 便于 peek/pop
+    - std::atomic<size_t> maxQueue_{1024};
+    - std::function<void(const SerializedMessage&)> msgCb_; std::function<void(ConnectionEvent)> connCb_;
+    - ConnectionManager& connStats_ = ConnectionManager::getInstance();
+  关键点: 所有真正的 socket read/write 必须在 `EventBase` 线程/回调中执行（使用 runInLoop/queueInLoop），避免跨线程直接调用 Buffer::readFd。
 
-[ ] T023 连接流程实现 connect()/disconnect()
-  文件: src/net/MiniEventAdapterImpl.cpp
-  指数退避: base=500ms factor=2 max=30s attempts<=8
-  错误: DNS失败 / 超时 → NetStatus::Timeout
+[ ] T023 连接/断开流程实现（使用 EventBase）
+  文件: src/net/MiniEventAdapterMiniEventWork.cpp
+  行为要求:
+    - connect() 发起非阻塞连接：在 loop 线程通过 queueInLoop 建立 BufferEvent/Channel，并注册读写回调。
+    - disconnect() 在 loop 线程关闭 BufferEvent、注销 connection 并调用 connCb_(Disconnected)。
+    - 指数退避：base=500ms, factor=2, max=30s, attempts<=8，在 connect 失败时使用 eventBase_->executeInWorker/queueInLoop 调度重试。
+  错误映射: 系统错误 / socket errno → NetStatus::InternalError 或 Timeout（按 errno 判断），并写入 `docs/network-error-mapping.md`。
 
-[ ] T024 [P] 发送线程循环
-  文件: src/net/MiniEventAdapterImpl.cpp
-  逻辑: while(!stop_) wait(sendQueue_) → serialize → MiniEvent send
-  队列满判定: size>MAX_QUEUE(1024) → 返回 QueueFull
+[ ] T024 发送队列串行化（在 EventBase 线程执行发送）
+  文件: src/net/MiniEventAdapterMiniEventWork.cpp
+  逻辑: 外部线程调用 sendMessage() 时先检查 queue 大小（> maxQueue_ 返回 QueueFull），然后通过 eventBase_->queueInLoop 将发送任务入列；真正 send 在 loop 线程调用 Buffer::append/写入 fd（使用 BufferEvent/Channel 回调完成 write）。
+  验收: queue 高并发入队（1000 qps）无数据竞争；测试使用单元测试模拟并发调用 sendMessage 并断言没有崩溃。
 
-[ ] T025 接收线程与回调主线程封送
-  文件: src/net/MiniEventAdapterImpl.cpp
-  使用: QMetaObject::invokeMethod(nullptr, lambda, Qt::QueuedConnection)
-  事件: Connected/Disconnected/Reconnecting
+[ ] T025 接收与消息分发（MessageHandler / TCPMsgHandler）
+  文件: src/net/MiniEventAdapterMiniEventWork.cpp
+  逻辑: 在 BufferEvent 的 read 回调中使用 `Buffer::find_str` 或自定义帧解析器切分消息，组装为 `SerializedMessage`，再通过 eventBase_->queueInLoop 或直接在 loop 线程调用 msgCb_（若 msgCb_ 能安全在 loop 线程执行，则直接调用以减少拷贝）。
+  事件: Connected/Disconnected/Reconnecting，通过 connCb_ 上报，必须携带轻量统计（ConnectionManager::getTotalRequest/Response）。
 
-[ ] T026 [P] sendFileChunk 基线实现
-  文件: src/net/MiniEventAdapterImpl.cpp
-  校验: chunk.bytes.size <= 64*1024; offset 对齐
+[ ] T026 sendFileChunk 与分片约束
+  文件: src/net/MiniEventAdapterMiniEventWork.cpp
+  校验: chunk.bytes.size <= 64*1024; offset 对齐；每个分片发送应写入 storage 进度（回调或 ACK 时回写）。
+  异常: 超大分片 → 返回 SerializeError；写入失败 → InternalError 并触发重试策略。
 
-[ ] T027 超时/错误映射策略文档
+[ ] T027 错误/超时/重连映射文档
   文件: docs/network-error-mapping.md
-  内容: MiniEvent errno → NetStatus 映射表
+  内容: 基于 `MiniEventWork` 的错误来源（socket errno、connect timeout、event loop 关闭）与 `NetStatus` 的映射表；记录 reconnect/backoff 策略和可重试错误集合。
 
-[ ] T028 Adapter 单元测试
+[ ] T028 Adapter 单元测试 & Fake Server（基于 MiniEventWork 的 Loopback）
   文件: tests/net/test_mini_event_adapter.cpp
-  场景: 成功连接/错误端口/消息往返/队列满
+  附件: tests/mocks/FakeMiniEventServer.{cpp,h}（可复用 `MiniEventWork::TCPSever` + `TCPMsgHandler`）
+  场景: 成功连接/错误端口/消息往返/队列满/分片上限/断线重连
+
+[ ] T029 文档: MiniEventWork 集成说明
+  文件: docs/mini_event_adapter_integration.md
+  内容: 列出需要包含的头（EventBase.hpp, Buffer/Buffer.hpp, ConnectionManager.hpp, MiniEventLog.hpp, MessageHandler.hpp），threading contract（哪些函数可跨线程调用，哪些必须在 loop 线程），以及示例代码片段（init、connect、sendMessage、clean shutdown）。
+
 
 -------------------------------------------------
 阶段 5: ViewModel 层 (Login / Chat)
