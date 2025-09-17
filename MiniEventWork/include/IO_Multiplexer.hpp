@@ -3,6 +3,8 @@
 #include <vector>
 #include <map>
 
+namespace MiniEventWork {
+
 class Channel;//将原来的fd，event等等都封装到这里面
 
 
@@ -20,6 +22,8 @@ public:
 protected:
     IOMultiplexer() = default;
 };
+
+} // namespace MiniEventWork
 
 
 

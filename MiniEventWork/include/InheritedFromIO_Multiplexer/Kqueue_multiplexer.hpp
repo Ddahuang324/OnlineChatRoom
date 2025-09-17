@@ -7,6 +7,8 @@
 #include <sys/event.h>
 #include <unistd.h>
 
+namespace MiniEventWork {
+
 class Channel;
 
 class KqueueMultiplexer : public IOMultiplexer {
@@ -27,5 +29,7 @@ private:
     std::vector<struct kevent> events_;
     std::map<int, Channel*> channels_;
 };
+
+} // namespace MiniEventWork
 
 #endif

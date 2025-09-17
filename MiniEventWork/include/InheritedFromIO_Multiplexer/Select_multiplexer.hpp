@@ -11,6 +11,7 @@
 #include <sys/select.h>
 #endif
 
+namespace MiniEventWork {
 
 class SelectMultiplexer : public IOMultiplexer {
 public:
@@ -29,3 +30,5 @@ private:
     int max_fd_;
     std::map<int, Channel*> channels_;
 };
+
+} // namespace MiniEventWork

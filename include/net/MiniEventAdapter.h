@@ -1,49 +1,59 @@
 #pragma once
 
-// Placeholder for the MiniEventAdapter abstract interface as per T021.
-// Enum: NetStatus { Ok, NotConnected, Timeout, QueueFull, SerializeError, InternalError }
-// Implementation will be provided by the user.
 #include <string>
 #include <vector>
 #include <functional>
-#include <cstdint>
+#include "model/Entities.hpp"
 
-using SerializedMessage = std::vector<uint8_t>;
+namespace MiniEventWork {
+    class EventBase;
+}
 
-
-enum class NetStatus{
-    OK,
-    NOT_CONNECTED,
-    TIMEOUT,
-    QUEUE_FULL,
-    SERIALIZATION_ERROR,
-    INTERNAL_ERROR,
+struct ConnectionParams {
+    std::string host;//服务器地址
+    int port;//服务器端口
+    //可拓展
 };
+
+enum class connectionEvents {
+    Connecting,
+    Connected,
+    Disconnected,
+    ConnectFailed,
+};
+
+//序列化后对消息，用于适配器内部和传送队列中传递
+using SerializedMessage = std::vector<uint8_t>; 
 
 class MiniEventAdapter {
-
 public:
+    using ConnectionCallback = std::function<void(connectionEvents)>;
+    using MessageCallback = std::function<void(const MessageRecord&)>;
+    using FileChunkCallback = std::function<void(const FileMeta)>;
+
     virtual ~MiniEventAdapter() = default;
 
-    // 连接成功时调用的回调函数
-    std::function<void()> onConnected;
-    // 断开连接时调用的回调函数
-    std::function<void()> onDisconnected;
-    // 接收到消息时调用的回调函数
-    std::function<void(const SerializedMessage&)> onMessageReceived;
-    // 发送文件块成功时调用的回调函数
-    std::function<void(uint64_t fileid, uint32_t chunkindex, NetStatus status)> onFileChunkSent;
 
-    // 连接到指定的IP地址和端口
-    virtual void connect(const std::string& ip, uint16_t port) = 0;
-    // 断开当前连接
+     virtual void init(MiniEventWork::EventBase* eventBase,
+                      ConnectionCallback connCb,
+                      MessageCallback msgCb,
+                      FileChunkCallback fileCb) = 0;
+
+
+    virtual void connect(const ConnectionParams& params) = 0;
+
     virtual void disconnect() = 0;
 
-    // 发送消息
-    virtual NetStatus send(const SerializedMessage& message) = 0;
+   //virtual connectionEvents sendMessage(const MessageRecord& msg) = 0; 不能是 ConnectionEVents 事件 为什么？ 因为状态的发送的结果是异步的，未来才可能知道的
 
-    // 发送文件块
-    virtual NetStatus sendFileChunk(uint64_t fileid, uint32_t chunkindex,const std::vector<uint8_t>& data) = 0;
+    //virtual connectionEvents sendFileChunk(const FileMeta& fileMeta, const std::vector<uint8_t>& chunk) = 0;
 
+    virtual void sendMessage(const MessageRecord& msg) = 0;
+    virtual void sendFileChunk(const FileMeta& chunk) = 0;
 
 };
+
+
+
+
+

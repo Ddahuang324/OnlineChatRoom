@@ -20,6 +20,8 @@
 
 // [新增] 为最小堆定义比较器
 // 比较两个 Channel 的绝对超时时间
+namespace MiniEventWork {
+
 struct ChannelTimeoutComparator
 {
     bool operator()(const std::shared_ptr<Channel> &a, const std::shared_ptr<Channel> &b) const
@@ -55,6 +57,9 @@ public:
     // 提交到工作线程池（仅业务计算），完成后应再回到 loop 线程做 I/O
     void executeInWorker(const std::function<void()>& task);
 
+    // 定时器：在指定延迟后执行回调
+    void runAfter(std::chrono::milliseconds delay, const std::function<void()>& cb);
+
 private:
     // [新增] 定时器相关私有方法
     void addTimer(std::shared_ptr<Channel> channel);
@@ -88,3 +93,5 @@ private:
     void handleWakeup();
     void doPendingTasks();
 };
+
+} // namespace MiniEventWork

@@ -7,6 +7,7 @@
 #include <sys/epoll.h>
 #include <unistd.h>
 
+namespace MiniEventWork {
 
 class Channel;
 
@@ -34,5 +35,6 @@ private:
     std::map<int, Channel*> channels_;
 };
 
+} // namespace MiniEventWork
 
 #endif

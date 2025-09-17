@@ -5,8 +5,7 @@
 #include <unistd.h>
 #include <sys/socket.h>
 
-
-
+namespace MiniEventWork {
 
 BufferEvent::BufferEvent(EventBase* loop, int fd)
     : loop_(loop),
@@ -141,3 +140,76 @@ void BufferEvent::enableWriting() {
     // 启用写事件监听
     channel_->enableWriting();
 }
+
+// Extract next line from input buffer (up to \r\n), trim \r\n
+std::string BufferEvent::trimLine() {
+    size_t crlf_pos = inputBuffer_.findCRLF();
+    if (crlf_pos == 0) return "";
+
+    std::string line = inputBuffer_.retrieveAsString(crlf_pos);
+    // Remove \r\n
+    if (!line.empty() && line.back() == '\n') line.pop_back();
+    if (!line.empty() && line.back() == '\r') line.pop_back();
+    return line;
+}
+
+// static helper
+void BufferEvent::setCallBacks(const Ptr& bev,
+                 const std::function<void()>& readCb,
+                 const std::function<void()>& writeCb,
+                 const std::function<void(short)>& eventCb) {
+  if (!bev) return;
+
+  if (readCb) {
+    bev->setReadCallback([readCb](const BufferEvent::Ptr& self, Buffer* buf){
+      // ignore params and call simple read callback
+      readCb();
+    });
+  } else {
+    bev->setReadCallback(ReadCallback());
+  }
+
+  if (writeCb) {
+    bev->setWriteCallback([writeCb](const BufferEvent::Ptr& self){
+      writeCb();
+    });
+  } else {
+    bev->setWriteCallback(EventCallback());
+  }
+
+  if (eventCb) {
+    bev->setErrorCallback([eventCb](const BufferEvent::Ptr& self){
+      // BufferEvent currently does not pass event flags on error callback;
+      // we call with 0 as placeholder. If needed, expand interface.
+      eventCb(0);
+    });
+    bev->setCloseCallback([eventCb](const BufferEvent::Ptr& self){
+      eventCb(BufferEvent::kEOFEvent);
+    });
+  } else {
+    bev->setErrorCallback(EventCallback());
+    bev->setCloseCallback(EventCallback());
+  }
+}
+
+void BufferEvent::enable(const Ptr& bev, int events) {
+  if (!bev || !bev->channel_) return;
+
+  // Normalize events: accept either EV_READ/EV_WRITE from libevent or internal flags
+#ifdef EV_READ
+  const int ev_read = EV_READ;
+  const int ev_write = EV_WRITE;
+#else
+  const int ev_read = kReadEvent;
+  const int ev_write = kWriteEvent;
+#endif
+
+  if (events & ev_read) {
+    bev->channel_->enableReading();
+  }
+  if (events & ev_write) {
+    bev->channel_->enableWriting();
+  }
+}
+
+} // namespace MiniEventWork

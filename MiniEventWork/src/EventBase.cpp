@@ -9,7 +9,7 @@
 #include <chrono>
 #include <fcntl.h>
 
-
+namespace MiniEventWork {
 EventBase::EventBase(size_t thread_num)
     : quit_(false), thread_num_(thread_num)
 {
@@ -346,3 +346,13 @@ void EventBase::handleExpiredTimers()
         delete expired_event;
     }
 }
+
+void EventBase::runAfter(std::chrono::milliseconds delay, const std::function<void()>& cb) {
+    uint64_t timeout = getCurrentTimeMs() + delay.count();
+    auto timer_channel = std::make_shared<Channel>(this);
+    timer_channel->setTimeout(timeout);
+    timer_channel->setTimerCallback(cb);
+    addTimer(timer_channel);
+}
+
+} // namespace MiniEventWork

@@ -105,6 +105,12 @@ public:
         return nullptr;
     }
 
+    // Find CRLF (\r\n) and return the position offset from peek()
+    size_t findCRLF() const {
+        const char* crlf = find_str("\r\n");
+        return crlf ? (crlf - peek() + 2) : 0; // +2 to include \r\n
+    }
+
 private:
     char* begin() { return &*buffer_.begin(); }
     const char* begin() const { return &*buffer_.begin(); }

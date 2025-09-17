@@ -89,6 +89,14 @@
         "ranges": "cpp",
         "stop_token": "cpp",
         "text_encoding": "cpp",
-        "cinttypes": "cpp"
+        "cinttypes": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "valarray": "cpp",
+        "flat_map": "cpp",
+        "flat_set": "cpp",
+        "generator": "cpp",
+        "stacktrace": "cpp",
+        "cerrno": "cpp"
     }
 }

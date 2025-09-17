@@ -54,3 +54,13 @@ struct MessageRecord {
     std::shared_ptr<FileMeta> fileMeta; // 文件元数据 (如果是文件消息)，使用指针以配合前向声明
     MessageState state;           // 消息状态
 };
+
+struct FileMeta {
+    std::string fileId;      // 唯一ID（可由服务器或本地生成）
+    std::string fileName;    // 文件名
+    std::string mimeType;    // MIME 类型
+    std::string localPath;   // 本地路径（可选）
+    uint64_t    fileSize{0}; // 字节大小
+    uint32_t    chunkIndex{0};   // 当前分片序号（如果是分片传输）
+    uint32_t    totalChunks{0};  // 总分片数
+};

@@ -6,6 +6,8 @@
 #ifdef _WIN32
 #include <windows.h>
 
+namespace MiniEventWork {
+
 class Channel;
 
 class IOCPMultiplexer : public IOMultiplexer {
@@ -22,5 +24,7 @@ private:
     HANDLE iocp_handle_;
     std::map<int, Channel*> channels_;
 };
+
+} // namespace MiniEventWork
 
 #endif

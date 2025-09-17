@@ -16,6 +16,11 @@ Channel::Channel(EventBase* loop, int fd)
       timeout_(0), heap_index_(-1) {
 }
 
+Channel::Channel(EventBase* loop)
+    : loop_(loop), fd_(-1), events_(0), ready_events_(0), 
+      timeout_(0), heap_index_(-1) {
+}
+
 // --- 析构函数 ---
 Channel::~Channel(){
     if (fd_ >= 0) {

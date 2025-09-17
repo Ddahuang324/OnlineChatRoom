@@ -4,6 +4,8 @@
 #include <memory>
 #include <cstdint>
 
+namespace MiniEventWork {
+
     class EventBase;
     class Channel : public std::enable_shared_from_this<Channel> {
 public:
@@ -21,6 +23,7 @@ public:
     static const int kErrorEvent;
 
     Channel(EventBase* loop, int fd);
+    Channel(EventBase* loop); // for timer, fd = -1
     ~Channel();
     
     //核心：当事件发生时，有EventLoop调用
@@ -89,5 +92,7 @@ private:
     int heap_index_;                // 在最小堆中的索引
     // =======================================================
 };
+
+} // namespace MiniEventWork
 
 
