@@ -20,6 +20,38 @@ src/i18n_lib_autogen/timestamp: /Users/dahuang/Desktop/项目/OnlineChat/src/CMa
   /Users/dahuang/Desktop/项目/OnlineChat/src/CMakeLists.txt \
   /Users/dahuang/Desktop/项目/OnlineChat/src/i18n/I18n.cpp \
   /Users/dahuang/Desktop/项目/OnlineChat/src/i18n/I18n.h \
+  /opt/homebrew/bin/cmake \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/CMakeLists.txt \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/i18n/I18n.cpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/i18n/I18n.h \
+  /opt/homebrew/bin/cmake \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/CMakeLists.txt \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/i18n/I18n.cpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/i18n/I18n.h \
+  /opt/homebrew/bin/cmake \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/CMakeLists.txt \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/i18n/I18n.cpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/i18n/I18n.h \
+  /opt/homebrew/bin/cmake \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/CMakeLists.txt \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/i18n/I18n.cpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/i18n/I18n.h \
+  /opt/homebrew/bin/cmake \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/CMakeLists.txt \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/i18n/I18n.cpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/i18n/I18n.h \
+  /opt/homebrew/bin/cmake \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/CMakeLists.txt \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/i18n/I18n.cpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/i18n/I18n.h \
+  /opt/homebrew/bin/cmake \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/CMakeLists.txt \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/i18n/I18n.cpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/i18n/I18n.h \
+  /opt/homebrew/bin/cmake \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/CMakeLists.txt \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/i18n/I18n.cpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/i18n/I18n.h \
   /opt/homebrew/bin/cmake
 
 

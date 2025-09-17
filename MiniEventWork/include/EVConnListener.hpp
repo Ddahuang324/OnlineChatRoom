@@ -5,6 +5,7 @@
 #include "../include/Channel.hpp"
 #include "../include/EventBase.hpp"
 
+namespace MiniEventWork {
 
 struct sockaddr;
 
@@ -29,3 +30,5 @@ private:
     NewConnectionCallback new_connection_callback_;
     bool listening_;
 };
+
+} // namespace MiniEventWork

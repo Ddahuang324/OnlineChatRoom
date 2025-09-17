@@ -1,6 +1,7 @@
 #include "../include/Buffer/Buffer.hpp"
 #include <sys/uio.h>
 
+namespace MiniEventWork {
 
    
 ssize_t Buffer::readFd(int fd, int* savedErrno) {
@@ -65,3 +66,5 @@ void Buffer::makeSpace(size_t len) {
         assert(readable == readableBytes());
     }
 }
+
+} // namespace MiniEventWork

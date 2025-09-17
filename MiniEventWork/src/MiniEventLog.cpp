@@ -6,6 +6,7 @@
 #include <sstream>
 #include "../include/MiniEventLog.hpp"
 
+namespace MiniEventWork {
 
 MiniEventLog* MiniEventLog::getInstance(){
     static MiniEventLog instance;
@@ -73,3 +74,5 @@ void MiniEventLog::log(LogLevel level, const char* filename, int line, const cha
     }
 
  }
+
+} // namespace MiniEventWork

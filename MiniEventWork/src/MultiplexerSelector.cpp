@@ -13,6 +13,8 @@
 #ifdef __APPLE__
 #include "../include/InheritedFromIO_Multiplexer/Kqueue_multiplexer.hpp"
 #endif
+
+namespace MiniEventWork {
 #ifdef _WIN32
 #include "../include/InheritedFromIO_Multiplexer/IOCP_multiplexer.hpp"
 #endif
@@ -106,3 +108,5 @@ std::unique_ptr<IOMultiplexer> choose_best_multiplexer() {
     std::cout << "Using best multiplexer by micro-bench: " << best_name << std::endl;
     return best;
 }
+
+} // namespace MiniEventWork

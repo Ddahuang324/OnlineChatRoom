@@ -5,7 +5,9 @@
 #include "../../MiniEventWork/include/Buffer/BufferEvent.hpp"
 #include "../../MiniEventWork/include/EVConnConnector.hpp"
 #include "common/Log.hpp"
+#include <nlohmann/json.hpp>
 #include <arpa/inet.h>
+#include <cstring>
 
 MiniEventAdapterImpl::MiniEventAdapterImpl() = default;
 
@@ -20,8 +22,11 @@ MiniEventAdapterImpl::~MiniEventAdapterImpl(){
             eventThread_->join();
         }
     }
+    if (connector_) {
+        delete connector_;
+        connector_ = nullptr;
+    }
 }
-
 
 void MiniEventAdapterImpl::init(MiniEventWork::EventBase* eventBase,ConnectionCallback connCb,MessageCallback msgCb,FileChunkCallback fileCb){
    
@@ -48,7 +53,6 @@ void MiniEventAdapterImpl::init(MiniEventWork::EventBase* eventBase,ConnectionCa
     });
 }
 
-
 void MiniEventAdapterImpl::connect(const ConnectionParams& params){
     if(!eventBase_){
         log_error("EventBase not initialized in MiniEventAdapterImpl::connect");
@@ -65,7 +69,7 @@ void MiniEventAdapterImpl::connect(const ConnectionParams& params){
     // 构建 lambda，捕获 this 和 params
     auto connectLambda = [this, params]() {
         // 创建连接器并发起连接（现在在 I/O 线程）
-        connector_ = std::make_unique<MiniEventWork::EVConnConnector>(eventBase_, params, [this](bool success, int sockfd) {
+        connector_ = new MiniEventWork::EVConnConnector(eventBase_, params, [this](bool success, int sockfd) {
             if (success) {
                 // 连接成功，创建 BufferEvent
                 bev_ = std::make_shared<MiniEventWork::BufferEvent>(eventBase_, sockfd);
@@ -115,42 +119,63 @@ void MiniEventAdapterImpl::disconnect(){
 }
 
 void MiniEventAdapterImpl::onRead() {
-    if (!bev_ || !messageCallback_) return;
-
+    if (!bev_ ) return;
     auto& inputBuffer = bev_->getInputBuffer();
     while (true) {
-        if (inputBuffer.readableBytes() < sizeof(uint32_t)) {
+        const size_t headersize = 1 + sizeof(uint32_t); // 1 byte for type, 4 bytes for length
+        if (inputBuffer.readableBytes() < headersize) {
             // 不足以读取长度前缀
             break;
         }
-        uint32_t bodylen;
+        uint8_t type;
+        memcpy(&type, inputBuffer.peek(), 1);
 
-        memcpy(&bodylen, inputBuffer.peek(), sizeof(bodylen));
+        uint32_t bodylen;
+        memcpy(&bodylen, inputBuffer.peek() + 1, sizeof(uint32_t));
         bodylen = ntohl(bodylen);
 
-        if (inputBuffer.readableBytes() < sizeof(uint32_t) + bodylen) {
+        size_t totalSize = headersize + bodylen;
+        if (inputBuffer.readableBytes() < totalSize) {
             // 不足以读取完整消息
             break;
         }
 
-        inputBuffer.retrieve(sizeof(uint32_t)); // 移动读指针，跳过长度前缀
+        SerializedMessage serialized(totalSize);
+        memcpy(serialized.data(), inputBuffer.peek(), totalSize);
+        inputBuffer.retrieve(totalSize);
 
-        SerializedMessage serialized(bodylen);
-        memcpy(serialized.data(), inputBuffer.peek(), bodylen);
-        inputBuffer.retrieve(bodylen);
-
-        MessageRecord msg;
-        if (deserializeMessage(serialized, msg)) {
-            messageCallback_(msg);
-        } else {
-            log_error("Failed to deserialize message");
-            disconnect();
-            break;
+         // 5. [设计模式] 根据类型分发到不同的处理器
+        switch (type) {
+            case 0x01: { // Message
+                if (messageCallback_) {
+                    MessageRecord msg;
+                    if (deserializeMessage(serialized, msg)) {
+                        messageCallback_(msg);
+                    } else {
+                        log_error("Failed to deserialize Message. Disconnecting.");
+                        disconnect();
+                    }
+                }
+                break;
+            }
+            case 0x02: { // FileChunk
+                if (fileCallback_) {
+                    FileMeta chunk;
+                    if (deserializeFileChunk(serialized, chunk)) {
+                        fileCallback_(chunk);
+                    } else {
+                        log_error("Failed to deserialize FileChunk. Disconnecting.");
+                        disconnect();
+                    }
+                }
+                break;
+            }
+            default:
+                log_error("Unknown message type received: %d. Disconnecting.", type);
+                disconnect();
+                break; // 必须跳出循环
         }
     }
-
-
-  
 }
 
 void MiniEventAdapterImpl::onEvent(short events) {
@@ -183,10 +208,10 @@ void MiniEventAdapterImpl::sendMessage(const MessageRecord& msg) {
         return;
     }
 
-   SerializedMessage serialized = serializedMessage(msg);
+   SerializedMessage frame = serializedMessage(msg);
    {
     std::lock_guard<std::mutex> lock(sendQueueMutex_);
-    sendQueue_.push_back(serialized);
+    sendQueue_.push_back(frame);
    }
     eventBase_->queueInLoop([this] { processSendQueue(); });
 }
@@ -200,17 +225,173 @@ void MiniEventAdapterImpl::processSendQueue() {
 
     if(bev_){
         for (const auto& serialized : toSend) {
-            uint32_t len = htonl(static_cast<uint32_t>(serialized.size()));
-            bev_->write(&len, sizeof(len));
             bev_->write(serialized.data(), serialized.size());
         }
     }else {
-        log_warn("BufferEvent not connected, cannot send messages");
+        log_warn("BufferEvent not connected, dropping %zu messages", toSend.size());
     }
  }
 
 void MiniEventAdapterImpl::sendFileChunk(const FileMeta& chunk) {
-    // Placeholder: not implemented yet
-    // For now, do nothing
+    if(!eventBase_){
+        log_error("EventBase not initialized in MiniEventAdapterImpl::sendFileChunk");
+        return;
+    }
+    SerializedMessage frame = serializedFileChunk(chunk);
+
+    {
+        std::lock_guard<std::mutex> lock(sendQueueMutex_);
+        sendQueue_.push_back(frame);
+    }
+    eventBase_->queueInLoop([this] { processSendQueue(); });
 }
 
+void MiniEventAdapterImpl::attemptReconnect() {
+    if (!reconnecting_.load()) return;
+
+    log_debug("Attempting to reconnect, retry count: %d", retryCount_);
+
+    // 尝试连接
+    connect(lastParams_);
+
+    // 注意：connect 是异步的，成功会在 connect 的回调中处理
+    // 这里不立即增加计数，失败时在下次 onEvent 中处理
+
+    // 增加退避时间
+    backoffTime_ = std::min(backoffTime_ * 2, std::chrono::milliseconds(60000)); // 最大60秒
+    retryCount_++;
+
+    // 如果超过最大重试次数，停止重连
+    if (retryCount_ >= 5) {
+        log_error("Max reconnection attempts reached, stopping reconnection");
+        reconnecting_ = false;
+        retryCount_ = 0;
+        backoffTime_ = std::chrono::milliseconds(1000);
+    }
+}
+
+SerializedMessage MiniEventAdapterImpl::serializedMessage(const MessageRecord msg){
+    nlohmann::json j;
+    j["id"] = msg.id;
+    j["roomId"] = msg.roomId;
+    j["senderId"] = msg.senderId;
+    j["localTimestamp"] = msg.localTimestamp;
+    j["serverTimestamp"] = msg.serverTimestamp;
+    j["type"] = static_cast<int>(msg.type);  // 使用int表示enum
+    j["content"] = msg.content;
+    j["state"] = static_cast<int>(msg.state);
+    if (msg.fileMeta) {
+        nlohmann::json fileJ;
+        fileJ["fileId"] = msg.fileMeta->fileId;
+        fileJ["fileName"] = msg.fileMeta->fileName;
+        fileJ["mimeType"] = msg.fileMeta->mimeType;
+        fileJ["localPath"] = msg.fileMeta->localPath;
+        fileJ["fileSize"] = msg.fileMeta->fileSize;
+        fileJ["chunkIndex"] = msg.fileMeta->chunkIndex;
+        fileJ["totalChunks"] = msg.fileMeta->totalChunks;
+        j["fileMeta"] = fileJ;
+    } else {
+        j["fileMeta"] = nullptr;
+    }
+
+    std::string jsonStr = j.dump();
+    std::vector<uint8_t> payload(jsonStr.begin(), jsonStr.end());
+    uint32_t length = htonl(static_cast<uint32_t>(payload.size()));
+    SerializedMessage result;
+    result.push_back(0x01);  // 类型字节 0x01 for Message
+    result.insert(result.end(), reinterpret_cast<uint8_t*>(&length), reinterpret_cast<uint8_t*>(&length) + sizeof(length));
+    result.insert(result.end(), payload.begin(), payload.end());
+    return result;
+}
+
+bool MiniEventAdapterImpl::deserializeMessage(const SerializedMessage& serialized, MessageRecord& msg){
+    if (serialized.size() < 1 + sizeof(uint32_t)) {
+        return false;  // 不足以读取类型和长度
+    }
+    if (serialized[0] != 0x01) {
+        return false;  // 类型不匹配
+    }
+    uint32_t length;
+    memcpy(&length, &serialized[1], sizeof(length));
+    length = ntohl(length);
+    if (serialized.size() < 1 + sizeof(uint32_t) + length) {
+        return false;  // 数据不足
+    }
+    std::string jsonStr(reinterpret_cast<const char*>(&serialized[1 + sizeof(uint32_t)]), length);
+    try {
+        nlohmann::json j = nlohmann::json::parse(jsonStr);
+        msg.id = j.at("id").get<std::string>();
+        msg.roomId = j.at("roomId").get<std::string>();
+        msg.senderId = j.at("senderId").get<std::string>();
+        msg.localTimestamp = j.at("localTimestamp").get<int64_t>();
+        msg.serverTimestamp = j.at("serverTimestamp").get<int64_t>();
+        msg.type = static_cast<MessageType>(j.at("type").get<int>());
+        msg.content = j.at("content").get<std::string>();
+        msg.state = static_cast<MessageState>(j.at("state").get<int>());
+        if (!j.at("fileMeta").is_null()) {
+            auto fileJ = j.at("fileMeta");
+            msg.fileMeta = std::make_shared<FileMeta>();
+            msg.fileMeta->fileId = fileJ.at("fileId").get<std::string>();
+            msg.fileMeta->fileName = fileJ.at("fileName").get<std::string>();
+            msg.fileMeta->mimeType = fileJ.at("mimeType").get<std::string>();
+            msg.fileMeta->localPath = fileJ.at("localPath").get<std::string>();
+            msg.fileMeta->fileSize = fileJ.at("fileSize").get<uint64_t>();
+            msg.fileMeta->chunkIndex = fileJ.at("chunkIndex").get<uint32_t>();
+            msg.fileMeta->totalChunks = fileJ.at("totalChunks").get<uint32_t>();
+        } else {
+            msg.fileMeta = nullptr;
+        }
+        return true;
+    } catch (const std::exception&) {
+        return false;
+    }
+}
+
+SerializedMessage MiniEventAdapterImpl::serializedFileChunk(const FileMeta& chunk){
+    nlohmann::json j;
+    j["fileId"] = chunk.fileId;
+    j["fileName"] = chunk.fileName;
+    j["mimeType"] = chunk.mimeType;
+    j["localPath"] = chunk.localPath;
+    j["fileSize"] = chunk.fileSize;
+    j["chunkIndex"] = chunk.chunkIndex;
+    j["totalChunks"] = chunk.totalChunks;
+
+    std::string jsonStr = j.dump();
+    std::vector<uint8_t> payload(jsonStr.begin(), jsonStr.end());
+    uint32_t length = htonl(static_cast<uint32_t>(payload.size()));
+    SerializedMessage result;
+    result.push_back(0x02);  // 类型字节 0x02 for FileChunk
+    result.insert(result.end(), reinterpret_cast<uint8_t*>(&length), reinterpret_cast<uint8_t*>(&length) + sizeof(length));
+    result.insert(result.end(), payload.begin(), payload.end());
+    return result;
+}
+
+bool MiniEventAdapterImpl::deserializeFileChunk(const SerializedMessage& serialized, FileMeta& chunk){
+    if (serialized.size() < 1 + sizeof(uint32_t)) {
+        return false;  // 不足以读取类型和长度
+    }
+    if (serialized[0] != 0x02) {
+        return false;  // 类型不匹配
+    }
+    uint32_t length;
+    memcpy(&length, &serialized[1], sizeof(length));
+    length = ntohl(length);
+    if (serialized.size() < 1 + sizeof(uint32_t) + length) {
+        return false;  // 数据不足
+    }
+    std::string jsonStr(reinterpret_cast<const char*>(&serialized[1 + sizeof(uint32_t)]), length);
+    try {
+        nlohmann::json j = nlohmann::json::parse(jsonStr);
+        chunk.fileId = j.at("fileId").get<std::string>();
+        chunk.fileName = j.at("fileName").get<std::string>();
+        chunk.mimeType = j.at("mimeType").get<std::string>();
+        chunk.localPath = j.at("localPath").get<std::string>();
+        chunk.fileSize = j.at("fileSize").get<uint64_t>();
+        chunk.chunkIndex = j.at("chunkIndex").get<uint32_t>();
+        chunk.totalChunks = j.at("totalChunks").get<uint32_t>();
+        return true;
+    } catch (const std::exception&) {
+        return false;
+    }
+}

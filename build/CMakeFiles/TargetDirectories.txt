@@ -3,6 +3,8 @@
 /Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles/rebuild_cache.dir
 /Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles/chat_app_autogen_timestamp_deps.dir
 /Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles/chat_app_autogen.dir
+/Users/dahuang/Desktop/项目/OnlineChat/build/_deps/nlohmann_json-build/CMakeFiles/edit_cache.dir
+/Users/dahuang/Desktop/项目/OnlineChat/build/_deps/nlohmann_json-build/CMakeFiles/rebuild_cache.dir
 /Users/dahuang/Desktop/项目/OnlineChat/build/src/CMakeFiles/storage_lib.dir
 /Users/dahuang/Desktop/项目/OnlineChat/build/src/CMakeFiles/net_lib.dir
 /Users/dahuang/Desktop/项目/OnlineChat/build/src/CMakeFiles/viewmodel_lib.dir

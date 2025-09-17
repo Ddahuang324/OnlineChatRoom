@@ -4,6 +4,8 @@
 
 #include <exception>
 
+namespace MiniEventWork {
+
 // --- 静态常量成员的定义 ---
 const int Channel::kNoneEvent = 0;
 const int Channel::kReadEvent = 1;
@@ -149,3 +151,5 @@ void Channel::disableAll() {
 void Channel::update() {
     loop_->updateChannel(this);
 }
+
+} // namespace MiniEventWork

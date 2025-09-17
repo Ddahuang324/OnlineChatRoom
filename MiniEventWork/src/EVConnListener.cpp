@@ -16,6 +16,8 @@ bool setNonBlock(int fd) {
 }
 } // namespace
 
+namespace MiniEventWork {
+
 EVConnListener::EVConnListener(EventBase* loop, NewConnectionCallback&& new_connection_callback)
         : loop_(loop),
             new_connection_callback_(std::move(new_connection_callback)),
@@ -128,3 +130,5 @@ void EVConnListener::handleAccept() {
         }
     }
 }
+
+} // namespace MiniEventWork

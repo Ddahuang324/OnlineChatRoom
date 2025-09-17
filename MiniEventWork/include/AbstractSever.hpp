@@ -2,6 +2,8 @@
 
 #include "../include/MessageHandler.hpp"
 
+namespace MiniEventWork {
+
 struct EventBase;
 
 class AbstractServer {
@@ -21,3 +23,5 @@ public:
 private:
     MessageHandler* msgHandler_;
 };
+
+} // namespace MiniEventWork

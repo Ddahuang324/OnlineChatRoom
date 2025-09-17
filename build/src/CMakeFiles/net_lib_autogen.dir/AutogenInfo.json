@@ -45,6 +45,8 @@
 	[
 		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/include",
 		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/src",
+		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/MiniEventWork/include",
+		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/_deps/nlohmann_json-src/include",
 		"/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1",
 		"/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include",
 		"/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include",
@@ -86,6 +88,56 @@
 	"SETTINGS_FILE" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/CMakeFiles/net_lib_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/MiniEventWork/src/Buffer.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/MiniEventWork/src/BufferEvent.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/MiniEventWork/src/Channel.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/MiniEventWork/src/ConnectionManager.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/MiniEventWork/src/EVConnConnector.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/MiniEventWork/src/EventBase.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/MiniEventWork/src/InheritedFromIO_Multiplexer/Kqueue_multiplexer.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/MiniEventWork/src/InheritedFromIO_Multiplexer/Select_multiplexer.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/MiniEventWork/src/MiniEventLog.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/MiniEventWork/src/MultiplexerSelector.cpp",
+			"MU",
+			null
+		],
 		[
 			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/src/net/MiniEventAdapterImpl.cpp",
 			"MU",

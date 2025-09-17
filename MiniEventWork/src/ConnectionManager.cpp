@@ -1,6 +1,8 @@
 #include "../include/ConnectionManager.hpp"
 #include <algorithm>
 
+namespace MiniEventWork {
+
 ConnectionManager& ConnectionManager::getInstance() {
     static ConnectionManager instance;
     return instance;
@@ -61,3 +63,5 @@ bool ConnectionManager::hasRegisteredConnection(int fd) const {
     std::lock_guard<std::mutex> lg(_reg_mutex);
     return _registered.find(fd) != _registered.end();
 }
+
+} // namespace MiniEventWork

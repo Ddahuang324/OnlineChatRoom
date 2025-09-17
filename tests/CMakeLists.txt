@@ -28,6 +28,8 @@ target_include_directories(unit_tests PRIVATE
     .
     mocks
     support
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}/include
 )
 
 target_link_libraries(unit_tests PRIVATE

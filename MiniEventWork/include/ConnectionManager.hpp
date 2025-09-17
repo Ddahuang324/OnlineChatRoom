@@ -4,6 +4,8 @@
 #include <mutex>
 #include <unordered_set>
 
+namespace MiniEventWork {
+
 class ConnectionManager {
 
 public:
@@ -55,3 +57,5 @@ private:
     std::unordered_set<int> _registered;
 
 };
+
+} // namespace MiniEventWork

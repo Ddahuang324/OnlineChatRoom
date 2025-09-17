@@ -51,7 +51,7 @@ private:
 
 
     std::shared_ptr<MiniEventWork::BufferEvent> bev_{nullptr}; // 使用 shared_ptr 管理 BufferEvent
-    std::unique_ptr<MiniEventWork::EVConnConnector> connector_;
+    MiniEventWork::EVConnConnector* connector_{nullptr};
 
     // Reconnection related
     std::atomic<bool> reconnecting_{false};
@@ -68,5 +68,6 @@ private:
 
     SerializedMessage serializedMessage(const MessageRecord msg); // 需要实现序列化函数
     bool deserializeMessage(const SerializedMessage& serialized, MessageRecord& msg); // 反序列化函数
-
+    SerializedMessage serializedFileChunk(const FileMeta& chunk);
+    bool deserializeFileChunk(const SerializedMessage& serialized, FileMeta& chunk);
 };

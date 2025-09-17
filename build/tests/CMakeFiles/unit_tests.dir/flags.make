@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/dahuang/Desktop/项目/OnlineChat/build/tests/unit_tests_autogen/include -I/Users/dahuang/Desktop/项目/OnlineChat/tests/. -I/Users/dahuang/Desktop/项目/OnlineChat/tests/mocks -I/Users/dahuang/Desktop/项目/OnlineChat/tests/support -I/Users/dahuang/Desktop/项目/OnlineChat/src/../include -I/Users/dahuang/Desktop/项目/OnlineChat/src/. -isystem /opt/homebrew/opt/googletest/include -isystem /Library/Frameworks/Mono.framework/Headers
+CXX_INCLUDES = -I/Users/dahuang/Desktop/项目/OnlineChat/build/tests/unit_tests_autogen/include -I/Users/dahuang/Desktop/项目/OnlineChat/tests/. -I/Users/dahuang/Desktop/项目/OnlineChat/tests/mocks -I/Users/dahuang/Desktop/项目/OnlineChat/tests/support -I/Users/dahuang/Desktop/项目/OnlineChat/src -I/Users/dahuang/Desktop/项目/OnlineChat/include -I/Users/dahuang/Desktop/项目/OnlineChat/src/../include -I/Users/dahuang/Desktop/项目/OnlineChat/src/. -I/Users/dahuang/Desktop/项目/OnlineChat/MiniEventWork/include -I/Users/dahuang/Desktop/项目/OnlineChat/build/_deps/nlohmann_json-src/include -isystem /opt/homebrew/opt/googletest/include -isystem /Library/Frameworks/Mono.framework/Headers
 
 CXX_FLAGSarm64 = -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -Wall -Wextra -Wpedantic
 

@@ -452,6 +452,246 @@ i18n_lib_autogen/fast:
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/i18n_lib_autogen.dir/build.make src/CMakeFiles/i18n_lib_autogen.dir/build
 .PHONY : i18n_lib_autogen/fast
 
+__/MiniEventWork/src/Buffer.o: __/MiniEventWork/src/Buffer.cpp.o
+.PHONY : __/MiniEventWork/src/Buffer.o
+
+# target to build an object file
+__/MiniEventWork/src/Buffer.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/Buffer.cpp.o
+.PHONY : __/MiniEventWork/src/Buffer.cpp.o
+
+__/MiniEventWork/src/Buffer.i: __/MiniEventWork/src/Buffer.cpp.i
+.PHONY : __/MiniEventWork/src/Buffer.i
+
+# target to preprocess a source file
+__/MiniEventWork/src/Buffer.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/Buffer.cpp.i
+.PHONY : __/MiniEventWork/src/Buffer.cpp.i
+
+__/MiniEventWork/src/Buffer.s: __/MiniEventWork/src/Buffer.cpp.s
+.PHONY : __/MiniEventWork/src/Buffer.s
+
+# target to generate assembly for a file
+__/MiniEventWork/src/Buffer.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/Buffer.cpp.s
+.PHONY : __/MiniEventWork/src/Buffer.cpp.s
+
+__/MiniEventWork/src/BufferEvent.o: __/MiniEventWork/src/BufferEvent.cpp.o
+.PHONY : __/MiniEventWork/src/BufferEvent.o
+
+# target to build an object file
+__/MiniEventWork/src/BufferEvent.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/BufferEvent.cpp.o
+.PHONY : __/MiniEventWork/src/BufferEvent.cpp.o
+
+__/MiniEventWork/src/BufferEvent.i: __/MiniEventWork/src/BufferEvent.cpp.i
+.PHONY : __/MiniEventWork/src/BufferEvent.i
+
+# target to preprocess a source file
+__/MiniEventWork/src/BufferEvent.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/BufferEvent.cpp.i
+.PHONY : __/MiniEventWork/src/BufferEvent.cpp.i
+
+__/MiniEventWork/src/BufferEvent.s: __/MiniEventWork/src/BufferEvent.cpp.s
+.PHONY : __/MiniEventWork/src/BufferEvent.s
+
+# target to generate assembly for a file
+__/MiniEventWork/src/BufferEvent.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/BufferEvent.cpp.s
+.PHONY : __/MiniEventWork/src/BufferEvent.cpp.s
+
+__/MiniEventWork/src/Channel.o: __/MiniEventWork/src/Channel.cpp.o
+.PHONY : __/MiniEventWork/src/Channel.o
+
+# target to build an object file
+__/MiniEventWork/src/Channel.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/Channel.cpp.o
+.PHONY : __/MiniEventWork/src/Channel.cpp.o
+
+__/MiniEventWork/src/Channel.i: __/MiniEventWork/src/Channel.cpp.i
+.PHONY : __/MiniEventWork/src/Channel.i
+
+# target to preprocess a source file
+__/MiniEventWork/src/Channel.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/Channel.cpp.i
+.PHONY : __/MiniEventWork/src/Channel.cpp.i
+
+__/MiniEventWork/src/Channel.s: __/MiniEventWork/src/Channel.cpp.s
+.PHONY : __/MiniEventWork/src/Channel.s
+
+# target to generate assembly for a file
+__/MiniEventWork/src/Channel.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/Channel.cpp.s
+.PHONY : __/MiniEventWork/src/Channel.cpp.s
+
+__/MiniEventWork/src/ConnectionManager.o: __/MiniEventWork/src/ConnectionManager.cpp.o
+.PHONY : __/MiniEventWork/src/ConnectionManager.o
+
+# target to build an object file
+__/MiniEventWork/src/ConnectionManager.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/ConnectionManager.cpp.o
+.PHONY : __/MiniEventWork/src/ConnectionManager.cpp.o
+
+__/MiniEventWork/src/ConnectionManager.i: __/MiniEventWork/src/ConnectionManager.cpp.i
+.PHONY : __/MiniEventWork/src/ConnectionManager.i
+
+# target to preprocess a source file
+__/MiniEventWork/src/ConnectionManager.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/ConnectionManager.cpp.i
+.PHONY : __/MiniEventWork/src/ConnectionManager.cpp.i
+
+__/MiniEventWork/src/ConnectionManager.s: __/MiniEventWork/src/ConnectionManager.cpp.s
+.PHONY : __/MiniEventWork/src/ConnectionManager.s
+
+# target to generate assembly for a file
+__/MiniEventWork/src/ConnectionManager.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/ConnectionManager.cpp.s
+.PHONY : __/MiniEventWork/src/ConnectionManager.cpp.s
+
+__/MiniEventWork/src/EVConnConnector.o: __/MiniEventWork/src/EVConnConnector.cpp.o
+.PHONY : __/MiniEventWork/src/EVConnConnector.o
+
+# target to build an object file
+__/MiniEventWork/src/EVConnConnector.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/EVConnConnector.cpp.o
+.PHONY : __/MiniEventWork/src/EVConnConnector.cpp.o
+
+__/MiniEventWork/src/EVConnConnector.i: __/MiniEventWork/src/EVConnConnector.cpp.i
+.PHONY : __/MiniEventWork/src/EVConnConnector.i
+
+# target to preprocess a source file
+__/MiniEventWork/src/EVConnConnector.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/EVConnConnector.cpp.i
+.PHONY : __/MiniEventWork/src/EVConnConnector.cpp.i
+
+__/MiniEventWork/src/EVConnConnector.s: __/MiniEventWork/src/EVConnConnector.cpp.s
+.PHONY : __/MiniEventWork/src/EVConnConnector.s
+
+# target to generate assembly for a file
+__/MiniEventWork/src/EVConnConnector.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/EVConnConnector.cpp.s
+.PHONY : __/MiniEventWork/src/EVConnConnector.cpp.s
+
+__/MiniEventWork/src/EventBase.o: __/MiniEventWork/src/EventBase.cpp.o
+.PHONY : __/MiniEventWork/src/EventBase.o
+
+# target to build an object file
+__/MiniEventWork/src/EventBase.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/EventBase.cpp.o
+.PHONY : __/MiniEventWork/src/EventBase.cpp.o
+
+__/MiniEventWork/src/EventBase.i: __/MiniEventWork/src/EventBase.cpp.i
+.PHONY : __/MiniEventWork/src/EventBase.i
+
+# target to preprocess a source file
+__/MiniEventWork/src/EventBase.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/EventBase.cpp.i
+.PHONY : __/MiniEventWork/src/EventBase.cpp.i
+
+__/MiniEventWork/src/EventBase.s: __/MiniEventWork/src/EventBase.cpp.s
+.PHONY : __/MiniEventWork/src/EventBase.s
+
+# target to generate assembly for a file
+__/MiniEventWork/src/EventBase.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/EventBase.cpp.s
+.PHONY : __/MiniEventWork/src/EventBase.cpp.s
+
+__/MiniEventWork/src/InheritedFromIO_Multiplexer/Kqueue_multiplexer.o: __/MiniEventWork/src/InheritedFromIO_Multiplexer/Kqueue_multiplexer.cpp.o
+.PHONY : __/MiniEventWork/src/InheritedFromIO_Multiplexer/Kqueue_multiplexer.o
+
+# target to build an object file
+__/MiniEventWork/src/InheritedFromIO_Multiplexer/Kqueue_multiplexer.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/InheritedFromIO_Multiplexer/Kqueue_multiplexer.cpp.o
+.PHONY : __/MiniEventWork/src/InheritedFromIO_Multiplexer/Kqueue_multiplexer.cpp.o
+
+__/MiniEventWork/src/InheritedFromIO_Multiplexer/Kqueue_multiplexer.i: __/MiniEventWork/src/InheritedFromIO_Multiplexer/Kqueue_multiplexer.cpp.i
+.PHONY : __/MiniEventWork/src/InheritedFromIO_Multiplexer/Kqueue_multiplexer.i
+
+# target to preprocess a source file
+__/MiniEventWork/src/InheritedFromIO_Multiplexer/Kqueue_multiplexer.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/InheritedFromIO_Multiplexer/Kqueue_multiplexer.cpp.i
+.PHONY : __/MiniEventWork/src/InheritedFromIO_Multiplexer/Kqueue_multiplexer.cpp.i
+
+__/MiniEventWork/src/InheritedFromIO_Multiplexer/Kqueue_multiplexer.s: __/MiniEventWork/src/InheritedFromIO_Multiplexer/Kqueue_multiplexer.cpp.s
+.PHONY : __/MiniEventWork/src/InheritedFromIO_Multiplexer/Kqueue_multiplexer.s
+
+# target to generate assembly for a file
+__/MiniEventWork/src/InheritedFromIO_Multiplexer/Kqueue_multiplexer.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/InheritedFromIO_Multiplexer/Kqueue_multiplexer.cpp.s
+.PHONY : __/MiniEventWork/src/InheritedFromIO_Multiplexer/Kqueue_multiplexer.cpp.s
+
+__/MiniEventWork/src/InheritedFromIO_Multiplexer/Select_multiplexer.o: __/MiniEventWork/src/InheritedFromIO_Multiplexer/Select_multiplexer.cpp.o
+.PHONY : __/MiniEventWork/src/InheritedFromIO_Multiplexer/Select_multiplexer.o
+
+# target to build an object file
+__/MiniEventWork/src/InheritedFromIO_Multiplexer/Select_multiplexer.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/InheritedFromIO_Multiplexer/Select_multiplexer.cpp.o
+.PHONY : __/MiniEventWork/src/InheritedFromIO_Multiplexer/Select_multiplexer.cpp.o
+
+__/MiniEventWork/src/InheritedFromIO_Multiplexer/Select_multiplexer.i: __/MiniEventWork/src/InheritedFromIO_Multiplexer/Select_multiplexer.cpp.i
+.PHONY : __/MiniEventWork/src/InheritedFromIO_Multiplexer/Select_multiplexer.i
+
+# target to preprocess a source file
+__/MiniEventWork/src/InheritedFromIO_Multiplexer/Select_multiplexer.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/InheritedFromIO_Multiplexer/Select_multiplexer.cpp.i
+.PHONY : __/MiniEventWork/src/InheritedFromIO_Multiplexer/Select_multiplexer.cpp.i
+
+__/MiniEventWork/src/InheritedFromIO_Multiplexer/Select_multiplexer.s: __/MiniEventWork/src/InheritedFromIO_Multiplexer/Select_multiplexer.cpp.s
+.PHONY : __/MiniEventWork/src/InheritedFromIO_Multiplexer/Select_multiplexer.s
+
+# target to generate assembly for a file
+__/MiniEventWork/src/InheritedFromIO_Multiplexer/Select_multiplexer.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/InheritedFromIO_Multiplexer/Select_multiplexer.cpp.s
+.PHONY : __/MiniEventWork/src/InheritedFromIO_Multiplexer/Select_multiplexer.cpp.s
+
+__/MiniEventWork/src/MiniEventLog.o: __/MiniEventWork/src/MiniEventLog.cpp.o
+.PHONY : __/MiniEventWork/src/MiniEventLog.o
+
+# target to build an object file
+__/MiniEventWork/src/MiniEventLog.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/MiniEventLog.cpp.o
+.PHONY : __/MiniEventWork/src/MiniEventLog.cpp.o
+
+__/MiniEventWork/src/MiniEventLog.i: __/MiniEventWork/src/MiniEventLog.cpp.i
+.PHONY : __/MiniEventWork/src/MiniEventLog.i
+
+# target to preprocess a source file
+__/MiniEventWork/src/MiniEventLog.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/MiniEventLog.cpp.i
+.PHONY : __/MiniEventWork/src/MiniEventLog.cpp.i
+
+__/MiniEventWork/src/MiniEventLog.s: __/MiniEventWork/src/MiniEventLog.cpp.s
+.PHONY : __/MiniEventWork/src/MiniEventLog.s
+
+# target to generate assembly for a file
+__/MiniEventWork/src/MiniEventLog.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/MiniEventLog.cpp.s
+.PHONY : __/MiniEventWork/src/MiniEventLog.cpp.s
+
+__/MiniEventWork/src/MultiplexerSelector.o: __/MiniEventWork/src/MultiplexerSelector.cpp.o
+.PHONY : __/MiniEventWork/src/MultiplexerSelector.o
+
+# target to build an object file
+__/MiniEventWork/src/MultiplexerSelector.cpp.o:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/MultiplexerSelector.cpp.o
+.PHONY : __/MiniEventWork/src/MultiplexerSelector.cpp.o
+
+__/MiniEventWork/src/MultiplexerSelector.i: __/MiniEventWork/src/MultiplexerSelector.cpp.i
+.PHONY : __/MiniEventWork/src/MultiplexerSelector.i
+
+# target to preprocess a source file
+__/MiniEventWork/src/MultiplexerSelector.cpp.i:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/MultiplexerSelector.cpp.i
+.PHONY : __/MiniEventWork/src/MultiplexerSelector.cpp.i
+
+__/MiniEventWork/src/MultiplexerSelector.s: __/MiniEventWork/src/MultiplexerSelector.cpp.s
+.PHONY : __/MiniEventWork/src/MultiplexerSelector.s
+
+# target to generate assembly for a file
+__/MiniEventWork/src/MultiplexerSelector.cpp.s:
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/net_lib.dir/build.make src/CMakeFiles/net_lib.dir/__/MiniEventWork/src/MultiplexerSelector.cpp.s
+.PHONY : __/MiniEventWork/src/MultiplexerSelector.cpp.s
+
 common/Log.o: common/Log.cpp.o
 .PHONY : common/Log.o
 
@@ -940,6 +1180,36 @@ help:
 	@echo "... transfer_lib"
 	@echo "... util_lib"
 	@echo "... viewmodel_lib"
+	@echo "... __/MiniEventWork/src/Buffer.o"
+	@echo "... __/MiniEventWork/src/Buffer.i"
+	@echo "... __/MiniEventWork/src/Buffer.s"
+	@echo "... __/MiniEventWork/src/BufferEvent.o"
+	@echo "... __/MiniEventWork/src/BufferEvent.i"
+	@echo "... __/MiniEventWork/src/BufferEvent.s"
+	@echo "... __/MiniEventWork/src/Channel.o"
+	@echo "... __/MiniEventWork/src/Channel.i"
+	@echo "... __/MiniEventWork/src/Channel.s"
+	@echo "... __/MiniEventWork/src/ConnectionManager.o"
+	@echo "... __/MiniEventWork/src/ConnectionManager.i"
+	@echo "... __/MiniEventWork/src/ConnectionManager.s"
+	@echo "... __/MiniEventWork/src/EVConnConnector.o"
+	@echo "... __/MiniEventWork/src/EVConnConnector.i"
+	@echo "... __/MiniEventWork/src/EVConnConnector.s"
+	@echo "... __/MiniEventWork/src/EventBase.o"
+	@echo "... __/MiniEventWork/src/EventBase.i"
+	@echo "... __/MiniEventWork/src/EventBase.s"
+	@echo "... __/MiniEventWork/src/InheritedFromIO_Multiplexer/Kqueue_multiplexer.o"
+	@echo "... __/MiniEventWork/src/InheritedFromIO_Multiplexer/Kqueue_multiplexer.i"
+	@echo "... __/MiniEventWork/src/InheritedFromIO_Multiplexer/Kqueue_multiplexer.s"
+	@echo "... __/MiniEventWork/src/InheritedFromIO_Multiplexer/Select_multiplexer.o"
+	@echo "... __/MiniEventWork/src/InheritedFromIO_Multiplexer/Select_multiplexer.i"
+	@echo "... __/MiniEventWork/src/InheritedFromIO_Multiplexer/Select_multiplexer.s"
+	@echo "... __/MiniEventWork/src/MiniEventLog.o"
+	@echo "... __/MiniEventWork/src/MiniEventLog.i"
+	@echo "... __/MiniEventWork/src/MiniEventLog.s"
+	@echo "... __/MiniEventWork/src/MultiplexerSelector.o"
+	@echo "... __/MiniEventWork/src/MultiplexerSelector.i"
+	@echo "... __/MiniEventWork/src/MultiplexerSelector.s"
 	@echo "... common/Log.o"
 	@echo "... common/Log.i"
 	@echo "... common/Log.s"

@@ -97,6 +97,7 @@
         "flat_set": "cpp",
         "generator": "cpp",
         "stacktrace": "cpp",
-        "cerrno": "cpp"
+        "cerrno": "cpp",
+        "source_location": "cpp"
     }
 }

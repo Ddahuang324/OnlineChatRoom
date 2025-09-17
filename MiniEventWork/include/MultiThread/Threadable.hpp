@@ -1,5 +1,7 @@
 #include <pthread.h>
 
+namespace MiniEventWork {
+
 class Threadable {
 
 public:
@@ -20,3 +22,5 @@ private:
     pthread_t threadId_;
     bool isRunning_;
 };
+
+} // namespace MiniEventWork

@@ -8,6 +8,8 @@
 #include <unistd.h>
 #include <fcntl.h>
 
+namespace MiniEventWork {
+
 
 
 SelectMultiplexer::SelectMultiplexer(): max_fd_(-1){
@@ -211,4 +213,4 @@ int SelectMultiplexer::dispatch(int timeout_ms, std::vector<Channel*>& active_ch
 
 
 
-
+} // namespace MiniEventWork

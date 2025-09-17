@@ -1,5 +1,7 @@
 #pragma once 
 
+namespace MiniEventWork {
+
 class AbstractServer;
 
 class MessageHandler {
@@ -11,4 +13,6 @@ public:
     virtual void handleMessage(void* arg) = 0  ;
 
 };
+
+} // namespace MiniEventWork
 

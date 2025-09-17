@@ -21,9 +21,19 @@ target_include_directories(storage_lib PUBLIC ../include .)  # Add current direc
 add_library(net_lib
     net/MiniEventAdapterImpl.cpp
     net/MiniEventAdapterImpl.h
+    ../MiniEventWork/src/EVConnConnector.cpp
+    ../MiniEventWork/src/BufferEvent.cpp
+    ../MiniEventWork/src/Channel.cpp
+    ../MiniEventWork/src/EventBase.cpp
+    ../MiniEventWork/src/MiniEventLog.cpp
+    ../MiniEventWork/src/Buffer.cpp
+    ../MiniEventWork/src/MultiplexerSelector.cpp
+    ../MiniEventWork/src/ConnectionManager.cpp
+    ../MiniEventWork/src/InheritedFromIO_Multiplexer/Select_multiplexer.cpp
+    ../MiniEventWork/src/InheritedFromIO_Multiplexer/Kqueue_multiplexer.cpp
 )
-target_link_libraries(net_lib PUBLIC model_lib)
-target_include_directories(net_lib PUBLIC ../include .)  # Add current directory to include path
+target_link_libraries(net_lib PUBLIC model_lib nlohmann_json::nlohmann_json)
+target_include_directories(net_lib PUBLIC ../include . ${CMAKE_SOURCE_DIR}/MiniEventWork/include)
 
 add_library(viewmodel_lib
     viewmodel/LoginViewModel.cpp

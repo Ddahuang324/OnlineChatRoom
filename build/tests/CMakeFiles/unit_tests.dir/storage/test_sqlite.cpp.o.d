@@ -861,9 +861,9 @@ tests/CMakeFiles/unit_tests.dir/storage/test_sqlite.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/thread \
-  /Users/dahuang/Desktop/项目/OnlineChat/src/./storage/SQLiteStorage.hpp \
-  /Users/dahuang/Desktop/项目/OnlineChat/src/./storage/../../include/storage/Storage.hpp \
-  /Users/dahuang/Desktop/项目/OnlineChat/src/../include/model/Entities.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/storage/SQLiteStorage.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/storage/../../include/storage/Storage.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/include/model/Entities.hpp \
   /Library/Frameworks/Mono.framework/Headers/sqlite3.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/queue \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/deque \

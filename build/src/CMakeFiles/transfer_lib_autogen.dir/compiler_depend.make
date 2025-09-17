@@ -18,6 +18,36 @@ src/transfer_lib_autogen/timestamp: /Users/dahuang/Desktop/项目/OnlineChat/inc
   /Users/dahuang/Desktop/项目/OnlineChat/src/CMakeLists.txt \
   /Users/dahuang/Desktop/项目/OnlineChat/src/transfer/FileTransferManager.cpp \
   /Users/dahuang/Desktop/项目/OnlineChat/src/transfer/FileTransferManager.h \
+  /opt/homebrew/bin/cmake \
+  /Users/dahuang/Desktop/项目/OnlineChat/include/model/Entities.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/include/model/Room.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/CMakeLists.txt \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/transfer/FileTransferManager.cpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/transfer/FileTransferManager.h \
+  /opt/homebrew/bin/cmake \
+  /Users/dahuang/Desktop/项目/OnlineChat/include/model/Entities.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/include/model/Room.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/CMakeLists.txt \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/transfer/FileTransferManager.cpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/transfer/FileTransferManager.h \
+  /opt/homebrew/bin/cmake \
+  /Users/dahuang/Desktop/项目/OnlineChat/include/model/Entities.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/include/model/Room.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/CMakeLists.txt \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/transfer/FileTransferManager.cpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/transfer/FileTransferManager.h \
+  /opt/homebrew/bin/cmake \
+  /Users/dahuang/Desktop/项目/OnlineChat/include/model/Entities.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/include/model/Room.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/CMakeLists.txt \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/transfer/FileTransferManager.cpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/transfer/FileTransferManager.h \
+  /opt/homebrew/bin/cmake \
+  /Users/dahuang/Desktop/项目/OnlineChat/include/model/Entities.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/include/model/Room.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/CMakeLists.txt \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/transfer/FileTransferManager.cpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/transfer/FileTransferManager.h \
   /opt/homebrew/bin/cmake
 
 

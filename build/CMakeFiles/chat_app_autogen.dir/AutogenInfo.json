@@ -34,6 +34,9 @@
 		"/opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake",
 		"/opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake",
 		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/cmake/Options.cmake",
+		"/opt/homebrew/share/cmake/Modules/FetchContent.cmake",
+		"/opt/homebrew/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake",
+		"/opt/homebrew/share/cmake/Modules/FetchContent/CMakeLists.cmake.in",
 		"/Users/dahuang/Qt/6.9.1/macos/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
 		"/Users/dahuang/Qt/6.9.1/macos/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
 		"/Users/dahuang/Qt/6.9.1/macos/lib/cmake/Qt6/Qt6Config.cmake",
@@ -1013,6 +1016,8 @@
 	[
 		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/include",
 		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/src",
+		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/MiniEventWork/include",
+		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/_deps/nlohmann_json-src/include",
 		"/Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers",
 		"/Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework",
 		"/Users/dahuang/Qt/6.9.1/macos/mkspecs/macx-clang",

@@ -1,5 +1,7 @@
 #include "../include/MultiThread/Threadable.hpp"
 
+namespace MiniEventWork {
+
 Threadable::Threadable() : threadId_(0), isRunning_(false) {
 
 }
@@ -40,4 +42,6 @@ void* Threadable::thread_proxy(void* args) {
     thread->run();
     return nullptr;
 }
+
+} // namespace MiniEventWork
 

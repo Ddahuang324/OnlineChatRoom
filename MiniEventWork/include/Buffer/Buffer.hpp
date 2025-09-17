@@ -6,7 +6,7 @@
 #include <cassert>
 #include <cstring>
 
-
+namespace MiniEventWork {
 
 class Buffer {
 public:
@@ -122,4 +122,6 @@ private:
     size_t readIndex_;
     size_t writeIndex_;
 };
+
+} // namespace MiniEventWork
 

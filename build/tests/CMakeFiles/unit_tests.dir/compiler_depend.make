@@ -6791,12 +6791,14 @@ tests/CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.o: /Users/dahuan
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/alloca.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/arm/_limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/arm/_mcontext.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/arm/_param.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/arm/_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/arm/arch.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/arm/endian.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/arm/limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/arm/signal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/arm/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/arpa/inet.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__algorithm/all_of.h \
@@ -7068,6 +7070,22 @@ tests/CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.o: /Users/dahuan
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__debug \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__debug_utils/randomize_range.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__errc \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/file_status.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/file_time_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/file_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/operations.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/path.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/perms.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/space_info.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__format/concepts.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__format/enable_insertable.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__format/format_error.h \
@@ -7186,6 +7204,19 @@ tests/CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.o: /Users/dahuan
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__memory_resource/polymorphic_allocator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__mutex_base \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__node_handle \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/accumulate.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/exclusive_scan.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/gcd_lcm.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/inclusive_scan.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/inner_product.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/iota.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/midpoint.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/partial_sum.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/reduce.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/transform_exclusive_scan.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/transform_inclusive_scan.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/transform_reduce.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/is_valid.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/log2.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/uniform_int_distribution.h \
@@ -7379,6 +7410,7 @@ tests/CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.o: /Users/dahuan
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cerrno \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/chrono \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/climits \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/clocale \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cmath \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/compare \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/concepts \
@@ -7394,11 +7426,15 @@ tests/CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.o: /Users/dahuan
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cwchar \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cwctype \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cxxabi.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/deque \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/exception \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/float.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/forward_list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/functional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/initializer_list \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/iomanip \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/ios \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/iosfwd \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/iostream \
@@ -7413,8 +7449,10 @@ tests/CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.o: /Users/dahuan
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/memory \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/mutex \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/new \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/numeric \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/optional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/ostream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/queue \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/ratio \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/set \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/span \
@@ -7429,11 +7467,13 @@ tests/CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.o: /Users/dahuan
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/string.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/string_view \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/system_error \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/thread \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/tuple \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/type_traits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/typeinfo \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/unordered_map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/utility \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/valarray \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/variant \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/version \
@@ -7450,6 +7490,7 @@ tests/CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.o: /Users/dahuan
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/mach/arm/_structs.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/mach/machine/_structs.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/machine/_mcontext.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/machine/_param.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/machine/_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/machine/endian.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/machine/limits.h \
@@ -7458,6 +7499,9 @@ tests/CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.o: /Users/dahuan
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/malloc/_malloc.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/malloc/_malloc_type.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/math.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/net/net_kev.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/netinet/in.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/netinet6/in6.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/nl_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/pthread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/pthread/pthread_impl.h \
@@ -7515,6 +7559,7 @@ tests/CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.o: /Users/dahuan
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_int64_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_int8_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_intptr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_iovec_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_key_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_mach_port_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_mbstate_t.h \
@@ -7527,10 +7572,12 @@ tests/CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.o: /Users/dahuan
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_rsize_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_rune_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_s_ifmt.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_sa_family_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_seek_set.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_sigaltstack.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_sigset_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_size_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_socklen_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_ssize_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_suseconds_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_time_t.h \
@@ -7553,11 +7600,13 @@ tests/CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.o: /Users/dahuan
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_wint_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/appleapiopts.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/cdefs.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/constrained_ctypes.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/qos.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/resource.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/select.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/signal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/socket.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/stat.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/syslimits.h \
@@ -7584,6 +7633,56 @@ tests/CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.o: /Users/dahuan
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
+  _deps/nlohmann_json-src/include/nlohmann/adl_serializer.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/byte_container_with_subtype.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/abi_macros.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/conversions/from_json.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/conversions/to_chars.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/conversions/to_json.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/exceptions.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/hash.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/input/binary_reader.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/input/input_adapters.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/input/json_sax.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/input/lexer.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/input/parser.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/input/position_t.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/iterators/internal_iterator.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/iterators/iter_impl.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/iterators/iteration_proxy.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/iterators/iterator_traits.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/iterators/json_reverse_iterator.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/iterators/primitive_iterator.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/json_custom_base_class.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/json_pointer.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/json_ref.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/macro_scope.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/macro_unscope.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/meta/call_std/begin.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/meta/call_std/end.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/meta/cpp_future.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/meta/detected.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/meta/identity_tag.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/meta/is_sax.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/meta/std_fs.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/meta/type_traits.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/meta/void_t.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/output/binary_writer.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/output/output_adapters.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/output/serializer.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/string_concat.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/string_escape.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/detail/value_t.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/json.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/json_fwd.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/ordered_map.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/thirdparty/hedley/hedley.hpp \
+  _deps/nlohmann_json-src/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/include/model/Entities.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/include/net/MiniEventAdapter.h \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/common/Log.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/include/model/Entities.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/net/MiniEventAdapterImpl.h \
   /opt/homebrew/opt/googletest/include/gtest/gtest-assertion-result.h \
   /opt/homebrew/opt/googletest/include/gtest/gtest-death-test.h \
   /opt/homebrew/opt/googletest/include/gtest/gtest-matchers.h \
@@ -11012,13 +11111,109 @@ tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o: /Users/dahuang/Deskt
 
 /Library/Frameworks/Mono.framework/Headers/sqlite3.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/shared_mutex:
+
+/Users/dahuang/Desktop/项目/OnlineChat/src/net/MiniEventAdapterImpl.h:
+
+/Users/dahuang/Desktop/项目/OnlineChat/include/net/MiniEventAdapter.h:
+
+_deps/nlohmann_json-src/include/nlohmann/thirdparty/hedley/hedley_undef.hpp:
+
+_deps/nlohmann_json-src/include/nlohmann/thirdparty/hedley/hedley.hpp:
+
+_deps/nlohmann_json-src/include/nlohmann/ordered_map.hpp:
+
+_deps/nlohmann_json-src/include/nlohmann/json_fwd.hpp:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/value_t.hpp:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/output/output_adapters.hpp:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/meta/type_traits.hpp:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/meta/std_fs.hpp:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/meta/detected.hpp:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/meta/cpp_future.hpp:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/macro_unscope.hpp:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/json_ref.hpp:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/macro_scope.hpp:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/json_pointer.hpp:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/json_custom_base_class.hpp:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/iterators/primitive_iterator.hpp:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/iterators/iterator_traits.hpp:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/iterators/iter_impl.hpp:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/input/position_t.hpp:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/input/lexer.hpp:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/input/json_sax.hpp:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/input/input_adapters.hpp:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/input/binary_reader.hpp:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/hash.hpp:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/exceptions.hpp:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/conversions/from_json.hpp:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/abi_macros.hpp:
+
+_deps/nlohmann_json-src/include/nlohmann/adl_serializer.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/constrained_ctypes.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_sa_family_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/net/net_kev.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/machine/_param.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/thread:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/shared_mutex:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/netinet/in.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/iomanip:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/forward_list:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/filesystem:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/clocale:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/transform_reduce.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/transform_inclusive_scan.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/partial_sum.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/midpoint.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/iota.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/inner_product.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/inclusive_scan.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/gcd_lcm.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/exclusive_scan.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/accumulate.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h:
 
@@ -11037,6 +11232,10 @@ tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o: /Users/dahuang/Deskt
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/directory_entry.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/copy_options.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/arpa/inet.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/arm/_param.h:
 
 /opt/homebrew/opt/googletest/include/gtest/internal/gtest-port.h:
 
@@ -11061,6 +11260,8 @@ tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o: /Users/dahuang/Deskt
 /opt/homebrew/opt/googletest/include/gtest/gtest-assertion-result.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/iterators/internal_iterator.hpp:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h:
 
@@ -11089,6 +11290,8 @@ tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o: /Users/dahuang/Deskt
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/wchar.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/types.h:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/output/serializer.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/syslimits.h:
 
@@ -11121,6 +11324,8 @@ tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o: /Users/dahuang/Deskt
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cmath:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_pid_t.h:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/string_escape.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_nlink_t.h:
 
@@ -11392,6 +11597,8 @@ tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o: /Users/dahuang/Deskt
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__utility/rel_ops.h:
 
+_deps/nlohmann_json-src/include/nlohmann/detail/iterators/json_reverse_iterator.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__utility/priority_tag.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__utility/piecewise_construct.h:
@@ -11466,6 +11673,8 @@ tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o: /Users/dahuang/Deskt
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__type_traits/lazy.h:
 
+_deps/nlohmann_json-src/include/nlohmann/detail/conversions/to_chars.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__type_traits/is_trivially_destructible.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__type_traits/is_trivially_copy_constructible.h:
@@ -11479,6 +11688,8 @@ tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o: /Users/dahuang/Deskt
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__type_traits/is_trivial.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__type_traits/is_signed_integer.h:
+
+_deps/nlohmann_json-src/include/nlohmann/byte_container_with_subtype.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__type_traits/is_referenceable.h:
 
@@ -11549,6 +11760,8 @@ tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o: /Users/dahuang/Deskt
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__type_traits/is_copy_constructible.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__type_traits/is_convertible.h:
+
+_deps/nlohmann_json-src/include/nlohmann/json.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__type_traits/is_constructible.h:
 
@@ -11648,6 +11861,8 @@ tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o: /Users/dahuang/Deskt
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__tuple_dir/pair_like.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/valarray:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__tuple_dir/make_tuple_types.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_seek_set.h:
@@ -11668,6 +11883,8 @@ tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o: /Users/dahuang/Deskt
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__split_buffer:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/netinet6/in6.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__ranges/view_interface.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__tuple_dir/tuple_like_ext.h:
@@ -11679,6 +11896,8 @@ tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o: /Users/dahuang/Deskt
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__format/enable_insertable.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_socklen_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__ranges/dangling.h:
 
@@ -11794,6 +12013,8 @@ tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o: /Users/dahuang/Deskt
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/numeric:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/deque:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__iterator/mergeable.h:
@@ -11860,6 +12081,8 @@ tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o: /Users/dahuang/Deskt
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/_xlocale.h:
 
+_deps/nlohmann_json-src/include/nlohmann/detail/meta/call_std/end.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__concepts/semiregular.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__functional/hash.h:
@@ -11878,9 +12101,13 @@ tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o: /Users/dahuang/Deskt
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__algorithm/ranges_binary_search.h:
 
+_deps/nlohmann_json-src/include/nlohmann/detail/meta/identity_tag.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__functional/bind.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__functional/binary_negate.h:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/iterators/iteration_proxy.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__algorithm/shift_left.h:
 
@@ -11914,9 +12141,13 @@ tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o: /Users/dahuang/Deskt
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__fwd/memory_resource.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/transform_exclusive_scan.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__debug_utils/randomize_range.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__type_traits/aligned_storage.h:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/meta/is_sax.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__debug:
 
@@ -11931,6 +12162,8 @@ tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o: /Users/dahuang/Deskt
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__functional/binary_function.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__type_traits/enable_if.h:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/conversions/to_json.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__string/char_traits.h:
 
@@ -11973,6 +12206,8 @@ tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o: /Users/dahuang/Deskt
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__concepts/copyable.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__concepts/common_with.h:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/meta/call_std/begin.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__algorithm/find_first_of.h:
 
@@ -12158,6 +12393,8 @@ tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o: /Users/dahuang/Deskt
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__iterator/permutable.h:
 
+_deps/nlohmann_json-src/include/nlohmann/detail/string_concat.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__algorithm/sift_down.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__algorithm/ranges_partition_point.h:
@@ -12203,6 +12440,8 @@ tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o: /Users/dahuang/Deskt
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/locale.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__algorithm/remove_if.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/reduce.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__algorithm/remove_copy_if.h:
 
@@ -12522,6 +12761,8 @@ tests/unit_tests_autogen/mocs_compilation.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__iterator/counted_iterator.h:
 
+/Users/dahuang/Desktop/项目/OnlineChat/src/common/Log.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__type_traits/is_pointer.h:
 
 /opt/homebrew/opt/googletest/include/gtest/internal/gtest-filepath.h:
@@ -12556,7 +12797,11 @@ tests/unit_tests_autogen/mocs_compilation.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__fwd/pair.h:
 
+_deps/nlohmann_json-src/include/nlohmann/detail/output/binary_writer.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h:
+
+_deps/nlohmann_json-src/include/nlohmann/detail/meta/void_t.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__algorithm/fill.h:
 
@@ -12668,6 +12913,8 @@ tests/unit_tests_autogen/mocs_compilation.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__functional/operations.h:
 
+_deps/nlohmann_json-src/include/nlohmann/detail/input/parser.hpp:
+
 /opt/homebrew/opt/googletest/include/gtest/internal/gtest-type-util.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__concepts/different_from.h:
@@ -12707,6 +12954,8 @@ tests/unit_tests_autogen/mocs_compilation.cpp:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/mach/arm/_structs.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__locale:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_iovec_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__algorithm/ranges_remove_copy.h:
 
@@ -12757,6 +13006,8 @@ tests/unit_tests_autogen/mocs_compilation.cpp:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/string.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__compare/common_comparison_category.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/socket.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/_types/_wctype_t.h:
 

@@ -24,6 +24,46 @@ src/viewmodel_lib_autogen/timestamp: /Users/dahuang/Desktop/项目/OnlineChat/in
   /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/ChatViewModel.h \
   /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/LoginViewModel.cpp \
   /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/LoginViewModel.h \
+  /opt/homebrew/bin/cmake \
+  /Users/dahuang/Desktop/项目/OnlineChat/include/model/Entities.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/include/model/Room.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/CMakeLists.txt \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/ChatViewModel.cpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/ChatViewModel.h \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/LoginViewModel.cpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/LoginViewModel.h \
+  /opt/homebrew/bin/cmake \
+  /Users/dahuang/Desktop/项目/OnlineChat/include/model/Entities.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/include/model/Room.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/CMakeLists.txt \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/ChatViewModel.cpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/ChatViewModel.h \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/LoginViewModel.cpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/LoginViewModel.h \
+  /opt/homebrew/bin/cmake \
+  /Users/dahuang/Desktop/项目/OnlineChat/include/model/Entities.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/include/model/Room.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/CMakeLists.txt \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/ChatViewModel.cpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/ChatViewModel.h \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/LoginViewModel.cpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/LoginViewModel.h \
+  /opt/homebrew/bin/cmake \
+  /Users/dahuang/Desktop/项目/OnlineChat/include/model/Entities.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/include/model/Room.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/CMakeLists.txt \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/ChatViewModel.cpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/ChatViewModel.h \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/LoginViewModel.cpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/LoginViewModel.h \
+  /opt/homebrew/bin/cmake \
+  /Users/dahuang/Desktop/项目/OnlineChat/include/model/Entities.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/include/model/Room.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/CMakeLists.txt \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/ChatViewModel.cpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/ChatViewModel.h \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/LoginViewModel.cpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/LoginViewModel.h \
   /opt/homebrew/bin/cmake
 
 

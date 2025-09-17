@@ -1,5 +1,7 @@
 #include "../include/AbstractSever.hpp"
 
+namespace MiniEventWork {
+
 AbstractServer::AbstractServer(void)
     : msgHandler_(nullptr) {
 }
@@ -24,3 +26,5 @@ MessageHandler* AbstractServer::createMsgHandler() {
 
 // AbstractServer 不提供默认的 listen 实现，因为它是纯虚函数
 // 子类必须实现自己的 listen(int port) 方法
+
+} // namespace MiniEventWork

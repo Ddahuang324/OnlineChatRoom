@@ -8,6 +8,8 @@
 #include <cerrno>
 #include <unistd.h>
 
+namespace MiniEventWork {
+
 KqueueMultiplexer::KqueueMultiplexer()
     : kq_fd_(kqueue()), events_(KInitEventListSize) {
     if (kq_fd_ < 0) { log_error("[Kqueue] create error"); }
@@ -84,5 +86,7 @@ int KqueueMultiplexer::dispatch(int timeout_ms, std::vector<Channel*>& active_ch
     }
     return num_events;
 }
+
+} // namespace MiniEventWork
 
 #endif

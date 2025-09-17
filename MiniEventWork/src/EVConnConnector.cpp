@@ -21,7 +21,9 @@ bool setNonBlock(int fd) {
 }
 } // namespace
 
-EVConnConnector::EVConnConnector(MiniEventWork::EventBase* loop, ConnectionCallback&& connection_callback)
+namespace MiniEventWork {
+
+EVConnConnector::EVConnConnector(EventBase* loop, ConnectionCallback&& connection_callback)
     : loop_(loop),
       connection_callback_(std::move(connection_callback)),
       connecting_(false),
@@ -30,7 +32,7 @@ EVConnConnector::EVConnConnector(MiniEventWork::EventBase* loop, ConnectionCallb
     log_debug("EVConnConnector created.");
 }
 
-EVConnConnector::EVConnConnector(MiniEventWork::EventBase* loop, const ConnectionParams& params, ConnectionCallback&& connection_callback)
+EVConnConnector::EVConnConnector(EventBase* loop, const ConnectionParams& params, ConnectionCallback&& connection_callback)
     : loop_(loop),
       connection_callback_(std::move(connection_callback)),
       connecting_(false),
@@ -89,7 +91,7 @@ int EVConnConnector::connect(const std::string& host, int port) {
     } else if (ret < 0 && errno == EINPROGRESS) {
         // Connecting asynchronously
         connecting_ = true;
-        channel_ = std::make_unique<MiniEventWork::Channel>(loop_, sockfd);
+        channel_ = std::make_unique<Channel>(loop_, sockfd);
         channel_->setWriteCallback([this] { this->handleConnect(); });
         channel_->enableWriting();
         return 0;
@@ -127,4 +129,6 @@ void EVConnConnector::handleConnect() {
 void EVConnConnector::retry(int sockfd) {
     // For future use if needed
 }
+
+} // namespace MiniEventWork
 

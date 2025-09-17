@@ -16,6 +16,8 @@
 // 告知链接器链接 ws2_32.lib 库，这是 MSVC 编译器的特性
 #pragma comment(lib, "ws2_32.lib")
 
+namespace MiniEventWork {
+
 // 定义统一的 socket 句柄类型
 typedef SOCKET socket_t;
 
@@ -39,6 +41,7 @@ public:
     }
 };
 
+} // namespace MiniEventWork
 
 // =======================================================================
 // POSIX Platform (Linux, macOS, etc.)
@@ -52,6 +55,8 @@ public:
 #include <unistd.h>
 #include <errno.h>
 
+namespace MiniEventWork {
+
 // 定义统一的 socket 句柄类型
 typedef int socket_t;
 
@@ -60,5 +65,7 @@ typedef int socket_t;
 
 // 在 POSIX 平台下，这个类什么也不做，以保持代码统一性
 class NetworkInitializer {};
+
+} // namespace MiniEventWork
 
 #endif
