@@ -28,11 +28,12 @@ MiniEventAdapterImpl::~MiniEventAdapterImpl(){
     }
 }
 
-void MiniEventAdapterImpl::init(MiniEventWork::EventBase* eventBase,ConnectionCallback connCb,MessageCallback msgCb,FileChunkCallback fileCb){
+void MiniEventAdapterImpl::init(MiniEventWork::EventBase* eventBase,ConnectionCallback connCb,MessageCallback msgCb,FileChunkCallback fileCb,LoginCallback loginCb){
    
-    connectionCallback_ = std::move(connCb);
+    connectionCallback_ = [this, connCb](connectionEvents event) { if (connCb) connCb(event); emit connectionEvent(event); };
     messageCallback_ = std::move(msgCb);
     fileCallback_ = std::move(fileCb);
+    loginCallback_ = [this, loginCb](const LoginResponse& resp) { if (loginCb) loginCb(resp); emit loginResponse(resp); };
 
 
     if (eventBase){
@@ -71,7 +72,9 @@ void MiniEventAdapterImpl::connect(const ConnectionParams& params){
         // 创建连接器并发起连接（现在在 I/O 线程）
         connector_ = new MiniEventWork::EVConnConnector(eventBase_, params, [this](bool success, int sockfd) {
             if (success) {
-                // 连接成功，创建 BufferEvent
+                // 连接成功，先移除连接器的channel
+                connector_->removeChannel();
+                // 然后创建 BufferEvent
                 bev_ = std::make_shared<MiniEventWork::BufferEvent>(eventBase_, sockfd);
                 MiniEventWork::BufferEvent::setCallBacks(bev_,
                     [this] { this->onRead(); },
@@ -170,6 +173,18 @@ void MiniEventAdapterImpl::onRead() {
                 }
                 break;
             }
+            case 0x03: { // LoginResponse
+                if (loginCallback_) {
+                    LoginResponse resp;
+                    if (deserializeLoginResponse(serialized, resp)) {
+                        loginCallback_(resp);
+                    } else {
+                        log_error("Failed to deserialize LoginResponse. Disconnecting.");
+                        disconnect();
+                    }
+                }
+                break;
+            }
             default:
                 log_error("Unknown message type received: %d. Disconnecting.", type);
                 disconnect();
@@ -223,9 +238,12 @@ void MiniEventAdapterImpl::processSendQueue() {
         toSend.swap(sendQueue_);
     }
 
+    log_debug("processSendQueue called with %zu messages", toSend.size());
     if(bev_){
         for (const auto& serialized : toSend) {
+            log_debug("Writing %zu bytes to BufferEvent", serialized.size());
             bev_->write(serialized.data(), serialized.size());
+            log_debug("Write completed");
         }
     }else {
         log_warn("BufferEvent not connected, dropping %zu messages", toSend.size());
@@ -242,6 +260,23 @@ void MiniEventAdapterImpl::sendFileChunk(const FileMeta& chunk) {
     {
         std::lock_guard<std::mutex> lock(sendQueueMutex_);
         sendQueue_.push_back(frame);
+    }
+    eventBase_->queueInLoop([this] { processSendQueue(); });
+}
+
+void MiniEventAdapterImpl::sendLoginRequest(const LoginRequest& req) {
+    log_debug("MiniEventAdapterImpl::sendLoginRequest called with username: %s", req.username.c_str());
+    if(!eventBase_){
+        log_error("EventBase not initialized in MiniEventAdapterImpl::sendLoginRequest");
+        return;
+    }
+    SerializedMessage frame = serializedLoginRequest(req);
+    log_debug("Serialized login request, size: %zu", frame.size());
+
+    {
+        std::lock_guard<std::mutex> lock(sendQueueMutex_);
+        sendQueue_.push_back(frame);
+        log_debug("Added to send queue, queue size: %zu", sendQueue_.size());
     }
     eventBase_->queueInLoop([this] { processSendQueue(); });
 }
@@ -390,6 +425,46 @@ bool MiniEventAdapterImpl::deserializeFileChunk(const SerializedMessage& seriali
         chunk.fileSize = j.at("fileSize").get<uint64_t>();
         chunk.chunkIndex = j.at("chunkIndex").get<uint32_t>();
         chunk.totalChunks = j.at("totalChunks").get<uint32_t>();
+        return true;
+    } catch (const std::exception&) {
+        return false;
+    }
+}
+
+SerializedMessage MiniEventAdapterImpl::serializedLoginRequest(const LoginRequest& req){
+    nlohmann::json j;
+    j["username"] = req.username;
+    j["password"] = req.password;
+
+    std::string jsonStr = j.dump();
+    std::vector<uint8_t> payload(jsonStr.begin(), jsonStr.end());
+    uint32_t length = htonl(static_cast<uint32_t>(payload.size()));
+    SerializedMessage result;
+    result.push_back(0x04);  // 类型字节 0x04 for LoginRequest
+    result.insert(result.end(), reinterpret_cast<uint8_t*>(&length), reinterpret_cast<uint8_t*>(&length) + sizeof(length));
+    result.insert(result.end(), payload.begin(), payload.end());
+    return result;
+}
+
+bool MiniEventAdapterImpl::deserializeLoginResponse(const SerializedMessage& serialized, LoginResponse& resp){
+    if (serialized.size() < 1 + sizeof(uint32_t)) {
+        return false;  // 不足以读取类型和长度
+    }
+    if (serialized[0] != 0x03) {
+        return false;  // 类型不匹配
+    }
+    uint32_t length;
+    memcpy(&length, &serialized[1], sizeof(length));
+    length = ntohl(length);
+    if (serialized.size() < 1 + sizeof(uint32_t) + length) {
+        return false;  // 数据不足
+    }
+    std::string jsonStr(reinterpret_cast<const char*>(&serialized[1 + sizeof(uint32_t)]), length);
+    try {
+        nlohmann::json j = nlohmann::json::parse(jsonStr);
+        resp.success = j.at("success").get<bool>();
+        resp.message = j.at("message").get<std::string>();
+        resp.userId = j.at("userId").get<std::string>();
         return true;
     } catch (const std::exception&) {
         return false;

@@ -34,6 +34,7 @@ target_include_directories(unit_tests PRIVATE
 
 target_link_libraries(unit_tests PRIVATE
     GTest::gtest_main
+    GTest::gmock
     model_lib
     common_lib
     config_lib

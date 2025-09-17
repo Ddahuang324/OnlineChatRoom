@@ -4,6 +4,9 @@
 // Implementation will be provided by the user.
 #include <QObject>
 #include <QString>
+#include "net/IMiniEventAdapter.h"
+#include <memory>
+#include "storage/Storage.hpp"
 
 class LoginViewModel : public QObject {
     Q_OBJECT
@@ -14,7 +17,7 @@ class LoginViewModel : public QObject {
     Q_PROPERTY(QString loginStatus READ getLoginStatus NOTIFY loginStatusChanged)
 
 public:
-    explicit LoginViewModel(QObject* parent = nullptr);
+    explicit LoginViewModel(std::shared_ptr<IMiniEventAdapter> adapter, std::shared_ptr<Storage> storage, QObject* parent = nullptr);
 //read
     QString getUserName() const;
     QString getPassword() const;
@@ -33,12 +36,22 @@ signals:
     void isLoggingInChanged();
     void loginStatusChanged();
 
-private:
+public:
+    void handleConnectionEvent(connectionEvents event);
+    void handleMessage(const MessageRecord& msg);
+    void handleLoginResponse(const LoginResponse& resp);
+
+    void setIsLoggingIn(bool isLoggingIn);
+    void setLoginStatus(const QString& loginStatus);
+
+protected:
     QString userName_;
     QString password_;
     bool isLoggingIn_ = false;
     QString loginStatus_;
 
-    void setIsLoggingIn(bool isLoggingIn);
-    void setLoginStatus(const QString& loginStatus);
+    std::shared_ptr<IMiniEventAdapter> adapter_;
+    std::shared_ptr<Storage> storage_;
+
+    friend class LoginViewModelTest;
 };

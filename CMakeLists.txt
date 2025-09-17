@@ -24,6 +24,14 @@ FetchContent_MakeAvailable(nlohmann_json)
 # --- Find Packages ---
 find_package(Qt6 COMPONENTS Core Gui Qml Quick REQUIRED)
 
+# 设置 QML 导入路径
+set(QML_IMPORT_PATH "${CMAKE_SOURCE_DIR}/qml" CACHE STRING "QML Import Path")
+
+# 获取 Qt6 QML 插件路径
+get_target_property(QT_QML_PLUGIN_PATH Qt6::Qml IMPORTED_LOCATION)
+get_filename_component(QT_QML_PLUGIN_DIR ${QT_QML_PLUGIN_PATH} DIRECTORY)
+set(QML2_IMPORT_PATH "${QT_QML_PLUGIN_DIR}/../qml" CACHE STRING "QML2 Import Path")
+
 if(CHAT_ENABLE_SQLITE)
     find_package(SQLite3) # Not set to REQUIRED to allow configuration without it
 endif()
@@ -46,7 +54,7 @@ endif()
 # --- Main Executable Target ---
 # The main_app executable will be fully defined in a later task (T043)
 # For now, we declare it to have other targets link against it if necessary.
-add_executable(chat_app src/app/main.cpp)
+add_executable(chat_app src/app/main.cpp resources.qrc)
 
 target_link_libraries(chat_app PRIVATE
     Qt6::Core

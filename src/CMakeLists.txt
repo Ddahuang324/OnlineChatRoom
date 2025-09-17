@@ -21,6 +21,7 @@ target_include_directories(storage_lib PUBLIC ../include .)  # Add current direc
 add_library(net_lib
     net/MiniEventAdapterImpl.cpp
     net/MiniEventAdapterImpl.h
+    ../include/net/IMiniEventAdapter.h
     ../MiniEventWork/src/EVConnConnector.cpp
     ../MiniEventWork/src/BufferEvent.cpp
     ../MiniEventWork/src/Channel.cpp
@@ -32,7 +33,7 @@ add_library(net_lib
     ../MiniEventWork/src/InheritedFromIO_Multiplexer/Select_multiplexer.cpp
     ../MiniEventWork/src/InheritedFromIO_Multiplexer/Kqueue_multiplexer.cpp
 )
-target_link_libraries(net_lib PUBLIC model_lib nlohmann_json::nlohmann_json)
+target_link_libraries(net_lib PUBLIC model_lib nlohmann_json::nlohmann_json Qt6::Core)
 target_include_directories(net_lib PUBLIC ../include . ${CMAKE_SOURCE_DIR}/MiniEventWork/include)
 
 add_library(viewmodel_lib
@@ -41,7 +42,7 @@ add_library(viewmodel_lib
     viewmodel/ChatViewModel.cpp
     viewmodel/ChatViewModel.h
 )
-target_link_libraries(viewmodel_lib PUBLIC model_lib Qt6::Core)
+target_link_libraries(viewmodel_lib PUBLIC model_lib storage_lib net_lib Qt6::Core Qt6::Qml Qt6::Quick)
 target_include_directories(viewmodel_lib PUBLIC ../include .)  # Add current directory to include path
 
 add_library(transfer_lib

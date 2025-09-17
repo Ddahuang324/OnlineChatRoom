@@ -36,6 +36,12 @@ public:
 //(可选) 恢复机制
     bool recover() override;
 
+// 保存登录凭据（用户名和加密密码）
+    bool saveCredentials(const std::string& username, const std::string& encryptedPassword) override;
+
+// 加载登录凭据，返回用户名和加密密码的pair，如果不存在返回空
+    std::optional<std::pair<std::string, std::string>> loadCredentials() const override;
+
 private:
     sqlite3* m_db = nullptr; // SQLite 数据库连接指针
     std::string dbPath_; // 数据库文件路径
@@ -55,5 +61,7 @@ private:
     void executeWrite_(const std::function<void()>& task); // 执行写操作
     bool exec_(const std::string& sql); // 执行SQL语句
 
-
+    // 密码加密/解密辅助方法
+    std::string encryptPassword_(const std::string& password) const;
+    std::string decryptPassword_(const std::string& encryptedPassword) const;
 };

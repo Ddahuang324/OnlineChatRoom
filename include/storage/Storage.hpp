@@ -48,6 +48,12 @@ virtual std::optional<uint64_t> loadFileProgress(const std::string& fileId) = 0;
 // (可选) 恢复机制
 virtual bool recover() = 0;
 
+// 保存登录凭据（用户名和加密密码）
+virtual bool saveCredentials(const std::string& username, const std::string& encryptedPassword) = 0;
+
+// 加载登录凭据，返回用户名和加密密码的pair，如果不存在返回空
+virtual std::optional<std::pair<std::string, std::string>> loadCredentials() const = 0;
+
 
 
 };

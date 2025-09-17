@@ -98,6 +98,10 @@
         "generator": "cpp",
         "stacktrace": "cpp",
         "cerrno": "cpp",
-        "source_location": "cpp"
+        "source_location": "cpp",
+        "internet": "cpp",
+        "executor": "cpp",
+        "socket": "cpp",
+        "syncstream": "cpp"
     }
 }

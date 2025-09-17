@@ -69,11 +69,25 @@ include CMakeFiles/chat_app.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/chat_app.dir/flags.make
 
-chat_app_autogen/timestamp: /Users/dahuang/Qt/6.9.1/macos/libexec/moc
+chat_app_autogen/timestamp: /opt/homebrew/share/qt/libexec/moc
 chat_app_autogen/timestamp: CMakeFiles/chat_app.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target chat_app"
 	/opt/homebrew/bin/cmake -E cmake_autogen /Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles/chat_app_autogen.dir/AutogenInfo.json ""
 	/opt/homebrew/bin/cmake -E touch /Users/dahuang/Desktop/项目/OnlineChat/build/chat_app_autogen/timestamp
+
+chat_app_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/dahuang/Desktop/项目/OnlineChat/resources.qrc
+chat_app_autogen/EWIEGA46WW/qrc_resources.cpp: CMakeFiles/chat_app_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json
+chat_app_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/dahuang/Desktop/项目/OnlineChat/qml/Main.qml
+chat_app_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/dahuang/Desktop/项目/OnlineChat/qml/pages/ChatPage.qml
+chat_app_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/dahuang/Desktop/项目/OnlineChat/qml/pages/LoginPage.qml
+chat_app_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/dahuang/Desktop/项目/OnlineChat/qml/i18n/strings_zh_CN.qml
+chat_app_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/dahuang/Desktop/项目/OnlineChat/qml/themes/colors.qml
+chat_app_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/dahuang/Desktop/项目/OnlineChat/qml/themes/ThemeManager.qml
+chat_app_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/dahuang/Desktop/项目/OnlineChat/qml/components/MessageItem.qml
+chat_app_autogen/EWIEGA46WW/qrc_resources.cpp: /opt/homebrew/share/qt/libexec/rcc
+chat_app_autogen/EWIEGA46WW/qrc_resources.cpp: /opt/homebrew/share/qt/libexec/rcc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for resources.qrc"
+	/opt/homebrew/bin/cmake -E cmake_autorcc /Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles/chat_app_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json 
 
 CMakeFiles/chat_app.dir/codegen:
 .PHONY : CMakeFiles/chat_app.dir/codegen
@@ -81,7 +95,7 @@ CMakeFiles/chat_app.dir/codegen:
 CMakeFiles/chat_app.dir/chat_app_autogen/mocs_compilation.cpp.o: CMakeFiles/chat_app.dir/flags.make
 CMakeFiles/chat_app.dir/chat_app_autogen/mocs_compilation.cpp.o: chat_app_autogen/mocs_compilation.cpp
 CMakeFiles/chat_app.dir/chat_app_autogen/mocs_compilation.cpp.o: CMakeFiles/chat_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/chat_app.dir/chat_app_autogen/mocs_compilation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/chat_app.dir/chat_app_autogen/mocs_compilation.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chat_app.dir/chat_app_autogen/mocs_compilation.cpp.o -MF CMakeFiles/chat_app.dir/chat_app_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/chat_app.dir/chat_app_autogen/mocs_compilation.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/build/chat_app_autogen/mocs_compilation.cpp
 
 CMakeFiles/chat_app.dir/chat_app_autogen/mocs_compilation.cpp.i: cmake_force
@@ -95,7 +109,7 @@ CMakeFiles/chat_app.dir/chat_app_autogen/mocs_compilation.cpp.s: cmake_force
 CMakeFiles/chat_app.dir/src/app/main.cpp.o: CMakeFiles/chat_app.dir/flags.make
 CMakeFiles/chat_app.dir/src/app/main.cpp.o: /Users/dahuang/Desktop/项目/OnlineChat/src/app/main.cpp
 CMakeFiles/chat_app.dir/src/app/main.cpp.o: CMakeFiles/chat_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/chat_app.dir/src/app/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/chat_app.dir/src/app/main.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chat_app.dir/src/app/main.cpp.o -MF CMakeFiles/chat_app.dir/src/app/main.cpp.o.d -o CMakeFiles/chat_app.dir/src/app/main.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/src/app/main.cpp
 
 CMakeFiles/chat_app.dir/src/app/main.cpp.i: cmake_force
@@ -106,18 +120,33 @@ CMakeFiles/chat_app.dir/src/app/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/chat_app.dir/src/app/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/src/app/main.cpp -o CMakeFiles/chat_app.dir/src/app/main.cpp.s
 
+CMakeFiles/chat_app.dir/chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.o: CMakeFiles/chat_app.dir/flags.make
+CMakeFiles/chat_app.dir/chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.o: chat_app_autogen/EWIEGA46WW/qrc_resources.cpp
+CMakeFiles/chat_app.dir/chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.o: CMakeFiles/chat_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/chat_app.dir/chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chat_app.dir/chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.o -MF CMakeFiles/chat_app.dir/chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.o.d -o CMakeFiles/chat_app.dir/chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/build/chat_app_autogen/EWIEGA46WW/qrc_resources.cpp
+
+CMakeFiles/chat_app.dir/chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/chat_app.dir/chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/build/chat_app_autogen/EWIEGA46WW/qrc_resources.cpp > CMakeFiles/chat_app.dir/chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.i
+
+CMakeFiles/chat_app.dir/chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/chat_app.dir/chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/build/chat_app_autogen/EWIEGA46WW/qrc_resources.cpp -o CMakeFiles/chat_app.dir/chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.s
+
 # Object files for target chat_app
 chat_app_OBJECTS = \
 "CMakeFiles/chat_app.dir/chat_app_autogen/mocs_compilation.cpp.o" \
-"CMakeFiles/chat_app.dir/src/app/main.cpp.o"
+"CMakeFiles/chat_app.dir/src/app/main.cpp.o" \
+"CMakeFiles/chat_app.dir/chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.o"
 
 # External object files for target chat_app
 chat_app_EXTERNAL_OBJECTS =
 
 chat_app: CMakeFiles/chat_app.dir/chat_app_autogen/mocs_compilation.cpp.o
 chat_app: CMakeFiles/chat_app.dir/src/app/main.cpp.o
+chat_app: CMakeFiles/chat_app.dir/chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.o
 chat_app: CMakeFiles/chat_app.dir/build.make
-chat_app: /Users/dahuang/Qt/6.9.1/macos/lib/QtQuick.framework/Versions/A/QtQuick
 chat_app: src/libcommon_lib.a
 chat_app: src/libconfig_lib.a
 chat_app: src/libutil_lib.a
@@ -127,16 +156,20 @@ chat_app: src/libnet_lib.a
 chat_app: src/libviewmodel_lib.a
 chat_app: src/libtransfer_lib.a
 chat_app: /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/lib/libsqlite3.tbd
-chat_app: /Users/dahuang/Qt/6.9.1/macos/lib/QtQmlMeta.framework/Versions/A/QtQmlMeta
-chat_app: /Users/dahuang/Qt/6.9.1/macos/lib/QtQmlWorkerScript.framework/Versions/A/QtQmlWorkerScript
-chat_app: /Users/dahuang/Qt/6.9.1/macos/lib/QtQmlModels.framework/Versions/A/QtQmlModels
-chat_app: /Users/dahuang/Qt/6.9.1/macos/lib/QtQml.framework/Versions/A/QtQml
-chat_app: /Users/dahuang/Qt/6.9.1/macos/lib/QtNetwork.framework/Versions/A/QtNetwork
-chat_app: /Users/dahuang/Qt/6.9.1/macos/lib/QtOpenGL.framework/Versions/A/QtOpenGL
-chat_app: /Users/dahuang/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/QtGui
-chat_app: /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/QtCore
+chat_app: /opt/homebrew/lib/QtQuick.framework/Versions/A/QtQuick
+chat_app: /opt/homebrew/lib/QtQmlMeta.framework/Versions/A/QtQmlMeta
+chat_app: /opt/homebrew/lib/QtQmlWorkerScript.framework/Versions/A/QtQmlWorkerScript
+chat_app: /opt/homebrew/lib/QtQmlModels.framework/Versions/A/QtQmlModels
+chat_app: /opt/homebrew/lib/QtQml.framework/Versions/A/QtQml
+chat_app: /opt/homebrew/lib/QtNetwork.framework/Versions/A/QtNetwork
+chat_app: /opt/homebrew/lib/QtOpenGL.framework/Versions/A/QtOpenGL
+chat_app: /opt/homebrew/lib/QtGui.framework/Versions/A/QtGui
+chat_app: src/libstorage_lib.a
+chat_app: /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/lib/libsqlite3.tbd
+chat_app: src/libnet_lib.a
+chat_app: /opt/homebrew/lib/QtCore.framework/Versions/A/QtCore
 chat_app: CMakeFiles/chat_app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable chat_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable chat_app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/chat_app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -147,6 +180,7 @@ CMakeFiles/chat_app.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/chat_app.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/chat_app.dir/clean
 
+CMakeFiles/chat_app.dir/depend: chat_app_autogen/EWIEGA46WW/qrc_resources.cpp
 CMakeFiles/chat_app.dir/depend: chat_app_autogen/timestamp
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dahuang/Desktop/项目/OnlineChat /Users/dahuang/Desktop/项目/OnlineChat /Users/dahuang/Desktop/项目/OnlineChat/build /Users/dahuang/Desktop/项目/OnlineChat/build /Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles/chat_app.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/chat_app.dir/depend

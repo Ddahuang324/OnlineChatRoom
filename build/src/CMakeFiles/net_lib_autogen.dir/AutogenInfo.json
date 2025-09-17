@@ -24,6 +24,12 @@
 			null
 		],
 		[
+			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/include/net/IMiniEventAdapter.h",
+			"MU",
+			"4PR6EQQ5W3/moc_IMiniEventAdapter.cpp",
+			null
+		],
+		[
 			"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/src/net/MiniEventAdapterImpl.h",
 			"MU",
 			"Q6KNN7S663/moc_MiniEventAdapterImpl.cpp",
@@ -33,7 +39,7 @@
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/net_lib_autogen/include",
 	"MOC_COMPILATION_FILE" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/net_lib_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [],
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_NO_DEBUG" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -47,6 +53,10 @@
 		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/src",
 		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/MiniEventWork/include",
 		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/_deps/nlohmann_json-src/include",
+		"/opt/homebrew/lib/QtCore.framework/Headers",
+		"/opt/homebrew/lib/QtCore.framework",
+		"/opt/homebrew/share/qt/mkspecs/macx-clang",
+		"/opt/homebrew/include",
 		"/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1",
 		"/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include",
 		"/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include",
@@ -81,7 +91,7 @@
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 8,
 	"PARSE_CACHE_FILE" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/CMakeFiles/net_lib_autogen.dir/ParseCache.txt",
-	"QT_MOC_EXECUTABLE" : "/Users/dahuang/Qt/6.9.1/macos/libexec/moc",
+	"QT_MOC_EXECUTABLE" : "/opt/homebrew/share/qt/libexec/moc",
 	"QT_UIC_EXECUTABLE" : "",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 9,

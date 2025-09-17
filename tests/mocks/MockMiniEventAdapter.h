@@ -1,4 +1,11 @@
 #pragma once
 
-// Placeholder for MockMiniEventAdapter as per T062.
-// Implementation will be provided by the user.
+#include "net/IMiniEventAdapter.h"
+#include <gmock/gmock.h>
+
+// Mock class for IMiniEventAdapter
+class MockMiniEventAdapter : public IMiniEventAdapter {
+public:
+    MOCK_METHOD(void, connect, (const ConnectionParams& params), (override));
+    MOCK_METHOD(void, sendLoginRequest, (const LoginRequest& req), (override));
+};

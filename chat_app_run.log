@@ -1,0 +1,44 @@
+2025-09-17T13:14:06.888Z TRACE SQLiteStorage.cpp - Writer thread started
+2025-09-17T13:14:06.889Z TRACE SQLiteStorage.cpp - Database opened successfully at /Users/dahuang/.onlinechat/chat.db
+2025-09-17T13:14:06.890Z TRACE SQLiteStorage.cpp - Database created successfully
+[Kqueue] created
+2025-09-17T13:14:06.894Z INFO MultiplexerSelector.cpp - Mux candidate kqueue: median 13280.420000 ns/dispatch(0)
+[Select] created
+2025-09-17T13:14:06.894Z INFO MultiplexerSelector.cpp - Mux candidate select: median 408.330000 ns/dispatch(0)
+[Kqueue] destroyed
+Using best multiplexer by micro-bench: select
+2025-09-17T13:14:06.894Z TRACE MiniEventAdapterImpl.cpp - EventBase loop start.
+EventBase loop start.
+[EventBase] wakeup channel fd=6 registered
+LoginViewModel::login called
+[EventBase] queueInLoop size=1
+[EventBase] wakeup write
+[EventBase] active channels: fd=6 
+[Channel] handleEvent fd=6 ready_events=1 events(mask)=1 has(event)=0 has(read)=1 has(write)=0 has(error)=0
+[Channel] invoking read_callback fd=6
+[EventBase] handleWakeup pending_now=1
+[EventBase] executing pending tasks count=1
+2025-09-17T13:14:10.145Z TRACE EVConnConnector.cpp - EVConnConnector created with params: host=127.0.0.1, port=8080
+[Channel] read_callback returned fd=6
+[EventBase] active channels: fd=17 
+[Channel] handleEvent fd=17 ready_events=2 events(mask)=2 has(event)=0 has(read)=0 has(write)=1 has(error)=0
+[Channel] invoking write_callback fd=17
+2025-09-17T13:14:10.145Z TRACE EVConnConnector.cpp - Connected successfully.
+[Channel] write_callback returned fd=handleConnectionEvent: 1
+17
+[Select][fix] cleared invalid fd=17 from select sets
+2025-09-17T13:14:10.146Z TRACE MiniEventAdapterImpl.cpp - MiniEventAdapterImpl::sendLoginRequest called with username: dahuang
+2025-09-17T13:14:10.147Z TRACE MiniEventAdapterImpl.cpp - Serialized login request, size: 44
+2025-09-17T13:14:10.147Z TRACE MiniEventAdapterImpl.cpp - Added to send queue, queue size: 1
+[EventBase] queueInLoop size=1
+[EventBase] wakeup write[EventBase] active channels: fd=6 
+[Channel] handleEvent fd=6 ready_events=1 events(mask)=1 has(event)=0 has(read)=1 has(write)=0 has(error)=0
+[Channel] invoking read_callback fd=6
+
+[EventBase] handleWakeup pending_now=1
+[EventBase] executing pending tasks count=1
+2025-09-17T13:14:10.147Z TRACE MiniEventAdapterImpl.cpp - processSendQueue called with 1 messages
+2025-09-17T13:14:10.147Z TRACE MiniEventAdapterImpl.cpp - Writing 44 bytes to BufferEvent
+2025-09-17T13:14:10.147Z TRACE MiniEventAdapterImpl.cpp - Write completed
+[Channel] read_callback returned fd=6
+2025-09-17 21:14:13.037 chat_app[97330:3037909] error messaging the mach port for IMKCFRunLoopWakeUpReliable

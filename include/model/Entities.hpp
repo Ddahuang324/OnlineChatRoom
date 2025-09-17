@@ -20,6 +20,8 @@ enum class MessageType {
     TEXT,
     IMAGE,
     FILE,
+    LOGIN,
+    LOGIN_RESPONSE,
 };
 
 
@@ -63,4 +65,21 @@ struct FileMeta {
     uint64_t    fileSize{0}; // 字节大小
     uint32_t    chunkIndex{0};   // 当前分片序号（如果是分片传输）
     uint32_t    totalChunks{0};  // 总分片数
+};
+
+// 登录请求结构体
+struct LoginRequest {
+    std::string username;
+    std::string password;  // 注意：应加密传输
+
+    bool operator==(const LoginRequest& other) const {
+        return username == other.username && password == other.password;
+    }
+};
+
+// 登录响应结构体
+struct LoginResponse {
+    bool success;
+    std::string message;  // 成功提示或错误信息
+    std::string userId;   // 可选：登录成功后的用户ID
 };

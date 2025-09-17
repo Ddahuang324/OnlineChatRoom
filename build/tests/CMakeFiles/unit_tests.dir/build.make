@@ -69,7 +69,7 @@ include tests/CMakeFiles/unit_tests.dir/progress.make
 # Include the compile flags for this target's objects.
 include tests/CMakeFiles/unit_tests.dir/flags.make
 
-tests/unit_tests_autogen/timestamp: /Users/dahuang/Qt/6.9.1/macos/libexec/moc
+tests/unit_tests_autogen/timestamp: /opt/homebrew/share/qt/libexec/moc
 tests/unit_tests_autogen/timestamp: tests/CMakeFiles/unit_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target unit_tests"
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /opt/homebrew/bin/cmake -E cmake_autogen /Users/dahuang/Desktop/项目/OnlineChat/build/tests/CMakeFiles/unit_tests_autogen.dir/AutogenInfo.json ""
@@ -310,6 +310,7 @@ tests/unit_tests: tests/CMakeFiles/unit_tests.dir/integration/test_e2e_login_sen
 tests/unit_tests: tests/CMakeFiles/unit_tests.dir/integration/test_e2e_file_reconnect.cpp.o
 tests/unit_tests: tests/CMakeFiles/unit_tests.dir/build.make
 tests/unit_tests: /opt/homebrew/opt/googletest/lib/libgtest_main.a
+tests/unit_tests: /opt/homebrew/opt/googletest/lib/libgmock.a
 tests/unit_tests: src/libcommon_lib.a
 tests/unit_tests: src/libconfig_lib.a
 tests/unit_tests: src/libutil_lib.a
@@ -319,8 +320,18 @@ tests/unit_tests: src/libnet_lib.a
 tests/unit_tests: src/libviewmodel_lib.a
 tests/unit_tests: src/libtransfer_lib.a
 tests/unit_tests: /opt/homebrew/opt/googletest/lib/libgtest.a
+tests/unit_tests: src/libstorage_lib.a
 tests/unit_tests: /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/lib/libsqlite3.tbd
-tests/unit_tests: /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/QtCore
+tests/unit_tests: src/libnet_lib.a
+tests/unit_tests: /opt/homebrew/lib/QtQuick.framework/Versions/A/QtQuick
+tests/unit_tests: /opt/homebrew/lib/QtQmlMeta.framework/Versions/A/QtQmlMeta
+tests/unit_tests: /opt/homebrew/lib/QtQmlWorkerScript.framework/Versions/A/QtQmlWorkerScript
+tests/unit_tests: /opt/homebrew/lib/QtQmlModels.framework/Versions/A/QtQmlModels
+tests/unit_tests: /opt/homebrew/lib/QtQml.framework/Versions/A/QtQml
+tests/unit_tests: /opt/homebrew/lib/QtNetwork.framework/Versions/A/QtNetwork
+tests/unit_tests: /opt/homebrew/lib/QtOpenGL.framework/Versions/A/QtOpenGL
+tests/unit_tests: /opt/homebrew/lib/QtGui.framework/Versions/A/QtGui
+tests/unit_tests: /opt/homebrew/lib/QtCore.framework/Versions/A/QtCore
 tests/unit_tests: tests/CMakeFiles/unit_tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable unit_tests"
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/unit_tests.dir/link.txt --verbose=$(VERBOSE)

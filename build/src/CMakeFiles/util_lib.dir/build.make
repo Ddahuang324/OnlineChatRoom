@@ -69,7 +69,7 @@ include src/CMakeFiles/util_lib.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/util_lib.dir/flags.make
 
-src/util_lib_autogen/timestamp: /Users/dahuang/Qt/6.9.1/macos/libexec/moc
+src/util_lib_autogen/timestamp: /opt/homebrew/share/qt/libexec/moc
 src/util_lib_autogen/timestamp: src/CMakeFiles/util_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target util_lib"
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /opt/homebrew/bin/cmake -E cmake_autogen /Users/dahuang/Desktop/项目/OnlineChat/build/src/CMakeFiles/util_lib_autogen.dir/AutogenInfo.json ""

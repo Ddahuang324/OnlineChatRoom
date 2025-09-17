@@ -1,0 +1,10 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+<qresource>
+    <file>qml/Main.qml</file>
+    <file alias="qml/components">qml/components</file>
+    <file alias="qml/pages">qml/pages</file>
+    <file alias="qml/themes">qml/themes</file>
+    <file alias="qml/i18n">qml/i18n</file>
+</qresource>
+</RCC>

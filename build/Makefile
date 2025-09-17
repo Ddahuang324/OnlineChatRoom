@@ -506,6 +506,30 @@ unit_tests_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests_autogen.dir/build.make tests/CMakeFiles/unit_tests_autogen.dir/build
 .PHONY : unit_tests_autogen/fast
 
+chat_app_autogen/EWIEGA46WW/qrc_resources.o: chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.o
+.PHONY : chat_app_autogen/EWIEGA46WW/qrc_resources.o
+
+# target to build an object file
+chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_app.dir/build.make CMakeFiles/chat_app.dir/chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.o
+.PHONY : chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.o
+
+chat_app_autogen/EWIEGA46WW/qrc_resources.i: chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : chat_app_autogen/EWIEGA46WW/qrc_resources.i
+
+# target to preprocess a source file
+chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_app.dir/build.make CMakeFiles/chat_app.dir/chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.i
+
+chat_app_autogen/EWIEGA46WW/qrc_resources.s: chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : chat_app_autogen/EWIEGA46WW/qrc_resources.s
+
+# target to generate assembly for a file
+chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_app.dir/build.make CMakeFiles/chat_app.dir/chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.s
+
 chat_app_autogen/mocs_compilation.o: chat_app_autogen/mocs_compilation.cpp.o
 .PHONY : chat_app_autogen/mocs_compilation.o
 
@@ -592,6 +616,9 @@ help:
 	@echo "... unit_tests"
 	@echo "... util_lib"
 	@echo "... viewmodel_lib"
+	@echo "... chat_app_autogen/EWIEGA46WW/qrc_resources.o"
+	@echo "... chat_app_autogen/EWIEGA46WW/qrc_resources.i"
+	@echo "... chat_app_autogen/EWIEGA46WW/qrc_resources.s"
 	@echo "... chat_app_autogen/mocs_compilation.o"
 	@echo "... chat_app_autogen/mocs_compilation.i"
 	@echo "... chat_app_autogen/mocs_compilation.s"

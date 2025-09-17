@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "chat_app_autogen/timestamp" "custom" "chat_app_autogen/deps"
+  "/Users/dahuang/Desktop/项目/OnlineChat/build/chat_app_autogen/EWIEGA46WW/qrc_resources.cpp" "CMakeFiles/chat_app.dir/chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.o" "gcc" "CMakeFiles/chat_app.dir/chat_app_autogen/EWIEGA46WW/qrc_resources.cpp.o.d"
   "/Users/dahuang/Desktop/项目/OnlineChat/build/chat_app_autogen/mocs_compilation.cpp" "CMakeFiles/chat_app.dir/chat_app_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/chat_app.dir/chat_app_autogen/mocs_compilation.cpp.o.d"
   "/Users/dahuang/Desktop/项目/OnlineChat/src/app/main.cpp" "CMakeFiles/chat_app.dir/src/app/main.cpp.o" "gcc" "CMakeFiles/chat_app.dir/src/app/main.cpp.o.d"
   )

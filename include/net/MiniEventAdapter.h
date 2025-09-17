@@ -13,6 +13,10 @@ struct ConnectionParams {
     std::string host;//服务器地址
     int port;//服务器端口
     //可拓展
+
+    bool operator==(const ConnectionParams& other) const {
+        return host == other.host && port == other.port;
+    }
 };
 
 enum class connectionEvents {
@@ -30,6 +34,7 @@ public:
     using ConnectionCallback = std::function<void(connectionEvents)>;
     using MessageCallback = std::function<void(const MessageRecord&)>;
     using FileChunkCallback = std::function<void(const FileMeta)>;
+    using LoginCallback = std::function<void(const LoginResponse&)>;
 
     virtual ~MiniEventAdapter() = default;
 
@@ -37,7 +42,8 @@ public:
      virtual void init(MiniEventWork::EventBase* eventBase,
                       ConnectionCallback connCb,
                       MessageCallback msgCb,
-                      FileChunkCallback fileCb) = 0;
+                      FileChunkCallback fileCb,
+                      LoginCallback loginCb) = 0;
 
 
     virtual void connect(const ConnectionParams& params) = 0;
@@ -50,6 +56,7 @@ public:
 
     virtual void sendMessage(const MessageRecord& msg) = 0;
     virtual void sendFileChunk(const FileMeta& chunk) = 0;
+    virtual void sendLoginRequest(const LoginRequest& req) = 0;
 
 };
 

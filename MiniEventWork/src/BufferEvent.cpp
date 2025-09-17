@@ -81,11 +81,15 @@ void BufferEvent::write(const void* data, size_t len) {
     size_t remaining = len;
     bool faultError = false;
 
+    printf("BufferEvent::write called with %zu bytes\n", len);
+
     // 如果输出缓冲区为空，尝试直接发送
     if (outputBuffer_.readableBytes() == 0) {
         nwrote = ::write(fd_, data, len);
+        printf("Direct write returned %zd, errno=%d\n", nwrote, errno);
         if (nwrote >= 0) {
             remaining = len - nwrote;
+            printf("Remaining after direct write: %zu\n", remaining);
             if (remaining == 0 && writeCallback_) {
                 // 全部一次性发送完毕
                 writeCallback_(shared_from_this());
@@ -94,16 +98,23 @@ void BufferEvent::write(const void* data, size_t len) {
             nwrote = 0;
             if (errno != EWOULDBLOCK) {
                 faultError = true;
+                printf("Write error: %s\n", strerror(errno));
             }
         }
+    } else {
+        printf("Output buffer not empty, skipping direct write\n");
     }
 
     // 如果没有出错，且还有数据没发完，就放入输出缓冲区
     if (!faultError && remaining > 0) {
+        printf("Appending %zu bytes to output buffer\n", remaining);
         outputBuffer_.append(static_cast<const char*>(data) + nwrote, remaining);
         if (!channel_->isWriting()) {
+            printf("Enabling write events\n");
             channel_->enableWriting(); // 开始监听可写事件
         }
+    } else {
+        printf("No data to buffer, remaining=%zu, faultError=%d\n", remaining, faultError);
     }
 }
 

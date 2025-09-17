@@ -22,6 +22,7 @@ public:
     EVConnConnector& operator=(const EVConnConnector&) = delete;
 
     int connect(const std::string& host, int port);
+    void removeChannel(); // 新增：移除channel
 
 private:
     void handleConnect();

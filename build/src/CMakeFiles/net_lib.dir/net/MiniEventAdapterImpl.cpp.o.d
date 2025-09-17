@@ -739,6 +739,133 @@ src/CMakeFiles/net_lib.dir/net/MiniEventAdapterImpl.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__functional/unary_negate.h \
   /Users/dahuang/Desktop/项目/OnlineChat/src/../include/model/Entities.hpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/../include/net/IMiniEventAdapter.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QObject \
+  /opt/homebrew/lib/QtCore.framework/Headers/qobject.h \
+  /opt/homebrew/include/QtCore/qobjectdefs.h \
+  /opt/homebrew/include/QtCore/qnamespace.h \
+  /opt/homebrew/include/QtCore/qglobal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/assert.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/stdbool.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h \
+  /opt/homebrew/include/QtCore/qtcoreglobal.h \
+  /opt/homebrew/include/QtCore/qtversionchecks.h \
+  /opt/homebrew/include/QtCore/qtconfiginclude.h \
+  /opt/homebrew/include/QtCore/qconfig.h \
+  /opt/homebrew/include/QtCore/qtcore-config.h \
+  /opt/homebrew/include/QtCore/qtconfigmacros.h \
+  /opt/homebrew/include/QtCore/qtdeprecationdefinitions.h \
+  /opt/homebrew/include/QtCore/qcompilerdetection.h \
+  /opt/homebrew/include/QtCore/qprocessordetection.h \
+  /opt/homebrew/include/QtCore/qsystemdetection.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/TargetConditionals.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/AvailabilityMacros.h \
+  /opt/homebrew/include/QtCore/qtcoreexports.h \
+  /opt/homebrew/include/QtCore/qtdeprecationmarkers.h \
+  /opt/homebrew/include/QtCore/qtclasshelpermacros.h \
+  /opt/homebrew/include/QtCore/qtpreprocessorsupport.h \
+  /opt/homebrew/include/QtCore/qassert.h \
+  /opt/homebrew/include/QtCore/qtnoop.h \
+  /opt/homebrew/include/QtCore/qtypes.h \
+  /opt/homebrew/include/QtCore/qtversion.h \
+  /opt/homebrew/include/QtCore/qtypeinfo.h \
+  /opt/homebrew/include/QtCore/qcontainerfwd.h \
+  /opt/homebrew/include/QtCore/qsysinfo.h \
+  /opt/homebrew/include/QtCore/qlogging.h \
+  /opt/homebrew/include/QtCore/qflags.h \
+  /opt/homebrew/include/QtCore/qcompare_impl.h \
+  /opt/homebrew/include/QtCore/qatomic.h \
+  /opt/homebrew/include/QtCore/qbasicatomic.h \
+  /opt/homebrew/include/QtCore/qatomic_cxx11.h \
+  /opt/homebrew/include/QtCore/qgenericatomic.h \
+  /opt/homebrew/include/QtCore/qyieldcpu.h \
+  /opt/homebrew/include/QtCore/qconstructormacros.h \
+  /opt/homebrew/include/QtCore/qdarwinhelpers.h \
+  /opt/homebrew/include/QtCore/qexceptionhandling.h \
+  /opt/homebrew/include/QtCore/qforeach.h \
+  /opt/homebrew/include/QtCore/qttypetraits.h \
+  /opt/homebrew/include/QtCore/qfunctionpointer.h \
+  /opt/homebrew/include/QtCore/qglobalstatic.h \
+  /opt/homebrew/include/QtCore/qmalloc.h \
+  /opt/homebrew/include/QtCore/qminmax.h \
+  /opt/homebrew/include/QtCore/qnumeric.h \
+  /opt/homebrew/include/QtCore/qoverload.h \
+  /opt/homebrew/include/QtCore/qswap.h \
+  /opt/homebrew/include/QtCore/qtenvironmentvariables.h \
+  /opt/homebrew/include/QtCore/qtresource.h \
+  /opt/homebrew/include/QtCore/qttranslation.h \
+  /opt/homebrew/include/QtCore/qversiontagging.h \
+  /opt/homebrew/include/QtCore/qcompare.h \
+  /opt/homebrew/include/QtCore/qstdlibdetection.h \
+  /opt/homebrew/include/QtCore/qcomparehelpers.h \
+  /opt/homebrew/include/QtCore/q20type_traits.h \
+  /opt/homebrew/include/QtCore/qtmetamacros.h \
+  /opt/homebrew/include/QtCore/qobjectdefs_impl.h \
+  /opt/homebrew/include/QtCore/qfunctionaltools_impl.h \
+  /opt/homebrew/include/QtCore/qstring.h \
+  /opt/homebrew/include/QtCore/qchar.h \
+  /opt/homebrew/include/QtCore/qstringview.h \
+  /opt/homebrew/include/QtCore/qbytearray.h \
+  /opt/homebrew/include/QtCore/qrefcount.h \
+  /opt/homebrew/include/QtCore/qarraydata.h \
+  /opt/homebrew/include/QtCore/qpair.h \
+  /opt/homebrew/include/QtCore/qarraydatapointer.h \
+  /opt/homebrew/include/QtCore/qarraydataops.h \
+  /opt/homebrew/include/QtCore/qcontainertools_impl.h \
+  /opt/homebrew/include/QtCore/qxptype_traits.h \
+  /opt/homebrew/include/QtCore/q20functional.h \
+  /opt/homebrew/include/QtCore/q20memory.h \
+  /opt/homebrew/include/QtCore/q17memory.h \
+  /opt/homebrew/include/QtCore/qbytearrayalgorithms.h \
+  /opt/homebrew/include/QtCore/qbytearrayview.h \
+  /opt/homebrew/include/QtCore/qstringfwd.h \
+  /opt/homebrew/include/QtCore/qstringliteral.h \
+  /opt/homebrew/include/QtCore/qstringalgorithms.h \
+  /opt/homebrew/include/QtCore/qlatin1stringview.h \
+  /opt/homebrew/include/QtCore/qanystringview.h \
+  /opt/homebrew/include/QtCore/qutf8stringview.h \
+  /opt/homebrew/include/QtCore/qstringtokenizer.h \
+  /opt/homebrew/include/QtCore/qstringbuilder.h \
+  /opt/homebrew/include/QtCore/qstringconverter.h \
+  /opt/homebrew/include/QtCore/qstringconverter_base.h \
+  /opt/homebrew/include/QtCore/qlist.h \
+  /opt/homebrew/include/QtCore/qhashfunctions.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/numeric \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/accumulate.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/exclusive_scan.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/gcd_lcm.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/inclusive_scan.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/inner_product.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/iota.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/midpoint.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/partial_sum.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/reduce.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/transform_exclusive_scan.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/transform_inclusive_scan.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/transform_reduce.h \
+  /opt/homebrew/include/QtCore/qiterator.h \
+  /opt/homebrew/include/QtCore/qbytearraylist.h \
+  /opt/homebrew/include/QtCore/qstringlist.h \
+  /opt/homebrew/include/QtCore/qalgorithms.h \
+  /opt/homebrew/include/QtCore/qstringmatcher.h \
+  /opt/homebrew/include/QtCore/qscopedpointer.h \
+  /opt/homebrew/include/QtCore/qmetatype.h \
+  /opt/homebrew/include/QtCore/qdatastream.h \
+  /opt/homebrew/include/QtCore/qiodevicebase.h \
+  /opt/homebrew/include/QtCore/qfloat16.h \
+  /opt/homebrew/include/QtCore/qmath.h \
+  /opt/homebrew/include/QtCore/qtformat_impl.h \
+  /opt/homebrew/include/QtCore/qiterable.h \
+  /opt/homebrew/include/QtCore/qmetacontainer.h \
+  /opt/homebrew/include/QtCore/qcontainerinfo.h \
+  /opt/homebrew/include/QtCore/qtaggedpointer.h \
+  /opt/homebrew/include/QtCore/qscopeguard.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/list \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/map \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__tree \
+  /opt/homebrew/include/QtCore/qobject_impl.h \
+  /opt/homebrew/include/QtCore/qbindingstorage.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/thread \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__mutex_base \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/system_error \
@@ -750,8 +877,6 @@ src/CMakeFiles/net_lib.dir/net/MiniEventAdapterImpl.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/deque \
   /Users/dahuang/Desktop/项目/OnlineChat/src/net/../../MiniEventWork/include/EventBase.hpp \
   /Users/dahuang/Desktop/项目/OnlineChat/MiniEventWork/include/IO_Multiplexer.hpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/map \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__tree \
   /Users/dahuang/Desktop/项目/OnlineChat/MiniEventWork/include/Channel.hpp \
   /Users/dahuang/Desktop/项目/OnlineChat/MiniEventWork/include/DataStructure/min_heap.hpp \
   /Users/dahuang/Desktop/项目/OnlineChat/MiniEventWork/include/Platform.hpp \
@@ -803,7 +928,6 @@ src/CMakeFiles/net_lib.dir/net/MiniEventAdapterImpl.cpp.o: \
   /Users/dahuang/Desktop/项目/OnlineChat/src/net/../../MiniEventWork/include/Buffer/BufferEvent.hpp \
   /Users/dahuang/Desktop/项目/OnlineChat/src/net/../../MiniEventWork/include/Buffer/../../include/Buffer/Buffer.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cassert \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/assert.h \
   /Users/dahuang/Desktop/项目/OnlineChat/src/net/../../MiniEventWork/include/EVConnConnector.hpp \
   /Users/dahuang/Desktop/项目/OnlineChat/MiniEventWork/include/../include/Channel.hpp \
   /Users/dahuang/Desktop/项目/OnlineChat/MiniEventWork/include/../include/EventBase.hpp \
@@ -881,20 +1005,6 @@ src/CMakeFiles/net_lib.dir/net/MiniEventAdapterImpl.cpp.o: \
   /Users/dahuang/Desktop/项目/OnlineChat/build/_deps/nlohmann_json-src/include/nlohmann/detail/hash.hpp \
   /Users/dahuang/Desktop/项目/OnlineChat/build/_deps/nlohmann_json-src/include/nlohmann/detail/input/binary_reader.hpp \
   /Users/dahuang/Desktop/项目/OnlineChat/build/_deps/nlohmann_json-src/include/nlohmann/detail/input/input_adapters.hpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/numeric \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/accumulate.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/exclusive_scan.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/gcd_lcm.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/inclusive_scan.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/inner_product.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/iota.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/midpoint.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/partial_sum.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/reduce.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/transform_exclusive_scan.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/transform_inclusive_scan.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/transform_reduce.h \
   /Users/dahuang/Desktop/项目/OnlineChat/build/_deps/nlohmann_json-src/include/nlohmann/detail/input/json_sax.hpp \
   /Users/dahuang/Desktop/项目/OnlineChat/build/_deps/nlohmann_json-src/include/nlohmann/detail/input/lexer.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/clocale \

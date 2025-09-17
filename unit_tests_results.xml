@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="38" failures="0" disabled="0" errors="0" time="1.596" timestamp="2025-09-17T21:12:18.583" name="AllTests">
+  <testsuite name="ConfigTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2025-09-17T21:12:18.583">
+    <testcase name="Placeholder" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/config/test_config.cpp" line="5" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:18.583" classname="ConfigTest" />
+  </testsuite>
+  <testsuite name="NetworkContractTest" tests="2" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2025-09-17T21:12:18.583">
+    <testcase name="Connect" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_network_connect.cpp" line="5" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:18.583" classname="NetworkContractTest" />
+    <testcase name="FileChunk" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_network_file_chunk.cpp" line="5" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:18.583" classname="NetworkContractTest" />
+  </testsuite>
+  <testsuite name="StorageContractTest" tests="2" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2025-09-17T21:12:18.583">
+    <testcase name="Messages" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_storage_messages.cpp" line="5" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:18.583" classname="StorageContractTest" />
+    <testcase name="User" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_storage_user.cpp" line="5" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:18.583" classname="StorageContractTest" />
+  </testsuite>
+  <testsuite name="SQLiteStorageTest" tests="4" failures="0" disabled="0" skipped="0" errors="0" time="1.582" timestamp="2025-09-17T21:12:18.583">
+    <testcase name="InitCreatesSchema" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/storage/test_sqlite.cpp" line="29" status="run" result="completed" time="0.004" timestamp="2025-09-17T21:12:18.583" classname="SQLiteStorageTest" />
+    <testcase name="BasicReadWriteUserAndFileProgressAndMessages" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/storage/test_sqlite.cpp" line="59" status="run" result="completed" time="0.618" timestamp="2025-09-17T21:12:18.588" classname="SQLiteStorageTest" />
+    <testcase name="ConcurrencyStressTest" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/storage/test_sqlite.cpp" line="107" status="run" result="completed" time="0.949" timestamp="2025-09-17T21:12:19.206" classname="SQLiteStorageTest" />
+    <testcase name="RecoverRebuildsDatabase" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/storage/test_sqlite.cpp" line="185" status="run" result="completed" time="0.009" timestamp="2025-09-17T21:12:20.156" classname="SQLiteStorageTest" />
+  </testsuite>
+  <testsuite name="MiniEventAdapterTest" tests="17" failures="0" disabled="0" skipped="0" errors="0" time="0.01" timestamp="2025-09-17T21:12:20.166">
+    <testcase name="InitWithNullEventBase" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/net/test_mini_event_adapter.cpp" line="162" status="run" result="completed" time="0.004" timestamp="2025-09-17T21:12:20.166" classname="MiniEventAdapterTest" />
+    <testcase name="InitWithCallbacks" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/net/test_mini_event_adapter.cpp" line="173" status="run" result="completed" time="0.004" timestamp="2025-09-17T21:12:20.170" classname="MiniEventAdapterTest" />
+    <testcase name="ConnectWithoutInit" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/net/test_mini_event_adapter.cpp" line="190" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:20.175" classname="MiniEventAdapterTest" />
+    <testcase name="SerializeDeserializeMessage" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/net/test_mini_event_adapter.cpp" line="198" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:20.175" classname="MiniEventAdapterTest" />
+    <testcase name="SerializeDeserializeMessageWithFile" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/net/test_mini_event_adapter.cpp" line="229" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:20.175" classname="MiniEventAdapterTest" />
+    <testcase name="SerializeDeserializeFileChunk" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/net/test_mini_event_adapter.cpp" line="270" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:20.175" classname="MiniEventAdapterTest" />
+    <testcase name="DeserializeInvalidMessage" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/net/test_mini_event_adapter.cpp" line="299" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:20.175" classname="MiniEventAdapterTest" />
+    <testcase name="DeserializeInvalidFileChunk" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/net/test_mini_event_adapter.cpp" line="311" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:20.176" classname="MiniEventAdapterTest" />
+    <testcase name="MessageTypeValidation" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/net/test_mini_event_adapter.cpp" line="324" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:20.176" classname="MiniEventAdapterTest" />
+    <testcase name="SendMessageWithoutInit" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/net/test_mini_event_adapter.cpp" line="336" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:20.176" classname="MiniEventAdapterTest" />
+    <testcase name="SendFileChunkWithoutInit" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/net/test_mini_event_adapter.cpp" line="352" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:20.176" classname="MiniEventAdapterTest" />
+    <testcase name="DisconnectWithoutConnection" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/net/test_mini_event_adapter.cpp" line="366" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:20.176" classname="MiniEventAdapterTest" />
+    <testcase name="FullMessageSerialization" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/net/test_mini_event_adapter.cpp" line="374" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:20.176" classname="MiniEventAdapterTest" />
+    <testcase name="LargeFileChunkSerialization" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/net/test_mini_event_adapter.cpp" line="411" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:20.176" classname="MiniEventAdapterTest" />
+    <testcase name="EmptyMessageContent" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/net/test_mini_event_adapter.cpp" line="434" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:20.176" classname="MiniEventAdapterTest" />
+    <testcase name="ZeroSizeFile" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/net/test_mini_event_adapter.cpp" line="452" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:20.176" classname="MiniEventAdapterTest" />
+    <testcase name="MalformedJsonHandling" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/net/test_mini_event_adapter.cpp" line="470" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:20.176" classname="MiniEventAdapterTest" />
+  </testsuite>
+  <testsuite name="LoginViewModelTest" tests="8" failures="0" disabled="0" skipped="0" errors="0" time="0.002" timestamp="2025-09-17T21:12:20.176">
+    <testcase name="ConstructorLoadsCredentials" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/viewmodel/test_login.cpp" line="43" status="run" result="completed" time="0.002" timestamp="2025-09-17T21:12:20.176" classname="LoginViewModelTest" />
+    <testcase name="SetUserNameSavesCredentials" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/viewmodel/test_login.cpp" line="56" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:20.178" classname="LoginViewModelTest" />
+    <testcase name="SetPasswordSavesCredentials" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/viewmodel/test_login.cpp" line="66" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:20.178" classname="LoginViewModelTest" />
+    <testcase name="LoginCallsConnect" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/viewmodel/test_login.cpp" line="76" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:20.178" classname="LoginViewModelTest" />
+    <testcase name="HandleConnectionEventConnectedSendsLoginRequest" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/viewmodel/test_login.cpp" line="90" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:20.178" classname="LoginViewModelTest" />
+    <testcase name="HandleConnectionEventDisconnectedSetsStatus" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/viewmodel/test_login.cpp" line="104" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:20.179" classname="LoginViewModelTest" />
+    <testcase name="HandleLoginResponseSuccess" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/viewmodel/test_login.cpp" line="114" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:20.179" classname="LoginViewModelTest" />
+    <testcase name="HandleLoginResponseFailure" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/viewmodel/test_login.cpp" line="125" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:20.179" classname="LoginViewModelTest" />
+  </testsuite>
+  <testsuite name="ChatViewModelTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2025-09-17T21:12:20.179">
+    <testcase name="Placeholder" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/viewmodel/test_chat.cpp" line="6" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:20.179" classname="ChatViewModelTest" />
+  </testsuite>
+  <testsuite name="FileTransferTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2025-09-17T21:12:20.179">
+    <testcase name="Placeholder" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/transfer/test_file_transfer.cpp" line="6" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:20.179" classname="FileTransferTest" />
+  </testsuite>
+  <testsuite name="E2ELoginSendTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2025-09-17T21:12:20.179">
+    <testcase name="Placeholder" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/integration/test_e2e_login_send.cpp" line="6" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:20.179" classname="E2ELoginSendTest" />
+  </testsuite>
+  <testsuite name="E2EFileReconnectTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2025-09-17T21:12:20.179">
+    <testcase name="Placeholder" file="/Users/dahuang/Desktop/项目/OnlineChat/tests/integration/test_e2e_file_reconnect.cpp" line="5" status="run" result="completed" time="0." timestamp="2025-09-17T21:12:20.179" classname="E2EFileReconnectTest" />
+  </testsuite>
+</testsuites>

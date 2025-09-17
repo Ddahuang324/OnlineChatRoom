@@ -130,5 +130,12 @@ void EVConnConnector::retry(int sockfd) {
     // For future use if needed
 }
 
+void EVConnConnector::removeChannel() {
+    if (channel_) {
+        loop_->removeChannel(channel_.get());
+        channel_.reset();
+    }
+}
+
 } // namespace MiniEventWork
 

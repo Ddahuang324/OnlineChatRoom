@@ -1,5 +1,14 @@
 #define QT_CORE_LIB 1
+#define QT_GUI_LIB 1
+#define QT_NETWORK_LIB 1
 #define QT_NO_DEBUG 1
+#define QT_OPENGL_LIB 1
+#define QT_QMLINTEGRATION_LIB 1
+#define QT_QMLMETA_LIB 1
+#define QT_QMLMODELS_LIB 1
+#define QT_QMLWORKERSCRIPT_LIB 1
+#define QT_QML_LIB 1
+#define QT_QUICK_LIB 1
 #define SIZEOF_DPTR (sizeof(void*))
 #define _LP64 1
 #define __AARCH64EL__ 1

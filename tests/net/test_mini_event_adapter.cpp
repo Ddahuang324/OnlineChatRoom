@@ -163,7 +163,8 @@ TEST_F(MiniEventAdapterTest, InitWithNullEventBase) {
     adapter->init(nullptr,
                   [&](connectionEvents event) {},
                   [&](const MessageRecord&) {},
-                  [&](const FileMeta&) {});
+                  [&](const FileMeta&) {},
+                  [&](const LoginResponse&) {});
 
     // Should create internal EventBase
     SUCCEED();
@@ -173,11 +174,13 @@ TEST_F(MiniEventAdapterTest, InitWithCallbacks) {
     bool connectionCalled = false;
     bool messageCalled = false;
     bool fileCalled = false;
+    bool loginCalled = false;
 
     adapter->init(nullptr,
                   [&](connectionEvents event) { connectionCalled = true; },
                   [&](const MessageRecord&) { messageCalled = true; },
-                  [&](const FileMeta&) { fileCalled = true; });
+                  [&](const FileMeta&) { fileCalled = true; },
+                  [&](const LoginResponse&) { loginCalled = true; });
 
     // Verify callbacks are set (we can't directly test private members)
     SUCCEED();

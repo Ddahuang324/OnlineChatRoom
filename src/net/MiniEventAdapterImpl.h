@@ -1,6 +1,7 @@
 #pragma once
 
 #include "net/MiniEventAdapter.h"
+#include "net/IMiniEventAdapter.h"
 #include <thread>
 #include <mutex>
 #include <condition_variable>
@@ -21,7 +22,7 @@ namespace MiniEventWork {
 
 using SerializedMessage = std::vector<uint8_t>;
 
-class MiniEventAdapterImpl : public MiniEventAdapter {
+class MiniEventAdapterImpl : public MiniEventAdapter, public IMiniEventAdapter {
 public:
     MiniEventAdapterImpl();
     ~MiniEventAdapterImpl() override;
@@ -30,12 +31,14 @@ public:
     void init(MiniEventWork::EventBase* eventBase,
               ConnectionCallback connCb,
               MessageCallback msgCb,
-              FileChunkCallback fileCb) override;
+              FileChunkCallback fileCb,
+              LoginCallback loginCb) override;
 
     void connect(const ConnectionParams& params) override;
     void disconnect() override;
     void sendMessage(const MessageRecord& msg) override;
     void sendFileChunk(const FileMeta& chunk) override;
+    void sendLoginRequest(const LoginRequest& req) override;
 
 
 private:
@@ -48,6 +51,7 @@ private:
     ConnectionCallback connectionCallback_;
     MessageCallback messageCallback_;
     FileChunkCallback fileCallback_;
+    LoginCallback loginCallback_;
 
 
     std::shared_ptr<MiniEventWork::BufferEvent> bev_{nullptr}; // 使用 shared_ptr 管理 BufferEvent
@@ -70,4 +74,6 @@ private:
     bool deserializeMessage(const SerializedMessage& serialized, MessageRecord& msg); // 反序列化函数
     SerializedMessage serializedFileChunk(const FileMeta& chunk);
     bool deserializeFileChunk(const SerializedMessage& serialized, FileMeta& chunk);
+    SerializedMessage serializedLoginRequest(const LoginRequest& req);
+    bool deserializeLoginResponse(const SerializedMessage& serialized, LoginResponse& resp);
 };
