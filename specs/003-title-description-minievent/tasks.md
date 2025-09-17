@@ -245,6 +245,20 @@ FEATURE_DIR: specs/003-title-description-minievent
   逻辑: 创建/注入 `FileTransferManager`，并通过其 `uploadFile(path)` 开始上传；ViewModel 仅负责 UI 交互与进度回调转发（进度事件也需要 marshal 到主线程）。
   依赖: T036-T041（FileTransfer 子系统完成）
 
+[ ] T033a RoomsViewModel 头文件
+  文件: src/viewmodel/RoomsViewModel.h
+  成员: Q_OBJECT; Storage* storage_; // 注入; QVector<Room> rooms_; QString currentRoomId_; 
+  说明: 管理房间/聊天对象列表（chat list），提供查询/刷新/选择 room 的接口。必须保证对 Storage 的读取在后台线程或使用 shared_lock 执行。
+  信号: `roomsUpdated()`, `roomSelected(QString roomId)`
+
+[ ] T033b [P] RoomsViewModel 实现 (列表/选择)
+  文件: src/viewmodel/RoomsViewModel.cpp
+  功能: loadRooms(), refreshRooms(), selectRoom(roomId)
+  逻辑:
+    - loadRooms 从 storage_->loadRooms() 或合适接口读取房间并填充 `rooms_`。
+    - selectRoom 更新 `currentRoomId_` 并发射 `roomSelected(roomId)`，ChatViewModel 可监听此信号并切换上下文。
+  验收: 在 tests/viewmodel/test_rooms.cpp 中使用 MockStorage 验证加载/选择/刷新行为。
+
 [ ] T035 ViewModel 单元测试
   文件: tests/viewmodel/test_login.cpp / tests/viewmodel/test_chat.cpp
   要求:
@@ -257,29 +271,46 @@ FEATURE_DIR: specs/003-title-description-minievent
 -------------------------------------------------
 [ ] T036 FileTransferManager 头文件
   文件: src/transfer/FileTransferManager.h
-  成员: struct UploadCtx{ std::string fileId; uint64_t sent; uint64_t total; int retries; }; Storage* storage_; MiniEventAdapter* net_; QThreadPool pool_; size_t concurrency_=3;
+  成员: struct UploadCtx{ std::string fileId; uint64_t sent; uint64_t total; int retries; uint32_t chunkIndex; uint32_t totalChunks; }; Storage* storage_; MiniEventAdapter* net_; QThreadPool pool_; size_t concurrency_=3;
+  说明: 注意 `MiniEventAdapter::sendFileChunk(const FileMeta&)` 的现有签名——`FileMeta` 必须携带足够信息以便适配器在 EventBase 线程中序列化并读取要发送的分片（例如 `localPath`, `fileId`, `chunkIndex`, `totalChunks`, `fileSize`）。
 
 [ ] T037 [P] FileTransferManager.cpp 上传调度 uploadFile
-  分片: 64KiB; 读取 → 推线程池任务 → net_->sendFileChunk
+  文件: src/transfer/FileTransferManager.cpp
+  分片策略与职责划分:
+    - 分片大小上限: 64 KiB
+    - `FileTransferManager::uploadFile(path)` 负责:
+      1. 生成 `fileId`, 计算 `totalChunks` = ceil(fileSize / 64KiB)
+      2. 为每个 chunk 构建 `FileMeta`（至少包含 `fileId`, `fileName`, `localPath`, `fileSize`, `chunkIndex`, `totalChunks`）并提交到线程池或 send 队列。
+      3. 不直接假设 adapter 需要 chunk bytes；当前 `MiniEventAdapter` 的签名为 `sendFileChunk(const FileMeta&)`，实现（`MiniEventAdapterImpl`）会在自身的序列化步骤中根据 `localPath`/`chunkIndex` 读取磁盘并构造 `SerializedMessage`。
+    - 备选（可选）实现: 若你更倾向于让 `FileTransferManager` 读取并携带 bytes，则应扩展 `FileMeta`（例如添加 `std::vector<uint8_t> chunkData`）并同步更新 `include/model/Entities.hpp` 与 adapter 头以匹配（这会是向后不兼容的 API 变更，需另列任务）。
 
 [ ] T038 onChunkAck 处理与进度保存
   文件: src/transfer/FileTransferManager.cpp
-  调用: storage_->saveFileProgress(fileId, offset)
+  说明: Adapter 在收到远端 ACK/回执时（由 net 层触发 FileChunkCallback 或 MessageCallback 包含 ACK）应通知 FileTransferManager。FileTransferManager 在确认某分片被接受后调用 `storage_->saveFileProgress(fileId, offsetOrChunkIndex)` 并更新 UploadCtx。测试应覆盖在 ACK 延迟或丢失时的重试逻辑。
 
 [ ] T039 [P] resumeUpload 断点续传
   文件: src/transfer/FileTransferManager.cpp
-  逻辑: loadFileProgress → 继续 offset 对齐的下一片
+  逻辑: 调用 `storage_->loadFileProgress(fileId)` 获取最后成功的 chunkIndex/offset，计算下一待发送的 chunkIndex 并继续上传请求。注意：resume 流程必须与 `FileMeta` 中的 `chunkIndex/totalChunks` 保持一致并做边界检查。
 
 [ ] T040 与 ChatViewModel 集成 (注入 manager)
   文件: src/viewmodel/ChatViewModel.cpp / .h
+  说明: ChatViewModel 应注入 `FileTransferManager` 实例并在 UI 操作触发时调用 `uploadFile(path)`；同时订阅进度回调并确保这些回调被 marshal 到主线程用于 UI 更新。
 
 [ ] T041 传输重试与指数退避策略
   文件: src/transfer/FileTransferManager.cpp
-  算法: attemptDelay= base*2^retries (base=300ms, max=5s, retries<=3)
+  算法: attemptDelay = base * 2^retries (base=300ms, max=5s, retries<=3)
+  说明: 当 adapter 报告 InternalError/Timeout/Transient 网络错误时进行重试；在达到重试上限后报告失败并更新 message/file 状态为 Failed。
 
 [ ] T042 单元测试文件传输
   文件: tests/transfer/test_file_transfer.cpp
-  场景: 正常上传 / 中断恢复 / 重试上限
+  场景与要求:
+    - 正常上传：验证 `FileMeta` 被正确构造并对每个 chunk 调用 `net_->sendFileChunk`；在模拟 ACK 后进度被写入 storage。
+    - 中断恢复：在上传中断后，重新启动 upload，验证 `resumeUpload` 从上次保存进度继续。
+    - 重试上限：模拟 adapter 返回不可恢复错误，验证在重试用尽后上报失败。
+    - 并发上传：启动多个 uploadFile 调用，验证 `QThreadPool`/concurrency 限制生效且对同一 fileId 的分片按序处理（若同一 file 的分片在同一文件/资源上并发写入则应顺序化）。
+  Mock 要求: `MockMiniEventAdapter` 必须能够：
+    - 模拟在另一个线程（非主线程）触发 ACK 回调/FileChunkCallback，以验证 FileTransferManager 与 ViewModel 的 marshal/同步逻辑；
+    - 验证传入的 `FileMeta` 字段完整（包含 `chunkIndex`, `totalChunks`, `localPath` 等）并可选择性地回写 ACK 或模拟错误。
 
 -------------------------------------------------
 阶段 7: QML UI / 主题 / 动画
@@ -295,6 +326,16 @@ FEATURE_DIR: specs/003-title-description-minievent
 [ ] T045 ChatPage UI 初始
   文件: qml/pages/ChatPage.qml
   元素: ListView(messages), TextArea(input), Button(send), Button(sendFile)
+
+[ ] T045a ChatListPage UI (Chat list / Rooms)
+  文件: qml/pages/ChatListPage.qml
+  元素: ListView(rooms) 显示房间/联系人缩略信息 (name, lastMessage, unreadCount), Button(openChat)
+  交互: 点击房间触发 `roomSelected(roomId)`（绑定到 `RoomsViewModel.roomSelected`），并导航到 `ChatPage.qml`（或在主 QML 中切换 StackView 页面）。
+  验收: QML 层能通过 `RoomsViewModel` 的 `roomsUpdated()` 信号刷新列表；点击房间调用 `selectRoom` 并导航。
+
+[ ] T043a main 注册 RoomsViewModel 与导航
+  文件: src/app/main.cpp, qml/Main.qml
+  说明: main.cpp 应同时注册 `RoomsViewModel`，并在 QML 中实现页面间导航（StackView / Loader）。确保 `RoomsViewModel` 在 app 启动时先做一次 `loadRooms()`。
 
 [ ] T046 [P] 主题定义
   文件: qml/themes/colors.qml, qml/ThemeManager.qml
