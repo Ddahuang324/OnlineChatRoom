@@ -69,7 +69,7 @@ include tests/CMakeFiles/unit_tests.dir/progress.make
 # Include the compile flags for this target's objects.
 include tests/CMakeFiles/unit_tests.dir/flags.make
 
-tests/unit_tests_autogen/timestamp: /opt/homebrew/share/qt/libexec/moc
+tests/unit_tests_autogen/timestamp: /Users/dahuang/Qt/6.9.1/macos/libexec/moc
 tests/unit_tests_autogen/timestamp: tests/CMakeFiles/unit_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target unit_tests"
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /opt/homebrew/bin/cmake -E cmake_autogen /Users/dahuang/Desktop/项目/OnlineChat/build/tests/CMakeFiles/unit_tests_autogen.dir/AutogenInfo.json ""
@@ -82,197 +82,197 @@ tests/CMakeFiles/unit_tests.dir/unit_tests_autogen/mocs_compilation.cpp.o: tests
 tests/CMakeFiles/unit_tests.dir/unit_tests_autogen/mocs_compilation.cpp.o: tests/unit_tests_autogen/mocs_compilation.cpp
 tests/CMakeFiles/unit_tests.dir/unit_tests_autogen/mocs_compilation.cpp.o: tests/CMakeFiles/unit_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/unit_tests.dir/unit_tests_autogen/mocs_compilation.cpp.o"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/unit_tests_autogen/mocs_compilation.cpp.o -MF CMakeFiles/unit_tests.dir/unit_tests_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/unit_tests.dir/unit_tests_autogen/mocs_compilation.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/build/tests/unit_tests_autogen/mocs_compilation.cpp
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/unit_tests_autogen/mocs_compilation.cpp.o -MF CMakeFiles/unit_tests.dir/unit_tests_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/unit_tests.dir/unit_tests_autogen/mocs_compilation.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/build/tests/unit_tests_autogen/mocs_compilation.cpp
 
 tests/CMakeFiles/unit_tests.dir/unit_tests_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/unit_tests_autogen/mocs_compilation.cpp.i"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/build/tests/unit_tests_autogen/mocs_compilation.cpp > CMakeFiles/unit_tests.dir/unit_tests_autogen/mocs_compilation.cpp.i
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/build/tests/unit_tests_autogen/mocs_compilation.cpp > CMakeFiles/unit_tests.dir/unit_tests_autogen/mocs_compilation.cpp.i
 
 tests/CMakeFiles/unit_tests.dir/unit_tests_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/unit_tests_autogen/mocs_compilation.cpp.s"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/build/tests/unit_tests_autogen/mocs_compilation.cpp -o CMakeFiles/unit_tests.dir/unit_tests_autogen/mocs_compilation.cpp.s
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/build/tests/unit_tests_autogen/mocs_compilation.cpp -o CMakeFiles/unit_tests.dir/unit_tests_autogen/mocs_compilation.cpp.s
 
 tests/CMakeFiles/unit_tests.dir/main.cpp.o: tests/CMakeFiles/unit_tests.dir/flags.make
 tests/CMakeFiles/unit_tests.dir/main.cpp.o: /Users/dahuang/Desktop/项目/OnlineChat/tests/main.cpp
 tests/CMakeFiles/unit_tests.dir/main.cpp.o: tests/CMakeFiles/unit_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object tests/CMakeFiles/unit_tests.dir/main.cpp.o"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/main.cpp.o -MF CMakeFiles/unit_tests.dir/main.cpp.o.d -o CMakeFiles/unit_tests.dir/main.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/tests/main.cpp
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/main.cpp.o -MF CMakeFiles/unit_tests.dir/main.cpp.o.d -o CMakeFiles/unit_tests.dir/main.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/tests/main.cpp
 
 tests/CMakeFiles/unit_tests.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/main.cpp.i"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/tests/main.cpp > CMakeFiles/unit_tests.dir/main.cpp.i
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/tests/main.cpp > CMakeFiles/unit_tests.dir/main.cpp.i
 
 tests/CMakeFiles/unit_tests.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/main.cpp.s"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/tests/main.cpp -o CMakeFiles/unit_tests.dir/main.cpp.s
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/tests/main.cpp -o CMakeFiles/unit_tests.dir/main.cpp.s
 
 tests/CMakeFiles/unit_tests.dir/config/test_config.cpp.o: tests/CMakeFiles/unit_tests.dir/flags.make
 tests/CMakeFiles/unit_tests.dir/config/test_config.cpp.o: /Users/dahuang/Desktop/项目/OnlineChat/tests/config/test_config.cpp
 tests/CMakeFiles/unit_tests.dir/config/test_config.cpp.o: tests/CMakeFiles/unit_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object tests/CMakeFiles/unit_tests.dir/config/test_config.cpp.o"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/config/test_config.cpp.o -MF CMakeFiles/unit_tests.dir/config/test_config.cpp.o.d -o CMakeFiles/unit_tests.dir/config/test_config.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/tests/config/test_config.cpp
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/config/test_config.cpp.o -MF CMakeFiles/unit_tests.dir/config/test_config.cpp.o.d -o CMakeFiles/unit_tests.dir/config/test_config.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/tests/config/test_config.cpp
 
 tests/CMakeFiles/unit_tests.dir/config/test_config.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/config/test_config.cpp.i"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/tests/config/test_config.cpp > CMakeFiles/unit_tests.dir/config/test_config.cpp.i
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/tests/config/test_config.cpp > CMakeFiles/unit_tests.dir/config/test_config.cpp.i
 
 tests/CMakeFiles/unit_tests.dir/config/test_config.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/config/test_config.cpp.s"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/tests/config/test_config.cpp -o CMakeFiles/unit_tests.dir/config/test_config.cpp.s
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/tests/config/test_config.cpp -o CMakeFiles/unit_tests.dir/config/test_config.cpp.s
 
 tests/CMakeFiles/unit_tests.dir/contract/test_network_connect.cpp.o: tests/CMakeFiles/unit_tests.dir/flags.make
 tests/CMakeFiles/unit_tests.dir/contract/test_network_connect.cpp.o: /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_network_connect.cpp
 tests/CMakeFiles/unit_tests.dir/contract/test_network_connect.cpp.o: tests/CMakeFiles/unit_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object tests/CMakeFiles/unit_tests.dir/contract/test_network_connect.cpp.o"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/contract/test_network_connect.cpp.o -MF CMakeFiles/unit_tests.dir/contract/test_network_connect.cpp.o.d -o CMakeFiles/unit_tests.dir/contract/test_network_connect.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_network_connect.cpp
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/contract/test_network_connect.cpp.o -MF CMakeFiles/unit_tests.dir/contract/test_network_connect.cpp.o.d -o CMakeFiles/unit_tests.dir/contract/test_network_connect.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_network_connect.cpp
 
 tests/CMakeFiles/unit_tests.dir/contract/test_network_connect.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/contract/test_network_connect.cpp.i"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_network_connect.cpp > CMakeFiles/unit_tests.dir/contract/test_network_connect.cpp.i
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_network_connect.cpp > CMakeFiles/unit_tests.dir/contract/test_network_connect.cpp.i
 
 tests/CMakeFiles/unit_tests.dir/contract/test_network_connect.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/contract/test_network_connect.cpp.s"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_network_connect.cpp -o CMakeFiles/unit_tests.dir/contract/test_network_connect.cpp.s
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_network_connect.cpp -o CMakeFiles/unit_tests.dir/contract/test_network_connect.cpp.s
 
 tests/CMakeFiles/unit_tests.dir/contract/test_network_file_chunk.cpp.o: tests/CMakeFiles/unit_tests.dir/flags.make
 tests/CMakeFiles/unit_tests.dir/contract/test_network_file_chunk.cpp.o: /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_network_file_chunk.cpp
 tests/CMakeFiles/unit_tests.dir/contract/test_network_file_chunk.cpp.o: tests/CMakeFiles/unit_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object tests/CMakeFiles/unit_tests.dir/contract/test_network_file_chunk.cpp.o"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/contract/test_network_file_chunk.cpp.o -MF CMakeFiles/unit_tests.dir/contract/test_network_file_chunk.cpp.o.d -o CMakeFiles/unit_tests.dir/contract/test_network_file_chunk.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_network_file_chunk.cpp
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/contract/test_network_file_chunk.cpp.o -MF CMakeFiles/unit_tests.dir/contract/test_network_file_chunk.cpp.o.d -o CMakeFiles/unit_tests.dir/contract/test_network_file_chunk.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_network_file_chunk.cpp
 
 tests/CMakeFiles/unit_tests.dir/contract/test_network_file_chunk.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/contract/test_network_file_chunk.cpp.i"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_network_file_chunk.cpp > CMakeFiles/unit_tests.dir/contract/test_network_file_chunk.cpp.i
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_network_file_chunk.cpp > CMakeFiles/unit_tests.dir/contract/test_network_file_chunk.cpp.i
 
 tests/CMakeFiles/unit_tests.dir/contract/test_network_file_chunk.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/contract/test_network_file_chunk.cpp.s"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_network_file_chunk.cpp -o CMakeFiles/unit_tests.dir/contract/test_network_file_chunk.cpp.s
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_network_file_chunk.cpp -o CMakeFiles/unit_tests.dir/contract/test_network_file_chunk.cpp.s
 
 tests/CMakeFiles/unit_tests.dir/contract/test_storage_user.cpp.o: tests/CMakeFiles/unit_tests.dir/flags.make
 tests/CMakeFiles/unit_tests.dir/contract/test_storage_user.cpp.o: /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_storage_user.cpp
 tests/CMakeFiles/unit_tests.dir/contract/test_storage_user.cpp.o: tests/CMakeFiles/unit_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object tests/CMakeFiles/unit_tests.dir/contract/test_storage_user.cpp.o"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/contract/test_storage_user.cpp.o -MF CMakeFiles/unit_tests.dir/contract/test_storage_user.cpp.o.d -o CMakeFiles/unit_tests.dir/contract/test_storage_user.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_storage_user.cpp
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/contract/test_storage_user.cpp.o -MF CMakeFiles/unit_tests.dir/contract/test_storage_user.cpp.o.d -o CMakeFiles/unit_tests.dir/contract/test_storage_user.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_storage_user.cpp
 
 tests/CMakeFiles/unit_tests.dir/contract/test_storage_user.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/contract/test_storage_user.cpp.i"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_storage_user.cpp > CMakeFiles/unit_tests.dir/contract/test_storage_user.cpp.i
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_storage_user.cpp > CMakeFiles/unit_tests.dir/contract/test_storage_user.cpp.i
 
 tests/CMakeFiles/unit_tests.dir/contract/test_storage_user.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/contract/test_storage_user.cpp.s"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_storage_user.cpp -o CMakeFiles/unit_tests.dir/contract/test_storage_user.cpp.s
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_storage_user.cpp -o CMakeFiles/unit_tests.dir/contract/test_storage_user.cpp.s
 
 tests/CMakeFiles/unit_tests.dir/contract/test_storage_messages.cpp.o: tests/CMakeFiles/unit_tests.dir/flags.make
 tests/CMakeFiles/unit_tests.dir/contract/test_storage_messages.cpp.o: /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_storage_messages.cpp
 tests/CMakeFiles/unit_tests.dir/contract/test_storage_messages.cpp.o: tests/CMakeFiles/unit_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object tests/CMakeFiles/unit_tests.dir/contract/test_storage_messages.cpp.o"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/contract/test_storage_messages.cpp.o -MF CMakeFiles/unit_tests.dir/contract/test_storage_messages.cpp.o.d -o CMakeFiles/unit_tests.dir/contract/test_storage_messages.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_storage_messages.cpp
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/contract/test_storage_messages.cpp.o -MF CMakeFiles/unit_tests.dir/contract/test_storage_messages.cpp.o.d -o CMakeFiles/unit_tests.dir/contract/test_storage_messages.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_storage_messages.cpp
 
 tests/CMakeFiles/unit_tests.dir/contract/test_storage_messages.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/contract/test_storage_messages.cpp.i"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_storage_messages.cpp > CMakeFiles/unit_tests.dir/contract/test_storage_messages.cpp.i
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_storage_messages.cpp > CMakeFiles/unit_tests.dir/contract/test_storage_messages.cpp.i
 
 tests/CMakeFiles/unit_tests.dir/contract/test_storage_messages.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/contract/test_storage_messages.cpp.s"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_storage_messages.cpp -o CMakeFiles/unit_tests.dir/contract/test_storage_messages.cpp.s
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/tests/contract/test_storage_messages.cpp -o CMakeFiles/unit_tests.dir/contract/test_storage_messages.cpp.s
 
 tests/CMakeFiles/unit_tests.dir/storage/test_sqlite.cpp.o: tests/CMakeFiles/unit_tests.dir/flags.make
 tests/CMakeFiles/unit_tests.dir/storage/test_sqlite.cpp.o: /Users/dahuang/Desktop/项目/OnlineChat/tests/storage/test_sqlite.cpp
 tests/CMakeFiles/unit_tests.dir/storage/test_sqlite.cpp.o: tests/CMakeFiles/unit_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object tests/CMakeFiles/unit_tests.dir/storage/test_sqlite.cpp.o"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/storage/test_sqlite.cpp.o -MF CMakeFiles/unit_tests.dir/storage/test_sqlite.cpp.o.d -o CMakeFiles/unit_tests.dir/storage/test_sqlite.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/tests/storage/test_sqlite.cpp
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/storage/test_sqlite.cpp.o -MF CMakeFiles/unit_tests.dir/storage/test_sqlite.cpp.o.d -o CMakeFiles/unit_tests.dir/storage/test_sqlite.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/tests/storage/test_sqlite.cpp
 
 tests/CMakeFiles/unit_tests.dir/storage/test_sqlite.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/storage/test_sqlite.cpp.i"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/tests/storage/test_sqlite.cpp > CMakeFiles/unit_tests.dir/storage/test_sqlite.cpp.i
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/tests/storage/test_sqlite.cpp > CMakeFiles/unit_tests.dir/storage/test_sqlite.cpp.i
 
 tests/CMakeFiles/unit_tests.dir/storage/test_sqlite.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/storage/test_sqlite.cpp.s"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/tests/storage/test_sqlite.cpp -o CMakeFiles/unit_tests.dir/storage/test_sqlite.cpp.s
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/tests/storage/test_sqlite.cpp -o CMakeFiles/unit_tests.dir/storage/test_sqlite.cpp.s
 
 tests/CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.o: tests/CMakeFiles/unit_tests.dir/flags.make
 tests/CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.o: /Users/dahuang/Desktop/项目/OnlineChat/tests/net/test_mini_event_adapter.cpp
 tests/CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.o: tests/CMakeFiles/unit_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object tests/CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.o"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.o -MF CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.o.d -o CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/tests/net/test_mini_event_adapter.cpp
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.o -MF CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.o.d -o CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/tests/net/test_mini_event_adapter.cpp
 
 tests/CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.i"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/tests/net/test_mini_event_adapter.cpp > CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.i
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/tests/net/test_mini_event_adapter.cpp > CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.i
 
 tests/CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.s"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/tests/net/test_mini_event_adapter.cpp -o CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.s
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/tests/net/test_mini_event_adapter.cpp -o CMakeFiles/unit_tests.dir/net/test_mini_event_adapter.cpp.s
 
 tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o: tests/CMakeFiles/unit_tests.dir/flags.make
 tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o: /Users/dahuang/Desktop/项目/OnlineChat/tests/viewmodel/test_login.cpp
 tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o: tests/CMakeFiles/unit_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o -MF CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o.d -o CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/tests/viewmodel/test_login.cpp
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o -MF CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o.d -o CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/tests/viewmodel/test_login.cpp
 
 tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.i"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/tests/viewmodel/test_login.cpp > CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.i
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/tests/viewmodel/test_login.cpp > CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.i
 
 tests/CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.s"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/tests/viewmodel/test_login.cpp -o CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.s
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/tests/viewmodel/test_login.cpp -o CMakeFiles/unit_tests.dir/viewmodel/test_login.cpp.s
 
 tests/CMakeFiles/unit_tests.dir/viewmodel/test_chat.cpp.o: tests/CMakeFiles/unit_tests.dir/flags.make
 tests/CMakeFiles/unit_tests.dir/viewmodel/test_chat.cpp.o: /Users/dahuang/Desktop/项目/OnlineChat/tests/viewmodel/test_chat.cpp
 tests/CMakeFiles/unit_tests.dir/viewmodel/test_chat.cpp.o: tests/CMakeFiles/unit_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object tests/CMakeFiles/unit_tests.dir/viewmodel/test_chat.cpp.o"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/viewmodel/test_chat.cpp.o -MF CMakeFiles/unit_tests.dir/viewmodel/test_chat.cpp.o.d -o CMakeFiles/unit_tests.dir/viewmodel/test_chat.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/tests/viewmodel/test_chat.cpp
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/viewmodel/test_chat.cpp.o -MF CMakeFiles/unit_tests.dir/viewmodel/test_chat.cpp.o.d -o CMakeFiles/unit_tests.dir/viewmodel/test_chat.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/tests/viewmodel/test_chat.cpp
 
 tests/CMakeFiles/unit_tests.dir/viewmodel/test_chat.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/viewmodel/test_chat.cpp.i"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/tests/viewmodel/test_chat.cpp > CMakeFiles/unit_tests.dir/viewmodel/test_chat.cpp.i
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/tests/viewmodel/test_chat.cpp > CMakeFiles/unit_tests.dir/viewmodel/test_chat.cpp.i
 
 tests/CMakeFiles/unit_tests.dir/viewmodel/test_chat.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/viewmodel/test_chat.cpp.s"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/tests/viewmodel/test_chat.cpp -o CMakeFiles/unit_tests.dir/viewmodel/test_chat.cpp.s
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/tests/viewmodel/test_chat.cpp -o CMakeFiles/unit_tests.dir/viewmodel/test_chat.cpp.s
 
 tests/CMakeFiles/unit_tests.dir/transfer/test_file_transfer.cpp.o: tests/CMakeFiles/unit_tests.dir/flags.make
 tests/CMakeFiles/unit_tests.dir/transfer/test_file_transfer.cpp.o: /Users/dahuang/Desktop/项目/OnlineChat/tests/transfer/test_file_transfer.cpp
 tests/CMakeFiles/unit_tests.dir/transfer/test_file_transfer.cpp.o: tests/CMakeFiles/unit_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object tests/CMakeFiles/unit_tests.dir/transfer/test_file_transfer.cpp.o"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/transfer/test_file_transfer.cpp.o -MF CMakeFiles/unit_tests.dir/transfer/test_file_transfer.cpp.o.d -o CMakeFiles/unit_tests.dir/transfer/test_file_transfer.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/tests/transfer/test_file_transfer.cpp
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/transfer/test_file_transfer.cpp.o -MF CMakeFiles/unit_tests.dir/transfer/test_file_transfer.cpp.o.d -o CMakeFiles/unit_tests.dir/transfer/test_file_transfer.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/tests/transfer/test_file_transfer.cpp
 
 tests/CMakeFiles/unit_tests.dir/transfer/test_file_transfer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/transfer/test_file_transfer.cpp.i"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/tests/transfer/test_file_transfer.cpp > CMakeFiles/unit_tests.dir/transfer/test_file_transfer.cpp.i
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/tests/transfer/test_file_transfer.cpp > CMakeFiles/unit_tests.dir/transfer/test_file_transfer.cpp.i
 
 tests/CMakeFiles/unit_tests.dir/transfer/test_file_transfer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/transfer/test_file_transfer.cpp.s"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/tests/transfer/test_file_transfer.cpp -o CMakeFiles/unit_tests.dir/transfer/test_file_transfer.cpp.s
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/tests/transfer/test_file_transfer.cpp -o CMakeFiles/unit_tests.dir/transfer/test_file_transfer.cpp.s
 
 tests/CMakeFiles/unit_tests.dir/integration/test_e2e_login_send.cpp.o: tests/CMakeFiles/unit_tests.dir/flags.make
 tests/CMakeFiles/unit_tests.dir/integration/test_e2e_login_send.cpp.o: /Users/dahuang/Desktop/项目/OnlineChat/tests/integration/test_e2e_login_send.cpp
 tests/CMakeFiles/unit_tests.dir/integration/test_e2e_login_send.cpp.o: tests/CMakeFiles/unit_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object tests/CMakeFiles/unit_tests.dir/integration/test_e2e_login_send.cpp.o"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/integration/test_e2e_login_send.cpp.o -MF CMakeFiles/unit_tests.dir/integration/test_e2e_login_send.cpp.o.d -o CMakeFiles/unit_tests.dir/integration/test_e2e_login_send.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/tests/integration/test_e2e_login_send.cpp
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/integration/test_e2e_login_send.cpp.o -MF CMakeFiles/unit_tests.dir/integration/test_e2e_login_send.cpp.o.d -o CMakeFiles/unit_tests.dir/integration/test_e2e_login_send.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/tests/integration/test_e2e_login_send.cpp
 
 tests/CMakeFiles/unit_tests.dir/integration/test_e2e_login_send.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/integration/test_e2e_login_send.cpp.i"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/tests/integration/test_e2e_login_send.cpp > CMakeFiles/unit_tests.dir/integration/test_e2e_login_send.cpp.i
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/tests/integration/test_e2e_login_send.cpp > CMakeFiles/unit_tests.dir/integration/test_e2e_login_send.cpp.i
 
 tests/CMakeFiles/unit_tests.dir/integration/test_e2e_login_send.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/integration/test_e2e_login_send.cpp.s"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/tests/integration/test_e2e_login_send.cpp -o CMakeFiles/unit_tests.dir/integration/test_e2e_login_send.cpp.s
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/tests/integration/test_e2e_login_send.cpp -o CMakeFiles/unit_tests.dir/integration/test_e2e_login_send.cpp.s
 
 tests/CMakeFiles/unit_tests.dir/integration/test_e2e_file_reconnect.cpp.o: tests/CMakeFiles/unit_tests.dir/flags.make
 tests/CMakeFiles/unit_tests.dir/integration/test_e2e_file_reconnect.cpp.o: /Users/dahuang/Desktop/项目/OnlineChat/tests/integration/test_e2e_file_reconnect.cpp
 tests/CMakeFiles/unit_tests.dir/integration/test_e2e_file_reconnect.cpp.o: tests/CMakeFiles/unit_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object tests/CMakeFiles/unit_tests.dir/integration/test_e2e_file_reconnect.cpp.o"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/integration/test_e2e_file_reconnect.cpp.o -MF CMakeFiles/unit_tests.dir/integration/test_e2e_file_reconnect.cpp.o.d -o CMakeFiles/unit_tests.dir/integration/test_e2e_file_reconnect.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/tests/integration/test_e2e_file_reconnect.cpp
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/integration/test_e2e_file_reconnect.cpp.o -MF CMakeFiles/unit_tests.dir/integration/test_e2e_file_reconnect.cpp.o.d -o CMakeFiles/unit_tests.dir/integration/test_e2e_file_reconnect.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/tests/integration/test_e2e_file_reconnect.cpp
 
 tests/CMakeFiles/unit_tests.dir/integration/test_e2e_file_reconnect.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/integration/test_e2e_file_reconnect.cpp.i"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/tests/integration/test_e2e_file_reconnect.cpp > CMakeFiles/unit_tests.dir/integration/test_e2e_file_reconnect.cpp.i
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/tests/integration/test_e2e_file_reconnect.cpp > CMakeFiles/unit_tests.dir/integration/test_e2e_file_reconnect.cpp.i
 
 tests/CMakeFiles/unit_tests.dir/integration/test_e2e_file_reconnect.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/integration/test_e2e_file_reconnect.cpp.s"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/tests/integration/test_e2e_file_reconnect.cpp -o CMakeFiles/unit_tests.dir/integration/test_e2e_file_reconnect.cpp.s
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/tests/integration/test_e2e_file_reconnect.cpp -o CMakeFiles/unit_tests.dir/integration/test_e2e_file_reconnect.cpp.s
 
 # Object files for target unit_tests
 unit_tests_OBJECTS = \
@@ -323,15 +323,15 @@ tests/unit_tests: /opt/homebrew/opt/googletest/lib/libgtest.a
 tests/unit_tests: src/libstorage_lib.a
 tests/unit_tests: /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/lib/libsqlite3.tbd
 tests/unit_tests: src/libnet_lib.a
-tests/unit_tests: /opt/homebrew/lib/QtQuick.framework/Versions/A/QtQuick
-tests/unit_tests: /opt/homebrew/lib/QtQmlMeta.framework/Versions/A/QtQmlMeta
-tests/unit_tests: /opt/homebrew/lib/QtQmlWorkerScript.framework/Versions/A/QtQmlWorkerScript
-tests/unit_tests: /opt/homebrew/lib/QtQmlModels.framework/Versions/A/QtQmlModels
-tests/unit_tests: /opt/homebrew/lib/QtQml.framework/Versions/A/QtQml
-tests/unit_tests: /opt/homebrew/lib/QtNetwork.framework/Versions/A/QtNetwork
-tests/unit_tests: /opt/homebrew/lib/QtOpenGL.framework/Versions/A/QtOpenGL
-tests/unit_tests: /opt/homebrew/lib/QtGui.framework/Versions/A/QtGui
-tests/unit_tests: /opt/homebrew/lib/QtCore.framework/Versions/A/QtCore
+tests/unit_tests: /Users/dahuang/Qt/6.9.1/macos/lib/QtQuick.framework/Versions/A/QtQuick
+tests/unit_tests: /Users/dahuang/Qt/6.9.1/macos/lib/QtQmlMeta.framework/Versions/A/QtQmlMeta
+tests/unit_tests: /Users/dahuang/Qt/6.9.1/macos/lib/QtQmlWorkerScript.framework/Versions/A/QtQmlWorkerScript
+tests/unit_tests: /Users/dahuang/Qt/6.9.1/macos/lib/QtQmlModels.framework/Versions/A/QtQmlModels
+tests/unit_tests: /Users/dahuang/Qt/6.9.1/macos/lib/QtQml.framework/Versions/A/QtQml
+tests/unit_tests: /Users/dahuang/Qt/6.9.1/macos/lib/QtNetwork.framework/Versions/A/QtNetwork
+tests/unit_tests: /Users/dahuang/Qt/6.9.1/macos/lib/QtOpenGL.framework/Versions/A/QtOpenGL
+tests/unit_tests: /Users/dahuang/Qt/6.9.1/macos/lib/QtGui.framework/Versions/A/QtGui
+tests/unit_tests: /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/QtCore
 tests/unit_tests: tests/CMakeFiles/unit_tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable unit_tests"
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/unit_tests.dir/link.txt --verbose=$(VERBOSE)

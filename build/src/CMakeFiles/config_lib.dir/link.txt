@@ -1,2 +1,2 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libconfig_lib.a CMakeFiles/config_lib.dir/config_lib_autogen/mocs_compilation.cpp.o CMakeFiles/config_lib.dir/config/Config.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libconfig_lib.a
+/usr/bin/ar qc libconfig_lib.a CMakeFiles/config_lib.dir/config_lib_autogen/mocs_compilation.cpp.o CMakeFiles/config_lib.dir/config/Config.cpp.o
+/usr/bin/ranlib libconfig_lib.a

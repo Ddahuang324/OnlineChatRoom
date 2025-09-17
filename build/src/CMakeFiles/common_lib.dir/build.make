@@ -69,7 +69,7 @@ include src/CMakeFiles/common_lib.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/common_lib.dir/flags.make
 
-src/common_lib_autogen/timestamp: /opt/homebrew/share/qt/libexec/moc
+src/common_lib_autogen/timestamp: /Users/dahuang/Qt/6.9.1/macos/libexec/moc
 src/common_lib_autogen/timestamp: src/CMakeFiles/common_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target common_lib"
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /opt/homebrew/bin/cmake -E cmake_autogen /Users/dahuang/Desktop/项目/OnlineChat/build/src/CMakeFiles/common_lib_autogen.dir/AutogenInfo.json ""
@@ -82,29 +82,29 @@ src/CMakeFiles/common_lib.dir/common_lib_autogen/mocs_compilation.cpp.o: src/CMa
 src/CMakeFiles/common_lib.dir/common_lib_autogen/mocs_compilation.cpp.o: src/common_lib_autogen/mocs_compilation.cpp
 src/CMakeFiles/common_lib.dir/common_lib_autogen/mocs_compilation.cpp.o: src/CMakeFiles/common_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/common_lib.dir/common_lib_autogen/mocs_compilation.cpp.o"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/common_lib.dir/common_lib_autogen/mocs_compilation.cpp.o -MF CMakeFiles/common_lib.dir/common_lib_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/common_lib.dir/common_lib_autogen/mocs_compilation.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/build/src/common_lib_autogen/mocs_compilation.cpp
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/common_lib.dir/common_lib_autogen/mocs_compilation.cpp.o -MF CMakeFiles/common_lib.dir/common_lib_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/common_lib.dir/common_lib_autogen/mocs_compilation.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/build/src/common_lib_autogen/mocs_compilation.cpp
 
 src/CMakeFiles/common_lib.dir/common_lib_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/common_lib.dir/common_lib_autogen/mocs_compilation.cpp.i"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/build/src/common_lib_autogen/mocs_compilation.cpp > CMakeFiles/common_lib.dir/common_lib_autogen/mocs_compilation.cpp.i
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/build/src/common_lib_autogen/mocs_compilation.cpp > CMakeFiles/common_lib.dir/common_lib_autogen/mocs_compilation.cpp.i
 
 src/CMakeFiles/common_lib.dir/common_lib_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/common_lib.dir/common_lib_autogen/mocs_compilation.cpp.s"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/build/src/common_lib_autogen/mocs_compilation.cpp -o CMakeFiles/common_lib.dir/common_lib_autogen/mocs_compilation.cpp.s
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/build/src/common_lib_autogen/mocs_compilation.cpp -o CMakeFiles/common_lib.dir/common_lib_autogen/mocs_compilation.cpp.s
 
 src/CMakeFiles/common_lib.dir/common/Log.cpp.o: src/CMakeFiles/common_lib.dir/flags.make
 src/CMakeFiles/common_lib.dir/common/Log.cpp.o: /Users/dahuang/Desktop/项目/OnlineChat/src/common/Log.cpp
 src/CMakeFiles/common_lib.dir/common/Log.cpp.o: src/CMakeFiles/common_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/common_lib.dir/common/Log.cpp.o"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/common_lib.dir/common/Log.cpp.o -MF CMakeFiles/common_lib.dir/common/Log.cpp.o.d -o CMakeFiles/common_lib.dir/common/Log.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/src/common/Log.cpp
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/common_lib.dir/common/Log.cpp.o -MF CMakeFiles/common_lib.dir/common/Log.cpp.o.d -o CMakeFiles/common_lib.dir/common/Log.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/src/common/Log.cpp
 
 src/CMakeFiles/common_lib.dir/common/Log.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/common_lib.dir/common/Log.cpp.i"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/src/common/Log.cpp > CMakeFiles/common_lib.dir/common/Log.cpp.i
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/src/common/Log.cpp > CMakeFiles/common_lib.dir/common/Log.cpp.i
 
 src/CMakeFiles/common_lib.dir/common/Log.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/common_lib.dir/common/Log.cpp.s"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/src/common/Log.cpp -o CMakeFiles/common_lib.dir/common/Log.cpp.s
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/src/common/Log.cpp -o CMakeFiles/common_lib.dir/common/Log.cpp.s
 
 # Object files for target common_lib
 common_lib_OBJECTS = \

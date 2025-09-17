@@ -69,7 +69,7 @@ include src/CMakeFiles/config_lib.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/config_lib.dir/flags.make
 
-src/config_lib_autogen/timestamp: /opt/homebrew/share/qt/libexec/moc
+src/config_lib_autogen/timestamp: /Users/dahuang/Qt/6.9.1/macos/libexec/moc
 src/config_lib_autogen/timestamp: src/CMakeFiles/config_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target config_lib"
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /opt/homebrew/bin/cmake -E cmake_autogen /Users/dahuang/Desktop/项目/OnlineChat/build/src/CMakeFiles/config_lib_autogen.dir/AutogenInfo.json ""
@@ -82,29 +82,29 @@ src/CMakeFiles/config_lib.dir/config_lib_autogen/mocs_compilation.cpp.o: src/CMa
 src/CMakeFiles/config_lib.dir/config_lib_autogen/mocs_compilation.cpp.o: src/config_lib_autogen/mocs_compilation.cpp
 src/CMakeFiles/config_lib.dir/config_lib_autogen/mocs_compilation.cpp.o: src/CMakeFiles/config_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/config_lib.dir/config_lib_autogen/mocs_compilation.cpp.o"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/config_lib.dir/config_lib_autogen/mocs_compilation.cpp.o -MF CMakeFiles/config_lib.dir/config_lib_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/config_lib.dir/config_lib_autogen/mocs_compilation.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/build/src/config_lib_autogen/mocs_compilation.cpp
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/config_lib.dir/config_lib_autogen/mocs_compilation.cpp.o -MF CMakeFiles/config_lib.dir/config_lib_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/config_lib.dir/config_lib_autogen/mocs_compilation.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/build/src/config_lib_autogen/mocs_compilation.cpp
 
 src/CMakeFiles/config_lib.dir/config_lib_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/config_lib.dir/config_lib_autogen/mocs_compilation.cpp.i"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/build/src/config_lib_autogen/mocs_compilation.cpp > CMakeFiles/config_lib.dir/config_lib_autogen/mocs_compilation.cpp.i
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/build/src/config_lib_autogen/mocs_compilation.cpp > CMakeFiles/config_lib.dir/config_lib_autogen/mocs_compilation.cpp.i
 
 src/CMakeFiles/config_lib.dir/config_lib_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/config_lib.dir/config_lib_autogen/mocs_compilation.cpp.s"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/build/src/config_lib_autogen/mocs_compilation.cpp -o CMakeFiles/config_lib.dir/config_lib_autogen/mocs_compilation.cpp.s
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/build/src/config_lib_autogen/mocs_compilation.cpp -o CMakeFiles/config_lib.dir/config_lib_autogen/mocs_compilation.cpp.s
 
 src/CMakeFiles/config_lib.dir/config/Config.cpp.o: src/CMakeFiles/config_lib.dir/flags.make
 src/CMakeFiles/config_lib.dir/config/Config.cpp.o: /Users/dahuang/Desktop/项目/OnlineChat/src/config/Config.cpp
 src/CMakeFiles/config_lib.dir/config/Config.cpp.o: src/CMakeFiles/config_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/config_lib.dir/config/Config.cpp.o"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/config_lib.dir/config/Config.cpp.o -MF CMakeFiles/config_lib.dir/config/Config.cpp.o.d -o CMakeFiles/config_lib.dir/config/Config.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/src/config/Config.cpp
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/config_lib.dir/config/Config.cpp.o -MF CMakeFiles/config_lib.dir/config/Config.cpp.o.d -o CMakeFiles/config_lib.dir/config/Config.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/src/config/Config.cpp
 
 src/CMakeFiles/config_lib.dir/config/Config.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/config_lib.dir/config/Config.cpp.i"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/src/config/Config.cpp > CMakeFiles/config_lib.dir/config/Config.cpp.i
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/src/config/Config.cpp > CMakeFiles/config_lib.dir/config/Config.cpp.i
 
 src/CMakeFiles/config_lib.dir/config/Config.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/config_lib.dir/config/Config.cpp.s"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/src/config/Config.cpp -o CMakeFiles/config_lib.dir/config/Config.cpp.s
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/src/config/Config.cpp -o CMakeFiles/config_lib.dir/config/Config.cpp.s
 
 # Object files for target config_lib
 config_lib_OBJECTS = \

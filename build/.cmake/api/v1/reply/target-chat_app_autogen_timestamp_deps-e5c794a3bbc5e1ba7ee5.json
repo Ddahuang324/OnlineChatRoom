@@ -1,0 +1,62 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "storage_lib::@145eef247bfb46b6828c"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "net_lib::@145eef247bfb46b6828c"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "viewmodel_lib::@145eef247bfb46b6828c"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "transfer_lib::@145eef247bfb46b6828c"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "common_lib::@145eef247bfb46b6828c"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "config_lib::@145eef247bfb46b6828c"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "util_lib::@145eef247bfb46b6828c"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "i18n_lib::@145eef247bfb46b6828c"
+		}
+	],
+	"id" : "chat_app_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+	"isGeneratorProvided" : true,
+	"name" : "chat_app_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

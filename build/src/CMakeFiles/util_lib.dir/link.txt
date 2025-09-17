@@ -1,2 +1,2 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libutil_lib.a CMakeFiles/util_lib.dir/util_lib_autogen/mocs_compilation.cpp.o CMakeFiles/util_lib.dir/util/Uuid.cpp.o CMakeFiles/util_lib.dir/util/Sha256.cpp.o CMakeFiles/util_lib.dir/util/ThreadNaming.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libutil_lib.a
+/usr/bin/ar qc libutil_lib.a CMakeFiles/util_lib.dir/util_lib_autogen/mocs_compilation.cpp.o CMakeFiles/util_lib.dir/util/Uuid.cpp.o CMakeFiles/util_lib.dir/util/Sha256.cpp.o CMakeFiles/util_lib.dir/util/ThreadNaming.cpp.o
+/usr/bin/ranlib libutil_lib.a

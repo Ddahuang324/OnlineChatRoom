@@ -1,2 +1,2 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libi18n_lib.a CMakeFiles/i18n_lib.dir/i18n_lib_autogen/mocs_compilation.cpp.o CMakeFiles/i18n_lib.dir/i18n/I18n.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libi18n_lib.a
+/usr/bin/ar qc libi18n_lib.a CMakeFiles/i18n_lib.dir/i18n_lib_autogen/mocs_compilation.cpp.o CMakeFiles/i18n_lib.dir/i18n/I18n.cpp.o
+/usr/bin/ranlib libi18n_lib.a

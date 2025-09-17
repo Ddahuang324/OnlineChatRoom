@@ -69,7 +69,7 @@ include src/CMakeFiles/i18n_lib.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/i18n_lib.dir/flags.make
 
-src/i18n_lib_autogen/timestamp: /opt/homebrew/share/qt/libexec/moc
+src/i18n_lib_autogen/timestamp: /Users/dahuang/Qt/6.9.1/macos/libexec/moc
 src/i18n_lib_autogen/timestamp: src/CMakeFiles/i18n_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target i18n_lib"
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /opt/homebrew/bin/cmake -E cmake_autogen /Users/dahuang/Desktop/项目/OnlineChat/build/src/CMakeFiles/i18n_lib_autogen.dir/AutogenInfo.json ""
@@ -82,29 +82,29 @@ src/CMakeFiles/i18n_lib.dir/i18n_lib_autogen/mocs_compilation.cpp.o: src/CMakeFi
 src/CMakeFiles/i18n_lib.dir/i18n_lib_autogen/mocs_compilation.cpp.o: src/i18n_lib_autogen/mocs_compilation.cpp
 src/CMakeFiles/i18n_lib.dir/i18n_lib_autogen/mocs_compilation.cpp.o: src/CMakeFiles/i18n_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/i18n_lib.dir/i18n_lib_autogen/mocs_compilation.cpp.o"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/i18n_lib.dir/i18n_lib_autogen/mocs_compilation.cpp.o -MF CMakeFiles/i18n_lib.dir/i18n_lib_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/i18n_lib.dir/i18n_lib_autogen/mocs_compilation.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/build/src/i18n_lib_autogen/mocs_compilation.cpp
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/i18n_lib.dir/i18n_lib_autogen/mocs_compilation.cpp.o -MF CMakeFiles/i18n_lib.dir/i18n_lib_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/i18n_lib.dir/i18n_lib_autogen/mocs_compilation.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/build/src/i18n_lib_autogen/mocs_compilation.cpp
 
 src/CMakeFiles/i18n_lib.dir/i18n_lib_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/i18n_lib.dir/i18n_lib_autogen/mocs_compilation.cpp.i"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/build/src/i18n_lib_autogen/mocs_compilation.cpp > CMakeFiles/i18n_lib.dir/i18n_lib_autogen/mocs_compilation.cpp.i
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/build/src/i18n_lib_autogen/mocs_compilation.cpp > CMakeFiles/i18n_lib.dir/i18n_lib_autogen/mocs_compilation.cpp.i
 
 src/CMakeFiles/i18n_lib.dir/i18n_lib_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/i18n_lib.dir/i18n_lib_autogen/mocs_compilation.cpp.s"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/build/src/i18n_lib_autogen/mocs_compilation.cpp -o CMakeFiles/i18n_lib.dir/i18n_lib_autogen/mocs_compilation.cpp.s
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/build/src/i18n_lib_autogen/mocs_compilation.cpp -o CMakeFiles/i18n_lib.dir/i18n_lib_autogen/mocs_compilation.cpp.s
 
 src/CMakeFiles/i18n_lib.dir/i18n/I18n.cpp.o: src/CMakeFiles/i18n_lib.dir/flags.make
 src/CMakeFiles/i18n_lib.dir/i18n/I18n.cpp.o: /Users/dahuang/Desktop/项目/OnlineChat/src/i18n/I18n.cpp
 src/CMakeFiles/i18n_lib.dir/i18n/I18n.cpp.o: src/CMakeFiles/i18n_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/i18n_lib.dir/i18n/I18n.cpp.o"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/i18n_lib.dir/i18n/I18n.cpp.o -MF CMakeFiles/i18n_lib.dir/i18n/I18n.cpp.o.d -o CMakeFiles/i18n_lib.dir/i18n/I18n.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/src/i18n/I18n.cpp
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/i18n_lib.dir/i18n/I18n.cpp.o -MF CMakeFiles/i18n_lib.dir/i18n/I18n.cpp.o.d -o CMakeFiles/i18n_lib.dir/i18n/I18n.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/src/i18n/I18n.cpp
 
 src/CMakeFiles/i18n_lib.dir/i18n/I18n.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/i18n_lib.dir/i18n/I18n.cpp.i"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/src/i18n/I18n.cpp > CMakeFiles/i18n_lib.dir/i18n/I18n.cpp.i
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/src/i18n/I18n.cpp > CMakeFiles/i18n_lib.dir/i18n/I18n.cpp.i
 
 src/CMakeFiles/i18n_lib.dir/i18n/I18n.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/i18n_lib.dir/i18n/I18n.cpp.s"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/src/i18n/I18n.cpp -o CMakeFiles/i18n_lib.dir/i18n/I18n.cpp.s
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/src/i18n/I18n.cpp -o CMakeFiles/i18n_lib.dir/i18n/I18n.cpp.s
 
 # Object files for target i18n_lib
 i18n_lib_OBJECTS = \

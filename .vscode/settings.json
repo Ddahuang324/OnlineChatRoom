@@ -1,5 +1,7 @@
 {
     "cmake.sourceDirectory": "/Users/dahuang/Desktop/项目/OnlineChat",
+    "qml.qmlls.enable": true,
+     "qml.qmlls.importPaths": ["/opt/homebrew/Cellar/qt/6.9.2/share/qt/qml"],
     "files.associations": {
         "string": "cpp",
         "__bit_reference": "cpp",

@@ -69,7 +69,7 @@ include src/CMakeFiles/viewmodel_lib.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/viewmodel_lib.dir/flags.make
 
-src/viewmodel_lib_autogen/timestamp: /opt/homebrew/share/qt/libexec/moc
+src/viewmodel_lib_autogen/timestamp: /Users/dahuang/Qt/6.9.1/macos/libexec/moc
 src/viewmodel_lib_autogen/timestamp: src/CMakeFiles/viewmodel_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target viewmodel_lib"
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /opt/homebrew/bin/cmake -E cmake_autogen /Users/dahuang/Desktop/项目/OnlineChat/build/src/CMakeFiles/viewmodel_lib_autogen.dir/AutogenInfo.json ""
@@ -82,43 +82,43 @@ src/CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.o: s
 src/CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.o: src/viewmodel_lib_autogen/mocs_compilation.cpp
 src/CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.o: src/CMakeFiles/viewmodel_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.o"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.o -MF CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/build/src/viewmodel_lib_autogen/mocs_compilation.cpp
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.o -MF CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/build/src/viewmodel_lib_autogen/mocs_compilation.cpp
 
 src/CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.i"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/build/src/viewmodel_lib_autogen/mocs_compilation.cpp > CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.i
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/build/src/viewmodel_lib_autogen/mocs_compilation.cpp > CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.i
 
 src/CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.s"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/build/src/viewmodel_lib_autogen/mocs_compilation.cpp -o CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.s
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/build/src/viewmodel_lib_autogen/mocs_compilation.cpp -o CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.s
 
 src/CMakeFiles/viewmodel_lib.dir/viewmodel/LoginViewModel.cpp.o: src/CMakeFiles/viewmodel_lib.dir/flags.make
 src/CMakeFiles/viewmodel_lib.dir/viewmodel/LoginViewModel.cpp.o: /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/LoginViewModel.cpp
 src/CMakeFiles/viewmodel_lib.dir/viewmodel/LoginViewModel.cpp.o: src/CMakeFiles/viewmodel_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/viewmodel_lib.dir/viewmodel/LoginViewModel.cpp.o"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/viewmodel_lib.dir/viewmodel/LoginViewModel.cpp.o -MF CMakeFiles/viewmodel_lib.dir/viewmodel/LoginViewModel.cpp.o.d -o CMakeFiles/viewmodel_lib.dir/viewmodel/LoginViewModel.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/LoginViewModel.cpp
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/viewmodel_lib.dir/viewmodel/LoginViewModel.cpp.o -MF CMakeFiles/viewmodel_lib.dir/viewmodel/LoginViewModel.cpp.o.d -o CMakeFiles/viewmodel_lib.dir/viewmodel/LoginViewModel.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/LoginViewModel.cpp
 
 src/CMakeFiles/viewmodel_lib.dir/viewmodel/LoginViewModel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/viewmodel_lib.dir/viewmodel/LoginViewModel.cpp.i"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/LoginViewModel.cpp > CMakeFiles/viewmodel_lib.dir/viewmodel/LoginViewModel.cpp.i
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/LoginViewModel.cpp > CMakeFiles/viewmodel_lib.dir/viewmodel/LoginViewModel.cpp.i
 
 src/CMakeFiles/viewmodel_lib.dir/viewmodel/LoginViewModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/viewmodel_lib.dir/viewmodel/LoginViewModel.cpp.s"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/LoginViewModel.cpp -o CMakeFiles/viewmodel_lib.dir/viewmodel/LoginViewModel.cpp.s
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/LoginViewModel.cpp -o CMakeFiles/viewmodel_lib.dir/viewmodel/LoginViewModel.cpp.s
 
 src/CMakeFiles/viewmodel_lib.dir/viewmodel/ChatViewModel.cpp.o: src/CMakeFiles/viewmodel_lib.dir/flags.make
 src/CMakeFiles/viewmodel_lib.dir/viewmodel/ChatViewModel.cpp.o: /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/ChatViewModel.cpp
 src/CMakeFiles/viewmodel_lib.dir/viewmodel/ChatViewModel.cpp.o: src/CMakeFiles/viewmodel_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/viewmodel_lib.dir/viewmodel/ChatViewModel.cpp.o"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/viewmodel_lib.dir/viewmodel/ChatViewModel.cpp.o -MF CMakeFiles/viewmodel_lib.dir/viewmodel/ChatViewModel.cpp.o.d -o CMakeFiles/viewmodel_lib.dir/viewmodel/ChatViewModel.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/ChatViewModel.cpp
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/viewmodel_lib.dir/viewmodel/ChatViewModel.cpp.o -MF CMakeFiles/viewmodel_lib.dir/viewmodel/ChatViewModel.cpp.o.d -o CMakeFiles/viewmodel_lib.dir/viewmodel/ChatViewModel.cpp.o -c /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/ChatViewModel.cpp
 
 src/CMakeFiles/viewmodel_lib.dir/viewmodel/ChatViewModel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/viewmodel_lib.dir/viewmodel/ChatViewModel.cpp.i"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/ChatViewModel.cpp > CMakeFiles/viewmodel_lib.dir/viewmodel/ChatViewModel.cpp.i
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/ChatViewModel.cpp > CMakeFiles/viewmodel_lib.dir/viewmodel/ChatViewModel.cpp.i
 
 src/CMakeFiles/viewmodel_lib.dir/viewmodel/ChatViewModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/viewmodel_lib.dir/viewmodel/ChatViewModel.cpp.s"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/ChatViewModel.cpp -o CMakeFiles/viewmodel_lib.dir/viewmodel/ChatViewModel.cpp.s
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dahuang/Desktop/项目/OnlineChat/src/viewmodel/ChatViewModel.cpp -o CMakeFiles/viewmodel_lib.dir/viewmodel/ChatViewModel.cpp.s
 
 # Object files for target viewmodel_lib
 viewmodel_lib_OBJECTS = \

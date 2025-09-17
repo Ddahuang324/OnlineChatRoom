@@ -24,6 +24,9 @@ FetchContent_MakeAvailable(nlohmann_json)
 # --- Find Packages ---
 find_package(Qt6 COMPONENTS Core Gui Qml Quick REQUIRED)
 
+# 启用 QML 语言服务器配置文件生成
+set(QT_QML_GENERATE_QMLLS_INI ON)
+
 # 设置 QML 导入路径
 set(QML_IMPORT_PATH "${CMAKE_SOURCE_DIR}/qml" CACHE STRING "QML Import Path")
 

@@ -68,7 +68,7 @@ include CMakeFiles/chat_app_autogen.dir/progress.make
 
 CMakeFiles/chat_app_autogen: chat_app_autogen/timestamp
 
-chat_app_autogen/timestamp: /opt/homebrew/share/qt/libexec/moc
+chat_app_autogen/timestamp: /Users/dahuang/Qt/6.9.1/macos/libexec/moc
 chat_app_autogen/timestamp: CMakeFiles/chat_app_autogen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target chat_app"
 	/opt/homebrew/bin/cmake -E cmake_autogen /Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles/chat_app_autogen.dir/AutogenInfo.json ""

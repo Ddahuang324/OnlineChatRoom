@@ -62,7 +62,7 @@
 	"MOC_PATH_PREFIX" : false,
 	"MOC_PREDEFS_CMD" : 
 	[
-		"/Library/Developer/CommandLineTools/usr/bin/c++",
+		"/usr/bin/clang++",
 		"-std=gnu++17",
 		"-dM",
 		"-E",
@@ -83,7 +83,7 @@
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 8,
 	"PARSE_CACHE_FILE" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/CMakeFiles/util_lib_autogen.dir/ParseCache.txt",
-	"QT_MOC_EXECUTABLE" : "/opt/homebrew/share/qt/libexec/moc",
+	"QT_MOC_EXECUTABLE" : "/Users/dahuang/Qt/6.9.1/macos/libexec/moc",
 	"QT_UIC_EXECUTABLE" : "",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 9,

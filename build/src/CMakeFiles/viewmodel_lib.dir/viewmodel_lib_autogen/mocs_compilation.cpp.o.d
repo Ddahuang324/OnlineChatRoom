@@ -2,11 +2,11 @@ src/CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.o: \
   /Users/dahuang/Desktop/项目/OnlineChat/build/src/viewmodel_lib_autogen/mocs_compilation.cpp \
   /Users/dahuang/Desktop/项目/OnlineChat/build/src/viewmodel_lib_autogen/7OCNMGYRF4/moc_LoginViewModel.cpp \
   /Users/dahuang/Desktop/项目/OnlineChat/build/src/viewmodel_lib_autogen/7OCNMGYRF4/../../../../src/viewmodel/LoginViewModel.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QObject \
-  /opt/homebrew/lib/QtCore.framework/Headers/qobject.h \
-  /opt/homebrew/include/QtCore/qobjectdefs.h \
-  /opt/homebrew/include/QtCore/qnamespace.h \
-  /opt/homebrew/include/QtCore/qglobal.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/QObject \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qobject.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qobjectdefs.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qnamespace.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qglobal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/type_traits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__config \
@@ -311,33 +311,33 @@ src/CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/stdbool.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h \
-  /opt/homebrew/include/QtCore/qtcoreglobal.h \
-  /opt/homebrew/include/QtCore/qtversionchecks.h \
-  /opt/homebrew/include/QtCore/qtconfiginclude.h \
-  /opt/homebrew/include/QtCore/qconfig.h \
-  /opt/homebrew/include/QtCore/qtcore-config.h \
-  /opt/homebrew/include/QtCore/qtconfigmacros.h \
-  /opt/homebrew/include/QtCore/qtdeprecationdefinitions.h \
-  /opt/homebrew/include/QtCore/qcompilerdetection.h \
-  /opt/homebrew/include/QtCore/qprocessordetection.h \
-  /opt/homebrew/include/QtCore/qsystemdetection.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qtcoreglobal.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qtversionchecks.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qtconfiginclude.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qconfig.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qtcore-config.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qtconfigmacros.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qtdeprecationdefinitions.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qcompilerdetection.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qprocessordetection.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qsystemdetection.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/TargetConditionals.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/AvailabilityMacros.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/atomic \
-  /opt/homebrew/include/QtCore/qtcoreexports.h \
-  /opt/homebrew/include/QtCore/qtdeprecationmarkers.h \
-  /opt/homebrew/include/QtCore/qtclasshelpermacros.h \
-  /opt/homebrew/include/QtCore/qtpreprocessorsupport.h \
-  /opt/homebrew/include/QtCore/qassert.h \
-  /opt/homebrew/include/QtCore/qtnoop.h \
-  /opt/homebrew/include/QtCore/qtypes.h \
-  /opt/homebrew/include/QtCore/qtversion.h \
-  /opt/homebrew/include/QtCore/qtypeinfo.h \
-  /opt/homebrew/include/QtCore/qcontainerfwd.h \
-  /opt/homebrew/include/QtCore/qsysinfo.h \
-  /opt/homebrew/include/QtCore/qlogging.h \
-  /opt/homebrew/include/QtCore/qflags.h \
-  /opt/homebrew/include/QtCore/qcompare_impl.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qtcoreexports.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qtdeprecationmarkers.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qtclasshelpermacros.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qtpreprocessorsupport.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qassert.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qtnoop.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qtypes.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qtversion.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qtypeinfo.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qcontainerfwd.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qsysinfo.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qlogging.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qflags.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qcompare_impl.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/algorithm \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__debug \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h \
@@ -769,65 +769,65 @@ src/CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/year_month_weekday.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/file_clock.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/literals.h \
-  /opt/homebrew/include/QtCore/qatomic.h \
-  /opt/homebrew/include/QtCore/qbasicatomic.h \
-  /opt/homebrew/include/QtCore/qatomic_cxx11.h \
-  /opt/homebrew/include/QtCore/qgenericatomic.h \
-  /opt/homebrew/include/QtCore/qyieldcpu.h \
-  /opt/homebrew/include/QtCore/qconstructormacros.h \
-  /opt/homebrew/include/QtCore/qdarwinhelpers.h \
-  /opt/homebrew/include/QtCore/qexceptionhandling.h \
-  /opt/homebrew/include/QtCore/qforeach.h \
-  /opt/homebrew/include/QtCore/qttypetraits.h \
-  /opt/homebrew/include/QtCore/qfunctionpointer.h \
-  /opt/homebrew/include/QtCore/qglobalstatic.h \
-  /opt/homebrew/include/QtCore/qmalloc.h \
-  /opt/homebrew/include/QtCore/qminmax.h \
-  /opt/homebrew/include/QtCore/qnumeric.h \
-  /opt/homebrew/include/QtCore/qoverload.h \
-  /opt/homebrew/include/QtCore/qswap.h \
-  /opt/homebrew/include/QtCore/qtenvironmentvariables.h \
-  /opt/homebrew/include/QtCore/qtresource.h \
-  /opt/homebrew/include/QtCore/qttranslation.h \
-  /opt/homebrew/include/QtCore/qversiontagging.h \
-  /opt/homebrew/include/QtCore/qcompare.h \
-  /opt/homebrew/include/QtCore/qstdlibdetection.h \
-  /opt/homebrew/include/QtCore/qcomparehelpers.h \
-  /opt/homebrew/include/QtCore/q20type_traits.h \
-  /opt/homebrew/include/QtCore/qtmetamacros.h \
-  /opt/homebrew/include/QtCore/qobjectdefs_impl.h \
-  /opt/homebrew/include/QtCore/qfunctionaltools_impl.h \
-  /opt/homebrew/include/QtCore/qstring.h \
-  /opt/homebrew/include/QtCore/qchar.h \
-  /opt/homebrew/include/QtCore/qstringview.h \
-  /opt/homebrew/include/QtCore/qbytearray.h \
-  /opt/homebrew/include/QtCore/qrefcount.h \
-  /opt/homebrew/include/QtCore/qarraydata.h \
-  /opt/homebrew/include/QtCore/qpair.h \
-  /opt/homebrew/include/QtCore/qarraydatapointer.h \
-  /opt/homebrew/include/QtCore/qarraydataops.h \
-  /opt/homebrew/include/QtCore/qcontainertools_impl.h \
-  /opt/homebrew/include/QtCore/qxptype_traits.h \
-  /opt/homebrew/include/QtCore/q20functional.h \
-  /opt/homebrew/include/QtCore/q20memory.h \
-  /opt/homebrew/include/QtCore/q17memory.h \
-  /opt/homebrew/include/QtCore/qbytearrayalgorithms.h \
-  /opt/homebrew/include/QtCore/qbytearrayview.h \
-  /opt/homebrew/include/QtCore/qstringfwd.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qatomic.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qbasicatomic.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qatomic_cxx11.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qgenericatomic.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qyieldcpu.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qconstructormacros.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qdarwinhelpers.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qexceptionhandling.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qforeach.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qttypetraits.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qfunctionpointer.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qglobalstatic.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qmalloc.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qminmax.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qnumeric.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qoverload.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qswap.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qtenvironmentvariables.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qtresource.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qttranslation.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qversiontagging.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qcompare.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qstdlibdetection.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qcomparehelpers.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/q20type_traits.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qtmetamacros.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qobjectdefs_impl.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qfunctionaltools_impl.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qstring.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qchar.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qstringview.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qbytearray.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qrefcount.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qarraydata.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qpair.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qarraydatapointer.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qarraydataops.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qcontainertools_impl.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qxptype_traits.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/q20functional.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/q20memory.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/q17memory.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qbytearrayalgorithms.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qbytearrayview.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qstringfwd.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__ios/fpos.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__string/extern_template_lists.h \
-  /opt/homebrew/include/QtCore/qstringliteral.h \
-  /opt/homebrew/include/QtCore/qstringalgorithms.h \
-  /opt/homebrew/include/QtCore/qlatin1stringview.h \
-  /opt/homebrew/include/QtCore/qanystringview.h \
-  /opt/homebrew/include/QtCore/qutf8stringview.h \
-  /opt/homebrew/include/QtCore/qstringtokenizer.h \
-  /opt/homebrew/include/QtCore/qstringbuilder.h \
-  /opt/homebrew/include/QtCore/qstringconverter.h \
-  /opt/homebrew/include/QtCore/qstringconverter_base.h \
-  /opt/homebrew/include/QtCore/qlist.h \
-  /opt/homebrew/include/QtCore/qhashfunctions.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qstringliteral.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qstringalgorithms.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qlatin1stringview.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qanystringview.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qutf8stringview.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qstringtokenizer.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qstringbuilder.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qstringconverter.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qstringconverter_base.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qlist.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qhashfunctions.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/numeric \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/accumulate.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h \
@@ -842,35 +842,34 @@ src/CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/transform_exclusive_scan.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/transform_inclusive_scan.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/transform_reduce.h \
-  /opt/homebrew/include/QtCore/qiterator.h \
-  /opt/homebrew/include/QtCore/qbytearraylist.h \
-  /opt/homebrew/include/QtCore/qstringlist.h \
-  /opt/homebrew/include/QtCore/qalgorithms.h \
-  /opt/homebrew/include/QtCore/qstringmatcher.h \
-  /opt/homebrew/include/QtCore/qscopedpointer.h \
-  /opt/homebrew/include/QtCore/qmetatype.h \
-  /opt/homebrew/include/QtCore/qdatastream.h \
-  /opt/homebrew/include/QtCore/qiodevicebase.h \
-  /opt/homebrew/include/QtCore/qfloat16.h \
-  /opt/homebrew/include/QtCore/qmath.h \
-  /opt/homebrew/include/QtCore/qtformat_impl.h \
-  /opt/homebrew/include/QtCore/qiterable.h \
-  /opt/homebrew/include/QtCore/qmetacontainer.h \
-  /opt/homebrew/include/QtCore/qcontainerinfo.h \
-  /opt/homebrew/include/QtCore/qtaggedpointer.h \
-  /opt/homebrew/include/QtCore/qscopeguard.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qiterator.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qbytearraylist.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qstringlist.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qalgorithms.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qstringmatcher.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qscopedpointer.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qmetatype.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qdatastream.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qiodevicebase.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qfloat16.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qmath.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qtformat_impl.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qiterable.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qmetacontainer.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qcontainerinfo.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qtaggedpointer.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qscopeguard.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__tree \
-  /opt/homebrew/include/QtCore/qobject_impl.h \
-  /opt/homebrew/include/QtCore/qbindingstorage.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QString \
-  /opt/homebrew/lib/QtCore.framework/Headers/qstring.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qobject_impl.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qbindingstorage.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/QString \
   /Users/dahuang/Desktop/项目/OnlineChat/src/../include/net/IMiniEventAdapter.h \
   /Users/dahuang/Desktop/项目/OnlineChat/src/../include/net/MiniEventAdapter.h \
   /Users/dahuang/Desktop/项目/OnlineChat/src/../include/model/Entities.hpp \
   /Users/dahuang/Desktop/项目/OnlineChat/src/../include/storage/Storage.hpp \
-  /opt/homebrew/include/QtCore/qtmochelpers.h \
-  /opt/homebrew/include/QtCore/qtmocconstants.h \
-  /opt/homebrew/include/QtCore/q20algorithm.h \
-  /opt/homebrew/include/QtCore/q23type_traits.h
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qtmochelpers.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qtmocconstants.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/q20algorithm.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/q23type_traits.h
