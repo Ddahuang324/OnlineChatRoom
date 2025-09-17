@@ -320,6 +320,7 @@ tests/unit_tests: src/libviewmodel_lib.a
 tests/unit_tests: src/libtransfer_lib.a
 tests/unit_tests: /opt/homebrew/opt/googletest/lib/libgtest.a
 tests/unit_tests: /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/lib/libsqlite3.tbd
+tests/unit_tests: /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Versions/A/QtCore
 tests/unit_tests: tests/CMakeFiles/unit_tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable unit_tests"
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/unit_tests.dir/link.txt --verbose=$(VERBOSE)

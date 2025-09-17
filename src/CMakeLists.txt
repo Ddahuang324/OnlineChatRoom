@@ -41,7 +41,7 @@ add_library(viewmodel_lib
     viewmodel/ChatViewModel.cpp
     viewmodel/ChatViewModel.h
 )
-target_link_libraries(viewmodel_lib PUBLIC model_lib)
+target_link_libraries(viewmodel_lib PUBLIC model_lib Qt6::Core)
 target_include_directories(viewmodel_lib PUBLIC ../include .)  # Add current directory to include path
 
 add_library(transfer_lib

@@ -27,7 +27,7 @@
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/tests/unit_tests_autogen/include",
 	"MOC_COMPILATION_FILE" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/tests/unit_tests_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [],
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_NO_DEBUG" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -48,6 +48,10 @@
 		"/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/_deps/nlohmann_json-src/include",
 		"/opt/homebrew/opt/googletest/include",
 		"/Library/Frameworks/Mono.framework/Headers",
+		"/Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers",
+		"/Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework",
+		"/Users/dahuang/Qt/6.9.1/macos/mkspecs/macx-clang",
+		"/Users/dahuang/Qt/6.9.1/macos/include",
 		"/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1",
 		"/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include",
 		"/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include",

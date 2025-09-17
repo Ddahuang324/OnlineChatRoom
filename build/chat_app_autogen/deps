@@ -699,6 +699,9 @@ chat_app_autogen/timestamp: \
 	/opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
 	/opt/homebrew/share/cmake/Modules/Compiler/Clang.cmake \
 	/opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake \
+	/opt/homebrew/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake \
+	/opt/homebrew/share/cmake/Modules/FetchContent.cmake \
+	/opt/homebrew/share/cmake/Modules/FetchContent/CMakeLists.cmake.in \
 	/opt/homebrew/share/cmake/Modules/FindGTest.cmake \
 	/opt/homebrew/share/cmake/Modules/FindOpenGL.cmake \
 	/opt/homebrew/share/cmake/Modules/FindPackageHandleStandardArgs.cmake \

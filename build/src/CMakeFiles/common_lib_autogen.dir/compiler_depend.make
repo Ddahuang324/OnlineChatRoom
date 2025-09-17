@@ -32,6 +32,10 @@ src/common_lib_autogen/timestamp: /Users/dahuang/Desktop/项目/OnlineChat/src/C
   /Users/dahuang/Desktop/项目/OnlineChat/src/CMakeLists.txt \
   /Users/dahuang/Desktop/项目/OnlineChat/src/common/Log.cpp \
   /Users/dahuang/Desktop/项目/OnlineChat/src/common/Log.hpp \
+  /opt/homebrew/bin/cmake \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/CMakeLists.txt \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/common/Log.cpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/common/Log.hpp \
   /opt/homebrew/bin/cmake
 
 
