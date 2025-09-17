@@ -197,32 +197,60 @@ FEATURE_DIR: specs/003-title-description-minievent
 -------------------------------------------------
 [ ] T029 LoginViewModel 头文件
   文件: src/viewmodel/LoginViewModel.h
-  成员: Q_OBJECT; Storage* storage_; MiniEventAdapter* net_; QThread workerThread_; bool loggingIn_;
-  信号: loginSucceeded(), loginFailed(QString)
+  成员: Q_OBJECT; Storage* storage_; MiniEventAdapter* net_; // 不直接拥有 net
+         QThread workerThread_; bool loggingIn_ = false;
+  说明: 明确 thread-safety contract：
+    - `net_->connect()` 为异步接口（`MiniEventAdapter::connect` 是 `void`），连接结果通过 `ConnectionCallback` 上报。
+    - `ConnectionCallback` 可能在 adapter 的 EventBase loop 线程回调，LoginViewModel 必须将回调结果 marshal 到主线程（使用 `QMetaObject::invokeMethod` 或 `QObject::signal` + `Qt::QueuedConnection`）。
+  信号: `loginSucceeded()`, `loginFailed(QString)`
 
 [ ] T030 [P] LoginViewModel 实现 login/logout
   文件: src/viewmodel/LoginViewModel.cpp
-  逻辑: 移交到 workerThread 执行 net_->connect → 回主线程发信号
+  目标: 使用非阻塞/异步模式进行连接并安全上报到 QML
+  步骤:
+    1. 在 UI 触发 login 时，构建 `ConnectionParams` 并调用 `net_->connect(params)`。
+       - 如果项目的 `MiniEventAdapter` 实现可能在调用时做较重初始化（阻塞），则通过 `QThread` / `QtConcurrent::run` 在后台线程调用 `connect`；否则可直接调用（适配器约定为非阻塞）。
+    2. 在 `init(...)` 时注册 `ConnectionCallback`（在 LoginViewModel 或其代理中），回调收到 `Connected`/`ConnectFailed` 时：
+       - 使用 `QMetaObject::invokeMethod(this, "onConnectEvent", Qt::QueuedConnection, ...)` 或发射信号以保证在主线程处理 UI 更新。
+       - 在 `Connected` 时发射 `loginSucceeded()`；在 `ConnectFailed` 时发射 `loginFailed(reason)`。
+  验收: 在网络成功/失败场景下，QML 层只通过主线程接收 `loginSucceeded/loginFailed`，无跨线程 UI 访问。
 
 [ ] T031 ChatViewModel 头文件
   文件: src/viewmodel/ChatViewModel.h
-  成员: Storage* storage_; MiniEventAdapter* net_; QUuidGenerator helper; signal messageReceived(...)
+  成员: Q_OBJECT; Storage* storage_; MiniEventAdapter* net_; // 注入，不直接拥有
+         QUuidGenerator uuidGen_; // 或使用 util/Uuid
+  说明: ChatViewModel 必须约定对 Adapter 回调的线程策略：所有来自 Adapter 的回调可能在 EventBase 线程调用，ViewModel 需负责 marshal 到主线程并将耗时的存储动作交给 worker thread/Storage 的写队列。
+  信号: `messageReceived(QVariantMap)`, `messageSendStatusUpdated(QString messageId, int newState)`
 
 [ ] T032 sendText 实现
   文件: src/viewmodel/ChatViewModel.cpp
-  步骤: 生成 UUID → 构建 MessageRecord(state=Pending) → storage_->saveMessage → net_->sendMessage → 更新状态
+  步骤/约定:
+    1. 由 UI 在主线程调用 `sendText(const QString& text)`。
+    2. 生成消息 UUID -> 构建 `MessageRecord`（state = Pending）-> 同步或通过 Storage 的写队列调用 `storage_->saveMessage(msg)`，确保本地持久化立即可读。
+    3. 调用 `net_->sendMessage(msg)`（该接口为异步、返回 void）。
+    4. 维护本地状态机：在没有明确 per-message ACK 的情况下，采用乐观更新（Pending -> Sent）并同时设置超时计时器（例如 10s），若超时则将状态置为 Failed 并更新 storage（storage API 必须支持 updateMessageState）。
+    5. 若系统设计支持基于回文/ACK 的确认（例如远端回送同 messageId），在接收到对应 ACK 时将状态更新为 Sent 并写回 storage，然后发出 `messageSendStatusUpdated`。
+  验收: 单元测试能验证：消息被保存为 Pending、`net_->sendMessage` 被调用、在模拟 ACK 后状态变为 Sent；并在超时后标记为 Failed。
 
 [ ] T033 [P] onIncomingMessage & message 保存
   文件: src/viewmodel/ChatViewModel.cpp
-  验收: 收到后发射 messageReceived(QVariantMap)
+  行为要求:
+    - 在 `init` 或构造时注册 `MessageCallback` 到 `MiniEventAdapter`。
+    - `MessageCallback` 可能在 adapter 的 EventBase 线程执行：回调中仅做最小处理（解析 messageId/做完整性校验），随后通过 `QMetaObject::invokeMethod` 或 `QCoreApplication::postEvent` 将完整处理委派到主线程或专门的 worker（例如调用 `storage_->saveMessage` 应放到 Storage 的写队列或后台线程）。
+    - 完成持久化后，在主线程发射 `messageReceived(QVariantMap)`，QML 直接订阅该信号更新 UI。
+  验收: 在接收路径，MessageCallback 在非主线程触发时也不会导致线程问题；消息被持久化且最终在主线程发出 `messageReceived`，携带必要字段 (id, text, sender, ts)
 
 [ ] T034 sendFile 基础实现 (调度 FileTransferManager)
   文件: src/viewmodel/ChatViewModel.cpp
-  依赖: T040
+  逻辑: 创建/注入 `FileTransferManager`，并通过其 `uploadFile(path)` 开始上传；ViewModel 仅负责 UI 交互与进度回调转发（进度事件也需要 marshal 到主线程）。
+  依赖: T036-T041（FileTransfer 子系统完成）
 
 [ ] T035 ViewModel 单元测试
-  文件: tests/viewmodel/test_login.cpp / test_chat.cpp
-  使用 MockStorage / MockMiniEventAdapter
+  文件: tests/viewmodel/test_login.cpp / tests/viewmodel/test_chat.cpp
+  要求:
+    - 使用 `MockStorage` 与 `MockMiniEventAdapter`（MockMiniEventAdapter 必须能够模拟在非主线程触发 `ConnectionCallback` / `MessageCallback`，以验证 ViewModel 的 marshal 行为）。
+    - 测试场景：登录成功/失败回调路径、发送文本（保存 Pending + 模拟 ACK -> Sent）、接收消息（跨线程回调 -> 存储 -> 发射 signal）、文件上传触发与进度转发。
+  验收: 所有测试在单元环境下通过，且没有直接跨线程的 QObject 操作导致的未定义行为。
 
 -------------------------------------------------
 阶段 6: 文件传输子系统
