@@ -72,7 +72,7 @@ include src/CMakeFiles/config_lib.dir/flags.make
 src/config_lib_autogen/timestamp: /Users/dahuang/Qt/6.9.1/macos/libexec/moc
 src/config_lib_autogen/timestamp: src/CMakeFiles/config_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target config_lib"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /opt/homebrew/bin/cmake -E cmake_autogen /Users/dahuang/Desktop/项目/OnlineChat/build/src/CMakeFiles/config_lib_autogen.dir/AutogenInfo.json ""
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /opt/homebrew/bin/cmake -E cmake_autogen /Users/dahuang/Desktop/项目/OnlineChat/build/src/CMakeFiles/config_lib_autogen.dir/AutogenInfo.json Debug
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build/src && /opt/homebrew/bin/cmake -E touch /Users/dahuang/Desktop/项目/OnlineChat/build/src/config_lib_autogen/timestamp
 
 src/CMakeFiles/config_lib.dir/codegen:

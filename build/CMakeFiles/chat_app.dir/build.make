@@ -72,7 +72,7 @@ include CMakeFiles/chat_app.dir/flags.make
 chat_app_autogen/timestamp: /Users/dahuang/Qt/6.9.1/macos/libexec/moc
 chat_app_autogen/timestamp: CMakeFiles/chat_app.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target chat_app"
-	/opt/homebrew/bin/cmake -E cmake_autogen /Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles/chat_app_autogen.dir/AutogenInfo.json ""
+	/opt/homebrew/bin/cmake -E cmake_autogen /Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles/chat_app_autogen.dir/AutogenInfo.json Debug
 	/opt/homebrew/bin/cmake -E touch /Users/dahuang/Desktop/项目/OnlineChat/build/chat_app_autogen/timestamp
 
 chat_app_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/dahuang/Desktop/项目/OnlineChat/resources.qrc
@@ -87,7 +87,7 @@ chat_app_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/dahuang/Desktop/项目/Onl
 chat_app_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/dahuang/Qt/6.9.1/macos/libexec/rcc
 chat_app_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/dahuang/Qt/6.9.1/macos/libexec/rcc
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for resources.qrc"
-	/opt/homebrew/bin/cmake -E cmake_autorcc /Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles/chat_app_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json 
+	/opt/homebrew/bin/cmake -E cmake_autorcc /Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles/chat_app_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json Debug
 
 CMakeFiles/chat_app.dir/codegen:
 .PHONY : CMakeFiles/chat_app.dir/codegen

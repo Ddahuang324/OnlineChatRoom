@@ -39,7 +39,7 @@
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/net_lib_autogen/include",
 	"MOC_COMPILATION_FILE" : "/Users/dahuang/Desktop/\u9879\u76ee/OnlineChat/build/src/net_lib_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_NO_DEBUG" ],
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[

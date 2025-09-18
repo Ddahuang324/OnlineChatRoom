@@ -313,7 +313,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk"
+					"fragment" : "-g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk"
 				},
 				{
 					"backtrace" : 48,
@@ -341,10 +341,6 @@
 				{
 					"backtrace" : 2,
 					"define" : "QT_NETWORK_LIB"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "QT_NO_DEBUG"
 				},
 				{
 					"backtrace" : 2,
@@ -569,6 +565,10 @@
 	"dependencies" : 
 	[
 		{
+			"backtrace" : 0,
+			"id" : "unit_tests_autogen::@a44f0ac069e85531cdee"
+		},
+		{
 			"backtrace" : 2,
 			"id" : "storage_lib::@145eef247bfb46b6828c"
 		},
@@ -602,10 +602,6 @@
 		},
 		{
 			"id" : "unit_tests_autogen_timestamp_deps::@a44f0ac069e85531cdee"
-		},
-		{
-			"backtrace" : 0,
-			"id" : "unit_tests_autogen::@a44f0ac069e85531cdee"
 		}
 	],
 	"id" : "unit_tests::@a44f0ac069e85531cdee",
@@ -613,6 +609,10 @@
 	{
 		"commandFragments" : 
 		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
 			{
 				"fragment" : "-L/usr/local/opt/openssl/lib",
 				"role" : "flags"

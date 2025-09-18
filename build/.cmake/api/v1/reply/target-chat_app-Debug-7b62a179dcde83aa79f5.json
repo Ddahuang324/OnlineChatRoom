@@ -247,7 +247,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk"
+					"fragment" : "-g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk"
 				},
 				{
 					"backtrace" : 37,
@@ -275,10 +275,6 @@
 				{
 					"backtrace" : 2,
 					"define" : "QT_NETWORK_LIB"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "QT_NO_DEBUG"
 				},
 				{
 					"backtrace" : 2,
@@ -471,9 +467,6 @@
 			"id" : "chat_app_autogen::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "chat_app_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 2,
 			"id" : "storage_lib::@145eef247bfb46b6828c"
 		},
@@ -504,6 +497,9 @@
 		{
 			"backtrace" : 2,
 			"id" : "i18n_lib::@145eef247bfb46b6828c"
+		},
+		{
+			"id" : "chat_app_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "chat_app::@6890427a1f51a3e7e1df",
@@ -511,6 +507,10 @@
 	{
 		"commandFragments" : 
 		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
 			{
 				"fragment" : "-L/usr/local/opt/openssl/lib",
 				"role" : "flags"

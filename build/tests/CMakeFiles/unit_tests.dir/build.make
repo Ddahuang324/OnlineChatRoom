@@ -72,7 +72,7 @@ include tests/CMakeFiles/unit_tests.dir/flags.make
 tests/unit_tests_autogen/timestamp: /Users/dahuang/Qt/6.9.1/macos/libexec/moc
 tests/unit_tests_autogen/timestamp: tests/CMakeFiles/unit_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/dahuang/Desktop/项目/OnlineChat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target unit_tests"
-	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /opt/homebrew/bin/cmake -E cmake_autogen /Users/dahuang/Desktop/项目/OnlineChat/build/tests/CMakeFiles/unit_tests_autogen.dir/AutogenInfo.json ""
+	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /opt/homebrew/bin/cmake -E cmake_autogen /Users/dahuang/Desktop/项目/OnlineChat/build/tests/CMakeFiles/unit_tests_autogen.dir/AutogenInfo.json Debug
 	cd /Users/dahuang/Desktop/项目/OnlineChat/build/tests && /opt/homebrew/bin/cmake -E touch /Users/dahuang/Desktop/项目/OnlineChat/build/tests/unit_tests_autogen/timestamp
 
 tests/CMakeFiles/unit_tests.dir/codegen:
