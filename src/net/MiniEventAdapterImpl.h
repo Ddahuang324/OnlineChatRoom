@@ -55,7 +55,8 @@ private:
 
 
     std::shared_ptr<MiniEventWork::BufferEvent> bev_{nullptr}; // 使用 shared_ptr 管理 BufferEvent
-    MiniEventWork::EVConnConnector* connector_{nullptr};
+    // 将裸指针改为带自定义删除器的 unique_ptr，删除器会在 EventBase 线程上执行删除（如果可能）
+    std::unique_ptr<MiniEventWork::EVConnConnector, std::function<void(MiniEventWork::EVConnConnector*)>> connector_{nullptr};
 
     // Reconnection related
     std::atomic<bool> reconnecting_{false};

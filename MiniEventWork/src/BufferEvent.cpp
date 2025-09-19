@@ -29,6 +29,20 @@ BufferEvent::~BufferEvent() {
   // fd_ 的关闭交由 Channel 析构自动完成
 }
 
+// 新增：接管已有 channel 的构造函数
+BufferEvent::BufferEvent(EventBase* loop, std::unique_ptr<Channel> channel)
+  : loop_(loop),
+    fd_(channel ? channel->fd() : -1),
+    channel_(std::move(channel))
+{
+  if (channel_) {
+    channel_->setReadCallback(std::bind(&BufferEvent::handleRead, this));
+    channel_->setWriteCallback(std::bind(&BufferEvent::handleWrite, this));
+    channel_->setErrorCallback(std::bind(&BufferEvent::handleError, this));
+    channel_->setCloseCallback(std::bind(&BufferEvent::handleClose, this));
+  }
+}
+
 
 void BufferEvent::connectEstablished() {
   //连接建立后，开始监听读事件

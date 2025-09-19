@@ -565,10 +565,6 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "unit_tests_autogen::@a44f0ac069e85531cdee"
-		},
-		{
 			"backtrace" : 2,
 			"id" : "storage_lib::@145eef247bfb46b6828c"
 		},
@@ -602,6 +598,10 @@
 		},
 		{
 			"id" : "unit_tests_autogen_timestamp_deps::@a44f0ac069e85531cdee"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "unit_tests_autogen::@a44f0ac069e85531cdee"
 		}
 	],
 	"id" : "unit_tests::@a44f0ac069e85531cdee",

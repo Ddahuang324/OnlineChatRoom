@@ -44,6 +44,7 @@ template <> constexpr inline auto LoginViewModel::qt_create_metaobjectdata<qt_me
         "passwordChanged",
         "isLoggingInChanged",
         "loginStatusChanged",
+        "loginSuccessful",
         "login",
         "userName",
         "password",
@@ -60,18 +61,20 @@ template <> constexpr inline auto LoginViewModel::qt_create_metaobjectdata<qt_me
         QtMocHelpers::SignalData<void()>(4, 2, QMC::AccessPublic, QMetaType::Void),
         // Signal 'loginStatusChanged'
         QtMocHelpers::SignalData<void()>(5, 2, QMC::AccessPublic, QMetaType::Void),
+        // Signal 'loginSuccessful'
+        QtMocHelpers::SignalData<void()>(6, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'login'
-        QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(7, 2, QMC::AccessPublic, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
         // property 'userName'
-        QtMocHelpers::PropertyData<QString>(7, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 0),
+        QtMocHelpers::PropertyData<QString>(8, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 0),
         // property 'password'
-        QtMocHelpers::PropertyData<QString>(8, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 1),
+        QtMocHelpers::PropertyData<QString>(9, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 1),
         // property 'isLoggingIn'
-        QtMocHelpers::PropertyData<bool>(9, QMetaType::Bool, QMC::DefaultPropertyFlags, 2),
+        QtMocHelpers::PropertyData<bool>(10, QMetaType::Bool, QMC::DefaultPropertyFlags, 2),
         // property 'loginStatus'
-        QtMocHelpers::PropertyData<QString>(10, QMetaType::QString, QMC::DefaultPropertyFlags, 3),
+        QtMocHelpers::PropertyData<QString>(11, QMetaType::QString, QMC::DefaultPropertyFlags, 3),
     };
     QtMocHelpers::UintData qt_enums {
     };
@@ -97,7 +100,8 @@ void LoginViewModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         case 1: _t->passwordChanged(); break;
         case 2: _t->isLoggingInChanged(); break;
         case 3: _t->loginStatusChanged(); break;
-        case 4: _t->login(); break;
+        case 4: _t->loginSuccessful(); break;
+        case 5: _t->login(); break;
         default: ;
         }
     }
@@ -109,6 +113,8 @@ void LoginViewModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         if (QtMocHelpers::indexOfMethod<void (LoginViewModel::*)()>(_a, &LoginViewModel::isLoggingInChanged, 2))
             return;
         if (QtMocHelpers::indexOfMethod<void (LoginViewModel::*)()>(_a, &LoginViewModel::loginStatusChanged, 3))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (LoginViewModel::*)()>(_a, &LoginViewModel::loginSuccessful, 4))
             return;
     }
     if (_c == QMetaObject::ReadProperty) {
@@ -150,14 +156,14 @@ int LoginViewModel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 5)
+        if (_id < 6)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 5;
+        _id -= 6;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 5)
+        if (_id < 6)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 5;
+        _id -= 6;
     }
     if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty
@@ -190,5 +196,11 @@ void LoginViewModel::isLoggingInChanged()
 void LoginViewModel::loginStatusChanged()
 {
     QMetaObject::activate(this, &staticMetaObject, 3, nullptr);
+}
+
+// SIGNAL 4
+void LoginViewModel::loginSuccessful()
+{
+    QMetaObject::activate(this, &staticMetaObject, 4, nullptr);
 }
 QT_WARNING_POP

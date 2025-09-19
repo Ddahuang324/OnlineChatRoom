@@ -132,9 +132,20 @@ void EVConnConnector::retry(int sockfd) {
 
 void EVConnConnector::removeChannel() {
     if (channel_) {
-        loop_->removeChannel(channel_.get());
-        channel_.reset();
+        // channel_->remove(); // This is incorrect, Channel doesn't have remove()
+        // The correct way is to disable all events and let EventBase remove it.
+        channel_->disableAll();
     }
+}
+
+std::unique_ptr<Channel> EVConnConnector::releaseChannel() {
+    return std::move(channel_);
+}
+
+void EVConnConnector::selfDelete() {
+    loop_->runInLoop([this]() {
+        delete this;
+    });
 }
 
 } // namespace MiniEventWork

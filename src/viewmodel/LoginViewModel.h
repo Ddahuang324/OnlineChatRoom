@@ -35,6 +35,7 @@ signals:
     void passwordChanged();
     void isLoggingInChanged();
     void loginStatusChanged();
+    void loginSuccessful();
 
 public:
     void handleConnectionEvent(connectionEvents event);

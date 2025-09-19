@@ -22,18 +22,31 @@ MiniEventAdapterImpl::~MiniEventAdapterImpl(){
             eventThread_->join();
         }
     }
+    // connector_ 使用 unique_ptr 管理，直接 reset 即可；其自定义删除器会尝试在 eventBase_ 线程上删除对象
     if (connector_) {
-        delete connector_;
-        connector_ = nullptr;
+        connector_.reset();
     }
 }
 
 void MiniEventAdapterImpl::init(MiniEventWork::EventBase* eventBase,ConnectionCallback connCb,MessageCallback msgCb,FileChunkCallback fileCb,LoginCallback loginCb){
    
-    connectionCallback_ = [this, connCb](connectionEvents event) { if (connCb) connCb(event); emit connectionEvent(event); };
-    messageCallback_ = std::move(msgCb);
+    // 注意：MiniEventAdapterImpl 的对象线程亲和力在主线程，但其内部 I/O 事件在独立 eventBase_ 线程触发。
+    // 直接在 I/O 线程里 emit 信号会导致：表面上是 DirectConnection（因为对象 threadAffinity = 主线程），
+    // 但实际 slot 在错误线程执行，可能引发未定义行为（UI 无法刷新 / 随机崩溃）。
+    // 这里统一通过 QMetaObject::invokeMethod(..., Qt::QueuedConnection) 把信号投递回对象所属线程。
+    connectionCallback_ = [this, connCb](connectionEvents event) {
+        if (connCb) connCb(event);
+        QMetaObject::invokeMethod(this, [this, event]() { emit connectionEvent(event); }, Qt::QueuedConnection);
+    };
+    messageCallback_ = [this, msgCb](const MessageRecord& msg) {
+        if (msgCb) msgCb(msg);
+        QMetaObject::invokeMethod(this, [this, msg]() { emit messageReceived(msg); }, Qt::QueuedConnection);
+    };
     fileCallback_ = std::move(fileCb);
-    loginCallback_ = [this, loginCb](const LoginResponse& resp) { if (loginCb) loginCb(resp); emit loginResponse(resp); };
+    loginCallback_ = [this, loginCb](const LoginResponse& resp) {
+        if (loginCb) loginCb(resp);
+        QMetaObject::invokeMethod(this, [this, resp]() { emit loginResponse(resp); }, Qt::QueuedConnection);
+    };
 
 
     if (eventBase){
@@ -70,12 +83,39 @@ void MiniEventAdapterImpl::connect(const ConnectionParams& params){
     // 构建 lambda，捕获 this 和 params
     auto connectLambda = [this, params]() {
         // 创建连接器并发起连接（现在在 I/O 线程）
-        connector_ = new MiniEventWork::EVConnConnector(eventBase_, params, [this](bool success, int sockfd) {
+        // 使用 unique_ptr 并传入自定义 deleter，确保删除在 eventBase_ 线程上执行
+        auto deleter = [this](MiniEventWork::EVConnConnector* p){
+            if (!p) return;
+            if (eventBase_ && eventBase_->isInLoopThread()){
+                delete p;
+            } else if (eventBase_) {
+                // 在 event loop 线程删除
+                eventBase_->runInLoop([p]{ delete p; });
+            } else {
+                // 退化为直接删除
+                delete p;
+            }
+        };
+    connector_ = std::unique_ptr<MiniEventWork::EVConnConnector, std::function<void(MiniEventWork::EVConnConnector*)>>(new MiniEventWork::EVConnConnector(eventBase_, params, [this](bool success, int sockfd) {
             if (success) {
-                // 连接成功，先移除连接器的channel
-                connector_->removeChannel();
-                // 然后创建 BufferEvent
-                bev_ = std::make_shared<MiniEventWork::BufferEvent>(eventBase_, sockfd);
+                // 连接成功，此时 sockfd 已经由 EVConnConnector 管理，
+                // 我们需要接管它，并从 EVConnConnector 中移除
+                auto channel = connector_->releaseChannel();
+                if (!channel || channel->fd() != sockfd) {
+                    // 如果 channel 获取失败或 fd 不匹配，则关闭 sockfd
+                    ::close(sockfd);
+                    if (connectionCallback_) {
+                        connectionCallback_(connectionEvents::ConnectFailed);
+                    }
+                    return;
+                }
+
+                // 释放 unique_ptr 的所有权，交由自定义删除器在合适的线程执行删除
+                // 这里先把 connector_ 置空，触发 deleter（会在 eventBase_ 线程上删除）
+                connector_.reset();
+
+                // 然后创建 BufferEvent（从 connector 接管 Channel 而不是重新创建）
+                bev_ = std::make_shared<MiniEventWork::BufferEvent>(eventBase_, std::move(channel));
                 MiniEventWork::BufferEvent::setCallBacks(bev_,
                     [this] { this->onRead(); },
                     []() {},
@@ -95,7 +135,7 @@ void MiniEventAdapterImpl::connect(const ConnectionParams& params){
                     connectionCallback_(connectionEvents::ConnectFailed);
                 }
             }
-        });
+    }), deleter);
     };
 
     // 将 lambda 推送到 I/O 线程执行

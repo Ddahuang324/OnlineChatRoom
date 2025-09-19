@@ -23,6 +23,8 @@ public:
     };
 
     BufferEvent(EventBase* loop, int fd);
+    // 新增：从已有 channel 接管构造
+    BufferEvent(EventBase* loop, std::unique_ptr<Channel> channel);
     ~BufferEvent();
 
     void setReadCallback(const ReadCallback& cb) { readCallback_ = cb; }

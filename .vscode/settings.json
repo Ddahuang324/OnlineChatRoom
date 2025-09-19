@@ -104,6 +104,14 @@
         "internet": "cpp",
         "executor": "cpp",
         "socket": "cpp",
-        "syncstream": "cpp"
+        "syncstream": "cpp",
+        "qobject": "cpp",
+        "qvariantmap": "cpp",
+        "quuid": "cpp",
+        "buffer": "cpp",
+        "io_context": "cpp",
+        "scoped_allocator": "cpp",
+        "qdatetime": "cpp",
+        "qcoreapplication": "cpp"
     }
 }

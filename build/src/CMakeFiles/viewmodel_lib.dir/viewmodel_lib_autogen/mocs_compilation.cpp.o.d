@@ -1,7 +1,7 @@
 src/CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.o: \
   /Users/dahuang/Desktop/项目/OnlineChat/build/src/viewmodel_lib_autogen/mocs_compilation.cpp \
-  /Users/dahuang/Desktop/项目/OnlineChat/build/src/viewmodel_lib_autogen/7OCNMGYRF4/moc_LoginViewModel.cpp \
-  /Users/dahuang/Desktop/项目/OnlineChat/build/src/viewmodel_lib_autogen/7OCNMGYRF4/../../../../src/viewmodel/LoginViewModel.h \
+  /Users/dahuang/Desktop/项目/OnlineChat/build/src/viewmodel_lib_autogen/7OCNMGYRF4/moc_ChatViewModel.cpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/build/src/viewmodel_lib_autogen/7OCNMGYRF4/../../../../src/viewmodel/ChatViewModel.h \
   /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/QObject \
   /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qobject.h \
   /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qobjectdefs.h \
@@ -864,12 +864,37 @@ src/CMakeFiles/viewmodel_lib.dir/viewmodel_lib_autogen/mocs_compilation.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__tree \
   /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qobject_impl.h \
   /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qbindingstorage.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/QVariantMap \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qvariantmap.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/QMap \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qmap.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qshareddata.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qshareddata_impl.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/QVariant \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qvariant.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qdebug.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qtextstream.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qcontiguouscache.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qsharedpointer.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qsharedpointer_impl.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/set \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/unordered_set \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qset.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qhash.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qvarlengtharray.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/q23utility.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/q20utility.h \
   /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/QString \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/QUuid \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/quuid.h \
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qendian.h \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/../include/model/Entities.hpp \
   /Users/dahuang/Desktop/项目/OnlineChat/src/../include/net/IMiniEventAdapter.h \
   /Users/dahuang/Desktop/项目/OnlineChat/src/../include/net/MiniEventAdapter.h \
-  /Users/dahuang/Desktop/项目/OnlineChat/src/../include/model/Entities.hpp \
-  /Users/dahuang/Desktop/项目/OnlineChat/src/../include/storage/Storage.hpp \
   /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qtmochelpers.h \
   /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/qtmocconstants.h \
   /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/q20algorithm.h \
-  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/q23type_traits.h
+  /Users/dahuang/Qt/6.9.1/macos/lib/QtCore.framework/Headers/q23type_traits.h \
+  /Users/dahuang/Desktop/项目/OnlineChat/build/src/viewmodel_lib_autogen/7OCNMGYRF4/moc_LoginViewModel.cpp \
+  /Users/dahuang/Desktop/项目/OnlineChat/build/src/viewmodel_lib_autogen/7OCNMGYRF4/../../../../src/viewmodel/LoginViewModel.h \
+  /Users/dahuang/Desktop/项目/OnlineChat/src/../include/storage/Storage.hpp

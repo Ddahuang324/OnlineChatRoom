@@ -11,6 +11,7 @@
 #include "storage/SQLiteStorage.hpp"
 #include "net/MiniEventAdapterImpl.h"
 #include "viewmodel/LoginViewModel.h"
+#include "viewmodel/ChatViewModel.h"
 
 int main(int argc, char *argv[])
 {
@@ -48,14 +49,25 @@ int main(int argc, char *argv[])
     // 创建登录视图模型，注入存储和网络依赖
     auto loginViewModel = std::make_shared<LoginViewModel>(networkAdapter, storage);
     
+    // 创建聊天视图模型，注入存储和网络依赖
+    auto chatViewModel = std::make_shared<ChatViewModel>(storage.get(), networkAdapter.get());
+    
     // 创建 QML 引擎
     QQmlApplicationEngine engine;
     
     // 注册类型到 QML
     qmlRegisterUncreatableType<LoginViewModel>("OnlineChat", 1, 0, "LoginViewModel", "Cannot create LoginViewModel from QML");
+    qmlRegisterUncreatableType<ChatViewModel>("OnlineChat", 1, 0, "ChatViewModel", "Cannot create ChatViewModel from QML");
     
     // 设置上下文属性
     engine.rootContext()->setContextProperty("loginViewModel", loginViewModel.get());
+    engine.rootContext()->setContextProperty("chatViewModel", chatViewModel.get());
+    // 将登录成功信号连接到 ChatViewModel，以便设置已登录状态
+    QObject::connect(loginViewModel.get(), &LoginViewModel::loginSuccessful, [chatViewModel]() {
+        chatViewModel->setLoggedIn(true);
+        // 自动选择默认房间，避免发送时没有房间
+        chatViewModel->setCurrentRoomId(QStringLiteral("lobby"));
+    });
     
     // 加载主 QML 文件
     const QUrl url(QStringLiteral("qrc:/qml/Main.qml"));

@@ -79,6 +79,8 @@ chat_app_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/dahuang/Desktop/项目/Onl
 chat_app_autogen/EWIEGA46WW/qrc_resources.cpp: CMakeFiles/chat_app_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json
 chat_app_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/dahuang/Desktop/项目/OnlineChat/qml/Main.qml
 chat_app_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/dahuang/Desktop/项目/OnlineChat/qml/pages/ChatPage.qml
+chat_app_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/dahuang/Desktop/项目/OnlineChat/qml/pages/ChatPage.qml
+chat_app_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/dahuang/Desktop/项目/OnlineChat/qml/pages/LoginPage.qml
 chat_app_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/dahuang/Desktop/项目/OnlineChat/qml/pages/LoginPage.qml
 chat_app_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/dahuang/Desktop/项目/OnlineChat/qml/i18n/strings_zh_CN.qml
 chat_app_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/dahuang/Desktop/项目/OnlineChat/qml/themes/colors.qml

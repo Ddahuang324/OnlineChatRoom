@@ -2,6 +2,9 @@
 <RCC version="1.0">
 <qresource>
     <file>qml/Main.qml</file>
+    <file>qml/pages/LoginPage.qml</file>
+    <file>qml/pages/ChatPage.qml</file>
+    <!-- 如果有需要的组件单独列出，可继续添加 -->
     <file alias="qml/components">qml/components</file>
     <file alias="qml/pages">qml/pages</file>
     <file alias="qml/themes">qml/themes</file>

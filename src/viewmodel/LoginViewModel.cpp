@@ -128,8 +128,10 @@ void LoginViewModel::handleLoginResponse(const LoginResponse& resp) {
     if(resp.success){
         // 登录成功后的处理逻辑
         setLoginStatus("Login successful");
-        // 可以在这里触发进入主界面的逻辑
-    
+        qDebug() << "Emitting loginSuccessful signal";
+        emit loginSuccessful();  // 发射信号，通知跳转到聊天页面
+    } else {
+        qDebug() << "Login failed, not emitting signal";
     }
    
 }

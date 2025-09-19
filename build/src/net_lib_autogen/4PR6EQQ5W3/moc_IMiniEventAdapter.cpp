@@ -45,7 +45,10 @@ template <> constexpr inline auto IMiniEventAdapter::qt_create_metaobjectdata<qt
         "event",
         "loginResponse",
         "LoginResponse",
-        "resp"
+        "resp",
+        "messageReceived",
+        "MessageRecord",
+        "msg"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -56,6 +59,10 @@ template <> constexpr inline auto IMiniEventAdapter::qt_create_metaobjectdata<qt
         // Signal 'loginResponse'
         QtMocHelpers::SignalData<void(const LoginResponse &)>(5, 2, QMC::AccessPublic, QMetaType::Void, {{
             { 0x80000000 | 6, 7 },
+        }}),
+        // Signal 'messageReceived'
+        QtMocHelpers::SignalData<void(const MessageRecord &)>(8, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { 0x80000000 | 9, 10 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
@@ -82,6 +89,7 @@ void IMiniEventAdapter::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
         switch (_id) {
         case 0: _t->connectionEvent((*reinterpret_cast< std::add_pointer_t<connectionEvents>>(_a[1]))); break;
         case 1: _t->loginResponse((*reinterpret_cast< std::add_pointer_t<LoginResponse>>(_a[1]))); break;
+        case 2: _t->messageReceived((*reinterpret_cast< std::add_pointer_t<MessageRecord>>(_a[1]))); break;
         default: ;
         }
     }
@@ -89,6 +97,8 @@ void IMiniEventAdapter::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
         if (QtMocHelpers::indexOfMethod<void (IMiniEventAdapter::*)(connectionEvents )>(_a, &IMiniEventAdapter::connectionEvent, 0))
             return;
         if (QtMocHelpers::indexOfMethod<void (IMiniEventAdapter::*)(const LoginResponse & )>(_a, &IMiniEventAdapter::loginResponse, 1))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (IMiniEventAdapter::*)(const MessageRecord & )>(_a, &IMiniEventAdapter::messageReceived, 2))
             return;
     }
 }
@@ -112,14 +122,14 @@ int IMiniEventAdapter::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 3)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 3;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 3)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 2;
+        _id -= 3;
     }
     return _id;
 }
@@ -134,5 +144,11 @@ void IMiniEventAdapter::connectionEvent(connectionEvents _t1)
 void IMiniEventAdapter::loginResponse(const LoginResponse & _t1)
 {
     QMetaObject::activate<void>(this, &staticMetaObject, 1, nullptr, _t1);
+}
+
+// SIGNAL 2
+void IMiniEventAdapter::messageReceived(const MessageRecord & _t1)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 2, nullptr, _t1);
 }
 QT_WARNING_POP

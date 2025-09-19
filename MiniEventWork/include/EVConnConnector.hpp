@@ -18,11 +18,14 @@ public:
     EVConnConnector(EventBase* loop, const ConnectionParams& params, ConnectionCallback&& connection_callback);
     ~EVConnConnector();
 
+    void selfDelete(); // 新增：用于安全的自我销毁
+
     EVConnConnector(const EVConnConnector&) = delete;
     EVConnConnector& operator=(const EVConnConnector&) = delete;
 
     int connect(const std::string& host, int port);
     void removeChannel(); // 新增：移除channel
+    std::unique_ptr<Channel> releaseChannel(); // 新增：释放并转移Channel所有权
 
 private:
     void handleConnect();
